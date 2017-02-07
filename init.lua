@@ -120,9 +120,7 @@ mobs:register_mob("amc:4boat", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "boat.b3d",
-	textures = {
-		{"boat.png"},
-	},
+    textures = {{"boat.png"},{"boat1.png"},{"boat2.png"},{"boat3.png"},{"boat4.png"},{"boat5.png"},{"boat6.png"},},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -153,9 +151,7 @@ mobs:register_mob("amc:5cat", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "cat.b3d",
-	textures = {
-		{"cat.png"},
-	},
+    textures = {{"cat.png"},{"cat1.png"},{"cat2.png"},{"cat3.png"},{"cat4.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -583,9 +579,7 @@ mobs:register_mob("amc:18horse", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
-	textures = {
-		{"horse.png"},
-	},
+    textures = {{"horse.png"},{"horse1.png"},{"horse2.png"},{"horse3.png"},{"horse4.png"},{"horse5.png"},{"horse6.png"},{"horse7.png"},{"horse8.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -649,9 +643,7 @@ mobs:register_mob("amc:20llama", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "llama.b3d",
-	textures = {
-		{"llama.png"},
-	},
+    textures = {{"llama.png"},{"llama1.png"},{"llama2.png"},{"llama3.png"},{"llama4.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -748,9 +740,7 @@ mobs:register_mob("amc:23rabbit", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "rabbit.b3d",
-	textures = {
-		{"rabbit.png"},
-	},
+    textures = {{"rabbit.png"},{"rabbit1.png"},{"rabbit2.png"},{"rabbit3.png"},{"rabbit4.png"},{"rabbit5.png"},{"rabbit6.png"},{"rabbit7.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -946,9 +936,7 @@ mobs:register_mob("amc:29villager", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "villager.b3d",
-	textures = {
-		{"villager.png"},
-	},
+    textures = {{"villager.png"},{"villager1.png"},{"villager2.png"},{"villager3.png"},},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1111,9 +1099,7 @@ mobs:register_mob("amc:34shulker", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "shulker.b3d",
-	textures = {
-		{"shulker.png"},
-	},
+    textures = {{"shulker.png"},{"shulker1.png"},{"shulker2.png"},{"shulker3.png"},{"shulker4.png"},{"shulker5.png"},{"shulker6.png"},{"shulker7.png"},{"shulker8.png"},{"shulker9.png"},{"shulker10.png"},{"shulker11.png"},{"shulker12.png"},{"shulker13.png"},{"shulker14.png"},{"shulker15.png"},{"shulker16.png"},},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1193,3 +1179,162 @@ mobs:register_mob("amc:36witherskeleton", {
 })
 
 mobs:register_egg("amc:36witherskeleton", "Wither Skeleton", "witherskeleton_inv.png", 0)
+
+--###################
+--################### STRAY SKELETON
+--###################
+
+mobs:register_mob("amc:37stray", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "stray.b3d",
+	textures = {
+		{"stray.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:37stray", "Stray Skeleton", "stray_inv.png", 0)
+
+--###################
+--################### HORSE MULE
+--###################
+
+mobs:register_mob("amc:38horsemule", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "mule.b3d",
+    textures = {{"mule.png"},{"mule1.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:38horsemule", "Mule", "mule_inv.png", 0)
+
+--###################
+--################### CAVE SPIDER
+--###################
+
+mobs:register_mob("amc:38cavespider", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "spider.b3d",
+	textures = {
+		{"cave_spider.png"},
+	},
+	visual_size = {x=2, y=2},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:38cavespider", "Cave Spider", "cave_spider_inv.png", 0)
+
+--###################
+--################### EVOKER
+--###################
+
+mobs:register_mob("amc:39evoker", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "villager.b3d",
+    textures = {{"evoker.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:39evoker", "Evoker", "evoker_inv.png", 0)
+
+--###################
+--################### VINDICATOR
+--###################
+
+mobs:register_mob("amc:40vindicator", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "vindicator.b3d",
+    textures = {{"vindicator.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:40vindicator", "vindicator", "vindicator_inv.png", 0)
