@@ -5,168 +5,6 @@ COLISIONBOX in minetest press f5 to see where you are looking at then put these 
 --]]
 
 --###################
---################### BAT
---###################
-
-mobs:register_mob("amc:1bat", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "bat.b3d",
-	textures = {
-		{"bat.png"},
-	},
-	visual_size = {x=1, y=1},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:1bat", "Bat", "bat_inv.png", 0)
-
---###################
---################### POLARBEAR
---###################
-
-mobs:register_mob("amc:2polarbear", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "polarbear.b3d",
-	textures = {
-		{"polarbear.png"},
-	},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:2polarbear", "Polarbear", "polarbear_inv.png", 0)
-
-
---###################
---################### BLAZE
---###################
-
-mobs:register_mob("amc:3blaze", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "blaze.b3d",
-	textures = {
-		{"blaze.png"},
-	},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:3blaze", "Blaze", "blaze_inv.png", 0)
-
---###################
---################### BOAT
---###################
-
-mobs:register_mob("amc:4boat", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "boat.b3d",
-    textures = {{"boat.png"},{"boat1.png"},{"boat2.png"},{"boat3.png"},{"boat4.png"},{"boat5.png"},{"boat6.png"},},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:4boat", "Boat", "boat_inv.png", 0)
-
---###################
---################### CAT
---###################
-
-mobs:register_mob("amc:5cat", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "cat.b3d",
-    textures = {{"cat.png"},{"cat1.png"},{"cat2.png"},{"cat3.png"},{"cat4.png"}},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:5cat", "Cat", "cat_inv.png", 0)
-
---###################
 --################### CHICKEN
 --###################
 
@@ -297,6 +135,137 @@ mobs:register_mob("amc:9creeper", {
 })
 
 mobs:register_egg("amc:9creeper", "Creeper", "creeper_inv.png", 0)
+
+--###################
+--################### BAT
+--###################
+
+mobs:register_mob("amc:1bat", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "bat.b3d",
+	textures = {
+		{"bat.png"},
+	},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:1bat", "Bat", "bat_inv.png", 0)
+
+--###################
+--################### POLARBEAR
+--###################
+
+mobs:register_mob("amc:2polarbear", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "polarbear.b3d",
+	textures = {
+		{"polarbear.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:2polarbear", "Polarbear", "polarbear_inv.png", 0)
+
+
+--###################
+--################### BLAZE
+--###################
+
+mobs:register_mob("amc:3blaze", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "blaze.b3d",
+	textures = {
+		{"blaze.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:3blaze", "Blaze", "blaze_inv.png", 0)
+
+--###################
+--################### CAT
+--###################
+
+mobs:register_mob("amc:5cat", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "cat.b3d",
+    textures = {{"cat.png"},{"cat1.png"},{"cat2.png"},{"cat3.png"},{"cat4.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:5cat", "Cat", "cat_inv.png", 0)
 
 --###################
 --################### MAGMACUBE
@@ -1100,7 +1069,7 @@ mobs:register_mob("amc:37stray", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "stray.b3d",
+	mesh = "strayskeleton.b3d",
 	textures = {
 		{"stray.png"},
 	},
@@ -1307,10 +1276,10 @@ mobs:register_mob("amc:84villager", {
 mobs:register_egg("amc:84villager", "Villager", "villager_inv.png", 0)
 
 --###################
---################### WITCH
+--################### ZOMBIE VILLAGER
 --###################
 
-mobs:register_mob("amc:85witch", {
+mobs:register_mob("amc:85zvillager", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1321,10 +1290,8 @@ mobs:register_mob("amc:85witch", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "witch.b3d",
-	textures = {
-		{"witch.png"},
-	},
+	mesh = "zvillager.b3d",
+    textures = {{"zvillager1.png"},{"zvillager2.png"},{"zvillager3.png"},{"zvillager4.png"},{"zvillager5.png"},{"zvillager6.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1337,7 +1304,7 @@ mobs:register_mob("amc:85witch", {
 	},
 })
 
-mobs:register_egg("amc:85witch", "Witch", "witch_inv.png", 0)
+mobs:register_egg("amc:85zvillager", "Zombie Villager", "zvillager_inv.png", 0)
 
 --###################
 --################### EVOKER
@@ -1401,12 +1368,44 @@ mobs:register_mob("amc:87vindicator", {
 
 mobs:register_egg("amc:87vindicator", "Vindicator", "vindicator_inv.png", 0)
 
+--###################
+--################### WITCH
+--###################
+
+mobs:register_mob("amc:95witch", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "witch.b3d",
+	textures = {
+		{"witch.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:95witch", "Witch", "witch_inv.png", 0)
 
 --###################
 --################### ZOMBIE PIGMAN
 --###################
 
-mobs:register_mob("amc:88pigman", {
+mobs:register_mob("amc:99pigman", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1432,3 +1431,34 @@ mobs:register_mob("amc:88pigman", {
 })
 
 mobs:register_egg("amc:88pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
+
+--###################
+--################### BOAT
+--###################
+
+mobs:register_mob("amc:4boat", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "boat.b3d",
+    textures = {{"boat.png"},{"boat1.png"},{"boat2.png"},{"boat3.png"},{"boat4.png"},{"boat5.png"},{"boat6.png"},},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:4boat", "Boat", "boat_inv.png", 0)
