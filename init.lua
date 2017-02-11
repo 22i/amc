@@ -41,7 +41,7 @@ mobs:register_egg("amc:6chicken", "Chicken", "chicken_inv.png", 0)
 --################### COW
 --###################
 
-mobs:register_mob("amc:7cow", {
+mobs:register_mob("amc:0acow", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -68,13 +68,13 @@ mobs:register_mob("amc:7cow", {
 	},
 })
 
-mobs:register_egg("amc:7cow", "Cow", "cow_inv.png", 0)
+mobs:register_egg("amc:0acow", "Cow", "cow_inv.png", 0)
 
 --###################
 --################### COW MOOSHROOM
 --###################
 
-mobs:register_mob("amc:8mooshroom", {
+mobs:register_mob("amc:0amooshroom", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -101,13 +101,13 @@ mobs:register_mob("amc:8mooshroom", {
 	},
 })
 
-mobs:register_egg("amc:8mooshroom", "Mooshroom", "mooshroom_inv.png", 0)
+mobs:register_egg("amc:0amooshroom", "Mooshroom", "mooshroom_inv.png", 0)
 
 --###################
 --################### CREEPER
 --###################
 
-mobs:register_mob("amc:9creeper", {
+mobs:register_mob("amc:27creeper", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -134,7 +134,7 @@ mobs:register_mob("amc:9creeper", {
 	},
 })
 
-mobs:register_egg("amc:9creeper", "Creeper", "creeper_inv.png", 0)
+mobs:register_egg("amc:27creeper", "Creeper", "creeper_inv.png", 0)
 
 --###################
 --################### BAT
@@ -600,7 +600,7 @@ mobs:register_egg("amc:20llama", "llama", "llama_inv.png", 0)
 --################### PIG
 --###################
 
-mobs:register_mob("amc:21pig", {
+mobs:register_mob("amc:21apig", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -627,7 +627,7 @@ mobs:register_mob("amc:21pig", {
 	},
 })
 
-mobs:register_egg("amc:21pig", "Pig", "pig_inv.png", 0)
+mobs:register_egg("amc:21apig", "Pig", "pig_inv.png", 0)
 
 --###################
 --################### ZOMBIE
@@ -791,39 +791,6 @@ mobs:register_mob("amc:26snowman", {
 })
 
 mobs:register_egg("amc:26snowman", "Snowman", "snowman_inv.png", 0)
-
---###################
---################### SPIDER
---###################
-
-mobs:register_mob("amc:27spider", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "spider.b3d",
-	textures = {
-		{"spider.png"},
-	},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:27spider", "Spider", "spider_inv.png", 0)
 
 --###################
 --################### SQUID
@@ -1088,6 +1055,39 @@ mobs:register_mob("amc:37stray", {
 mobs:register_egg("amc:37stray", "Stray Skeleton", "stray_inv.png", 0)
 
 --###################
+--################### SPIDER
+--###################
+
+mobs:register_mob("amc:38spider", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "spider.b3d",
+	textures = {
+		{"spider.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:38spider", "Spider", "spider_inv.png", 0)
+
+--###################
 --################### CAVE SPIDER
 --###################
 
@@ -1119,6 +1119,37 @@ mobs:register_mob("amc:38cavespider", {
 })
 
 mobs:register_egg("amc:38cavespider", "Cave Spider", "cave_spider_inv.png", 0)
+
+--###################
+--################### ZOMBIE PIGMAN
+--###################
+
+mobs:register_mob("amc:51pigman", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "zombie_pigman.b3d",
+    textures = {{"zombie_pigman.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:51pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
 
 --###################
 --################### HORSE
@@ -1402,41 +1433,10 @@ mobs:register_mob("amc:95witch", {
 mobs:register_egg("amc:95witch", "Witch", "witch_inv.png", 0)
 
 --###################
---################### ZOMBIE PIGMAN
---###################
-
-mobs:register_mob("amc:99pigman", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "zombie_pigman.b3d",
-    textures = {{"zombie_pigman.png"}},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-	},
-})
-
-mobs:register_egg("amc:88pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
-
---###################
 --################### BOAT
 --###################
 
-mobs:register_mob("amc:4boat", {
+mobs:register_mob("amc:99boat", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1461,4 +1461,4 @@ mobs:register_mob("amc:4boat", {
 	},
 })
 
-mobs:register_egg("amc:4boat", "Boat", "boat_inv.png", 0)
+mobs:register_egg("amc:99boat", "Boat", "boat_inv.png", 0)
