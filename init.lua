@@ -29,7 +29,7 @@ mobs:register_mob("amc:6chicken", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -62,7 +62,7 @@ mobs:register_mob("amc:0acow", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -95,7 +95,7 @@ mobs:register_mob("amc:0amooshroom", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -156,12 +156,12 @@ mobs:register_mob("amc:1bat", {
 		{"bat.png"},
 	},
 	visual_size = {x=1, y=1},
-	walk_velocity = 0.6,
-	run_velocity = 2,
+	walk_velocity = 3,
+	run_velocity = 3,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		speed_normal = 80,		speed_run = 80,
+		stand_start = 0,		stand_end = 40,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -194,7 +194,7 @@ mobs:register_mob("amc:2polarbear", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -491,7 +491,7 @@ mobs:register_mob("amc:16guardian", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 40,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -514,7 +514,7 @@ mobs:register_mob("amc:17guardian_elder", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "guardian_elder.b3d",
+	mesh = "guardian.b3d",
 	textures = {
 		{"guardian_elder.png"},
 	},
@@ -524,7 +524,7 @@ mobs:register_mob("amc:17guardian_elder", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 40,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -911,12 +911,12 @@ mobs:register_mob("amc:33wolf", {
 		{"wolf.png"},
 	},
 	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
+	walk_velocity = 2,
+	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		speed_normal = 50,		speed_run = 100,
+		stand_start = 40,		stand_end = 45,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -1155,7 +1155,7 @@ mobs:register_egg("amc:51pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
 --################### HORSE
 --###################
 
-mobs:register_mob("amc:80horse", {
+mobs:register_mob("amc:52horse", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1174,19 +1174,19 @@ mobs:register_mob("amc:80horse", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:80horse", "Horse", "horse_inv.png", 0)
+mobs:register_egg("amc:52horse", "Horse", "horse_inv.png", 0)
 
 --###################
 --################### HORSE MULE
 --###################
 
-mobs:register_mob("amc:81horsemule", {
+mobs:register_mob("amc:53horsemule", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1205,19 +1205,19 @@ mobs:register_mob("amc:81horsemule", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:81horsemule", "Mule", "mule_inv.png", 0)
+mobs:register_egg("amc:53horsemule", "Mule", "mule_inv.png", 0)
 
 --###################
 --################### SKELETON HORSE
 --###################
 
-mobs:register_mob("amc:82horseskeleton", {
+mobs:register_mob("amc:54horseskeleton", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1236,19 +1236,19 @@ mobs:register_mob("amc:82horseskeleton", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:82horseskeleton", "Horse Skeleton", "horseskeleton_inv.png", 0)
+mobs:register_egg("amc:54horseskeleton", "Horse Skeleton", "horseskeleton_inv.png", 0)
 
 --###################
 --################### ZOMBIE HORSE
 --###################
 
-mobs:register_mob("amc:83horsezombie", {
+mobs:register_mob("amc:55horsezombie", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1267,19 +1267,19 @@ mobs:register_mob("amc:83horsezombie", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:83horsezombie", "Horse Zombie", "horsezombie_inv.png", 0)
+mobs:register_egg("amc:55horsezombie", "Horse Zombie", "horsezombie_inv.png", 0)
 
 --###################
 --################### VILLAGER
 --###################
 
-mobs:register_mob("amc:84villager", {
+mobs:register_mob("amc:58villager", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1304,13 +1304,13 @@ mobs:register_mob("amc:84villager", {
 	},
 })
 
-mobs:register_egg("amc:84villager", "Villager", "villager_inv.png", 0)
+mobs:register_egg("amc:58villager", "Villager", "villager_inv.png", 0)
 
 --###################
 --################### ZOMBIE VILLAGER
 --###################
 
-mobs:register_mob("amc:85zvillager", {
+mobs:register_mob("amc:59zvillager", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1335,13 +1335,13 @@ mobs:register_mob("amc:85zvillager", {
 	},
 })
 
-mobs:register_egg("amc:85zvillager", "Zombie Villager", "zvillager_inv.png", 0)
+mobs:register_egg("amc:59zvillager", "Zombie Villager", "zvillager_inv.png", 0)
 
 --###################
 --################### EVOKER
 --###################
 
-mobs:register_mob("amc:86evoker", {
+mobs:register_mob("amc:60evoker", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1366,13 +1366,13 @@ mobs:register_mob("amc:86evoker", {
 	},
 })
 
-mobs:register_egg("amc:86evoker", "Evoker", "evoker_inv.png", 0)
+mobs:register_egg("amc:60evoker", "Evoker", "evoker_inv.png", 0)
 
 --###################
 --################### VINDICATOR
 --###################
 
-mobs:register_mob("amc:87vindicator", {
+mobs:register_mob("amc:61vindicator", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1397,13 +1397,13 @@ mobs:register_mob("amc:87vindicator", {
 	},
 })
 
-mobs:register_egg("amc:87vindicator", "Vindicator", "vindicator_inv.png", 0)
+mobs:register_egg("amc:61vindicator", "Vindicator", "vindicator_inv.png", 0)
 
 --###################
 --################### WITCH
 --###################
 
-mobs:register_mob("amc:95witch", {
+mobs:register_mob("amc:62witch", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1430,13 +1430,13 @@ mobs:register_mob("amc:95witch", {
 	},
 })
 
-mobs:register_egg("amc:95witch", "Witch", "witch_inv.png", 0)
+mobs:register_egg("amc:62witch", "Witch", "witch_inv.png", 0)
 
 --###################
 --################### BOAT
 --###################
 
-mobs:register_mob("amc:97boat", {
+mobs:register_mob("amc:81boat", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1455,19 +1455,19 @@ mobs:register_mob("amc:97boat", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:97boat", "Boat", "boat_inv.png", 0)
+mobs:register_egg("amc:81boat", "Boat", "boat_inv.png", 0)
 
 --###################
 --################### SHIELD
 --###################
 
-mobs:register_mob("amc:98shield", {
+mobs:register_mob("amc:82shield", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1492,13 +1492,13 @@ mobs:register_mob("amc:98shield", {
 	},
 })
 
-mobs:register_egg("amc:98shield", "Shield", "shield_inv.png", 0)
+mobs:register_egg("amc:82shield", "Shield", "shield_inv.png", 0)
 
 --###################
 --################### BANNER
 --###################
 
-mobs:register_mob("amc:99banner", {
+mobs:register_mob("amc:83banner", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1523,4 +1523,35 @@ mobs:register_mob("amc:99banner", {
 	},
 })
 
-mobs:register_egg("amc:99banner", "Banner", "banner_inv.png", 0)
+mobs:register_egg("amc:83banner", "Banner", "banner_inv.png", 0)
+
+--###################
+--################### CHEST
+--###################
+
+mobs:register_mob("amc:84chest", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "chest.b3d",
+    textures = {{"normal.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:84chest", "Chest", "normal_inv.png", 0)
