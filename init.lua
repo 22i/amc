@@ -228,9 +228,9 @@ mobs:register_mob("amc:3blaze", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		stand_start = 0,		stand_end = 100,
+		walk_start = 0,		walk_end = 100,
+		run_start = 0,		run_end = 100,
 	},
 })
 
