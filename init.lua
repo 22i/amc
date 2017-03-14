@@ -229,7 +229,7 @@ mobs:register_mob("amc:3blaze", {
 	animation = {
 		speed_normal = 25,		speed_run = 50,
 		stand_start = 0,		stand_end = 100,
-		walk_start = 0,		walk_end = 100,
+        walk_start = 0,		walk_end = 100,
 		run_start = 0,		run_end = 100,
 	},
 })
@@ -237,10 +237,10 @@ mobs:register_mob("amc:3blaze", {
 mobs:register_egg("amc:3blaze", "Blaze", "blaze_inv.png", 0)
 
 --###################
---################### CAT
+--################### OCELOT - CAT
 --###################
 
-mobs:register_mob("amc:5cat", {
+mobs:register_mob("amc:5ocelot", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -259,13 +259,13 @@ mobs:register_mob("amc:5cat", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
 })
 
-mobs:register_egg("amc:5cat", "Cat", "cat_inv.png", 0)
+mobs:register_egg("amc:5ocelot", "Ocelot", "cat_inv.png", 0)
 
 --###################
 --################### MAGMACUBE
@@ -457,8 +457,8 @@ mobs:register_mob("amc:15ghast", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		speed_normal = 25,		speed_run = 25,
+		stand_start = 0,		stand_end = 40,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -537,9 +537,9 @@ mobs:register_egg("amc:17guardian_elder", "Guardian Elder", "guardian_elder_inv.
 --###################
 
 mobs:register_mob("amc:19iron_golem", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
+	passive = false,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -556,10 +556,11 @@ mobs:register_mob("amc:19iron_golem", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		speed_normal = 15,		speed_run = 25,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
+        punch_start = 40,  punch_end = 50,
 	},
 })
 
@@ -588,7 +589,7 @@ mobs:register_mob("amc:20llama", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -616,12 +617,12 @@ mobs:register_mob("amc:21apig", {
 		{"pig.png"},
 	},
 	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
+	walk_velocity = 1.5,
+	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		speed_normal = 40,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -857,7 +858,7 @@ mobs:register_mob("amc:30vex", {
 })
 
 mobs:register_egg("amc:30vex", "Vex", "vex_inv.png", 0)
-
+   
 --###################
 --################### WITHER
 --###################
@@ -882,10 +883,10 @@ mobs:register_mob("amc:32wither", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		speed_normal = 12,		speed_run = 12,
+		stand_start = 0,		stand_end = 20,
+        walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
 	},
 })
 
