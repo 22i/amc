@@ -128,7 +128,7 @@ mobs:register_mob("amc:27creeper", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -1299,7 +1299,7 @@ mobs:register_mob("amc:58villager", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -1361,7 +1361,7 @@ mobs:register_mob("amc:60evoker", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -1392,7 +1392,7 @@ mobs:register_mob("amc:61vindicator", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
@@ -1425,7 +1425,7 @@ mobs:register_mob("amc:62witch", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
+		stand_start = 0,		stand_end = 0,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
 	},
