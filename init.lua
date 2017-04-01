@@ -649,7 +649,7 @@ mobs:register_mob("amc:22zombie", {
 	textures = {
 		{"zombie.png"},
 	},
-	visual_size = {x=3, y=3},
+	visual_size = {x=3.5, y=3.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
@@ -713,6 +713,8 @@ mobs:register_mob("amc:24sheep", {
 	textures = {
 		{"sheep.png"},
 	},
+    gotten_texture = {"sheeps.png"},
+    gotten_mesh = "sheeps.b3d",
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -806,7 +808,7 @@ mobs:register_mob("amc:28squid", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
+    --rotate = 180,
 	visual = "mesh",
 	mesh = "squid.b3d",
 	textures = {
@@ -818,9 +820,9 @@ mobs:register_mob("amc:28squid", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 50,
+		run_start = 0,		run_end = 50,
 	},
 })
 
@@ -845,7 +847,7 @@ mobs:register_mob("amc:30vex", {
 	textures = {
 		{"vex.png"},
 	},
-	visual_size = {x=3, y=3},
+	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
