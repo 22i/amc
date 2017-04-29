@@ -1683,3 +1683,84 @@ mobs:register_mob("amc:86bed", {
 })
 
 mobs:register_egg("amc:86bed", "Bed", "bed.png", 0)
+
+mobs:register_mob("amc:87stonesword", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "stonesword.b3d",
+    textures = {{"stone_sword.png"}},
+	visual_size = {x=4, y=4},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:87stonesword", "Stone sword", "stone_sword.png", 0)
+
+mobs:register_mob("amc:88sstonesword", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "3d_item.b3d",
+    textures = {{"stone_sword.png"}},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:88sstonesword", "sword", "stone_sword.png", 0)
+
+mobs:register_mob("amc:89armorstand", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "armorstand.b3d",
+    textures = {{"wood.png"}},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:89armorstand", "Armor stand", "wooden_armorstand.png", 0)
