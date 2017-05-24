@@ -1778,6 +1778,10 @@ mobs:register_mob("amc:88sstonesword", {
 
 mobs:register_egg("amc:88sstonesword", "sword", "stone_sword.png", 0)
 
+--###################
+--################### ARMORSTAND
+--###################
+
 mobs:register_mob("amc:89armorstand", {
 	type = "animal",
 	passive = true,
@@ -1804,3 +1808,63 @@ mobs:register_mob("amc:89armorstand", {
 })
 
 mobs:register_egg("amc:89armorstand", "Armor stand", "wooden_armorstand.png", 0)
+
+--###################
+--################### 8x8 ITEM
+--###################
+
+mobs:register_mob("amc:908x8", {
+	type = "animal",
+	passive = true,
+    stepheight = 1.2,
+	hp_min = 1,
+	hp_max = 1,
+	--armor = 1,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "8x8.b3d",
+    textures = {{"a1.png"},{"a2.png"},{"a3.png"}},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.000000001,
+	run_velocity = 0.00000001,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:908x8", "8x8", "a1.png", 0)
+
+--###################
+--################### 16x16 ITEM
+--###################
+
+mobs:register_mob("amc:9016x16", {
+	type = "animal",
+	passive = true,
+    stepheight = 1.2,
+	hp_min = 1,
+	hp_max = 1,
+	--armor = 1,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "16x16.b3d",
+    textures = {{"stone_sword.png"},{"b1.png"},{"b2.png"},{"b3.png"},{"b4.png"}},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.000000001,
+	run_velocity = 0.00000001,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:9016x16", "16x16", "b1.png", 0)
