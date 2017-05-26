@@ -1034,9 +1034,8 @@ mobs:register_egg("amc:34shulker", "Shulker", "shulker_inv.png", 0)
 --###################
 
 mobs:register_mob("amc:35skeleton", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1046,17 +1045,27 @@ mobs:register_mob("amc:35skeleton", {
 	visual = "mesh",
 	mesh = "skeleton.b3d",
 	textures = {
-		{"skeleton.png"},
+		{"skeleton.png^skeleton_bow.png"},
+        {"skeleton1.png^skeleton_bow.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+    animation = {
+		--speed_normal = 25,
+		--speed_run = 50,
+		stand_start = 0,
+		stand_end = 40,
+        speed_stand = 5,
+		walk_start = 40,
+		walk_end = 60,
+        speed_walk = 50,
+        punch_start = 70,
+        punch_end = 90,
+        die_start = 120,
+        die_end = 130,
+        speed_die = 5,
 	},
 })
 
@@ -1067,9 +1076,8 @@ mobs:register_egg("amc:35skeleton", "Skeleton", "skeleton_inv.png", 0)
 --###################
 
 mobs:register_mob("amc:36witherskeleton", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1079,17 +1087,27 @@ mobs:register_mob("amc:36witherskeleton", {
 	visual = "mesh",
 	mesh = "witherskeleton.b3d",
 	textures = {
-		{"witherskeleton.png"},
+		{"wither_skeleton.png^wither_skeleton_sword.png"},
+        {"wither_skeleton1.png^wither_skeleton_sword.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+    animation = {
+		--speed_normal = 25,
+		--speed_run = 50,
+		stand_start = 0,
+		stand_end = 40,
+        speed_stand = 5,
+		walk_start = 40,
+		walk_end = 60,
+        speed_walk = 50,
+        punch_start = 70,
+        punch_end = 90,
+        die_start = 120,
+        die_end = 130,
+        speed_die = 5,
 	},
 })
 
@@ -1100,9 +1118,10 @@ mobs:register_egg("amc:36witherskeleton", "Wither Skeleton", "witherskeleton_inv
 --###################
 
 mobs:register_mob("amc:37stray", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
+	passive = false,
+    runaway = false,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1110,7 +1129,7 @@ mobs:register_mob("amc:37stray", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "strayskeleton.b3d",
+	mesh = "stray.b3d",
 	textures = {
 		{"stray.png"},
 	},
@@ -1118,11 +1137,20 @@ mobs:register_mob("amc:37stray", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+    animation = {
+		--speed_normal = 25,
+		--speed_run = 50,
+		stand_start = 0,
+		stand_end = 40,
+        speed_stand = 5,
+		walk_start = 40,
+		walk_end = 60,
+        speed_walk = 50,
+        punch_start = 70,
+        punch_end = 90,
+        die_start = 120,
+        die_end = 130,
+        speed_die = 5,
 	},
 })
 
@@ -1868,3 +1896,33 @@ mobs:register_mob("amc:9016x16", {
 })
 
 mobs:register_egg("amc:9016x16", "16x16", "b1.png", 0)
+
+--###################
+--################### 32x32 ITEM
+--###################
+
+mobs:register_mob("amc:9032x32", {
+	type = "animal",
+	passive = true,
+    stepheight = 1.2,
+	hp_min = 1,
+	hp_max = 1,
+	--armor = 1,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "32x32.b3d",
+    textures = {{"aa1.png"},{"aa2.png"},{"aa3.png"},{"aa4.png"}},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.000000001,
+	run_velocity = 0.00000001,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:9032x32", "32x32", "aa1.png", 0)
