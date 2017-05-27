@@ -22,6 +22,7 @@ mobs:register_mob("amc:6chicken", {
 	mesh = "chicken.b3d",
 	textures = {
 		{"chicken.png"},
+        {"chicken1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -55,6 +56,7 @@ mobs:register_mob("amc:0acow", {
 	mesh = "cow.b3d",
 	textures = {
 		{"cow.png"},
+        {"cow1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -88,6 +90,7 @@ mobs:register_mob("amc:0amooshroom", {
 	mesh = "mooshroom.b3d",
 	textures = {
 		{"mooshroom.png"},
+        {"mooshroom.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -121,6 +124,7 @@ mobs:register_mob("amc:27creeper", {
 	mesh = "creeper.b3d",
 	textures = {
 		{"creeper.png"},
+        {"creeper1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -148,7 +152,7 @@ mobs:register_mob("amc:1bat", {
 	hp_min = 30,
 	hp_max = 60,
 	armor = 150,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    collisionbox = {-0.35, -1, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
 	mesh = "bat.b3d",
@@ -164,6 +168,7 @@ mobs:register_mob("amc:1bat", {
 		stand_start = 0,		stand_end = 40,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
+        die_start = 40,		die_end = 80,
 	},
 })
 
@@ -261,6 +266,7 @@ mobs:register_mob("amc:3blaze", {
 	mesh = "blaze.b3d",
 	textures = {
 		{"blaze.png"},
+        {"blaze.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -280,7 +286,7 @@ mobs:register_egg("amc:3blaze", "Blaze", "blaze_inv.png", 0)
 --################### OCELOT - CAT
 --###################
 
-mobs:register_mob("amc:5ocelot", {
+mobs:register_mob("amc:5ocelotcat", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -292,7 +298,14 @@ mobs:register_mob("amc:5ocelot", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "cat.b3d",
-    textures = {{"cat.png"},{"cat1.png"},{"cat2.png"},{"cat3.png"},{"cat4.png"}},
+    textures = {
+        {"cat.png"},
+        {"cat1.png"},
+        {"cat2.png"},
+        {"cat3.png"},
+        {"cat4.png"},
+        {"cat4.png"},
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -305,7 +318,7 @@ mobs:register_mob("amc:5ocelot", {
 	},
 })
 
-mobs:register_egg("amc:5ocelot", "Ocelot", "cat_inv.png", 0)
+mobs:register_egg("amc:5ocelotcat", "Ocelot the cat", "cat_inv.png", 0)
 
 --###################
 --################### MAGMACUBE
@@ -388,9 +401,10 @@ mobs:register_mob("amc:12enderdragon", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "enderdragon.b3d",
+	mesh = "dragon.b3d",
 	textures = {
-		{"enderdragon.png"},
+		{"dragon.png"},
+        {"dragon1.png"},
 	},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
@@ -404,7 +418,7 @@ mobs:register_mob("amc:12enderdragon", {
 	},
 })
 
-mobs:register_egg("amc:12enderdragon", "Enderdragon", "enderdragon_inv.png", 0)
+mobs:register_egg("amc:12enderdragon", "Enderdragon", "dragon_inv.png", 0)
 
 
 --###################
@@ -425,6 +439,7 @@ mobs:register_mob("amc:13enderman", {
 	mesh = "enderman.b3d",
 	textures = {
 		{"enderman.png"},
+        {"enderman.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -491,6 +506,7 @@ mobs:register_mob("amc:15ghast", {
 	mesh = "ghast.b3d",
 	textures = {
 		{"ghast.png"},
+        {"ghast.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -820,6 +836,7 @@ mobs:register_mob("amc:26snowman", {
 	mesh = "snowman.b3d",
 	textures = {
 		{"snowman.png"},
+        {"snowman1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -827,9 +844,10 @@ mobs:register_mob("amc:26snowman", {
 	jump = true,
 	animation = {
 		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		stand_start = 20,		stand_end = 40,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+        die_start = 40,		die_end = 50,
 	},
 })
 
@@ -998,7 +1016,7 @@ mobs:register_mob("amc:34shulker", {
 		stand_start = 0,		stand_end = 45,
 		walk_start = 0,		walk_end = 45,
 		run_start = 0,		run_end = 45,
-        punch_start = 80,  punch_end = 100,
+        shoot_start = 80,  shoot_end = 100,
 	},
 })
 
@@ -1035,7 +1053,10 @@ mobs:register_egg("amc:34shulker", "Shulker", "shulker_inv.png", 0)
 
 mobs:register_mob("amc:35skeleton", {
 	type = "monster",
-    attack_type = "dogfight",
+    attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1061,8 +1082,8 @@ mobs:register_mob("amc:35skeleton", {
 		walk_start = 40,
 		walk_end = 60,
         speed_walk = 50,
-        punch_start = 70,
-        punch_end = 90,
+        shoot_start = 70,
+        shoot_end = 90,
         die_start = 120,
         die_end = 130,
         speed_die = 5,
@@ -1114,14 +1135,15 @@ mobs:register_mob("amc:36witherskeleton", {
 mobs:register_egg("amc:36witherskeleton", "Wither Skeleton", "witherskeleton_inv.png", 0)
 
 --###################
---################### STRAY SKELETON
+--################### STRAY SKELETONs
 --###################
 
 mobs:register_mob("amc:37stray", {
 	type = "monster",
-    attack_type = "dogfight",
-	passive = false,
-    runaway = false,
+    attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1146,8 +1168,8 @@ mobs:register_mob("amc:37stray", {
 		walk_start = 40,
 		walk_end = 60,
         speed_walk = 50,
-        punch_start = 70,
-        punch_end = 90,
+        shoot_start = 70,
+        shoot_end = 90,
         die_start = 120,
         die_end = 130,
         speed_die = 5,
@@ -1520,6 +1542,7 @@ mobs:register_mob("amc:62witch", {
 	mesh = "witch.b3d",
 	textures = {
 		{"witch.png"},
+        {"witch1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1532,6 +1555,8 @@ mobs:register_mob("amc:62witch", {
 		run_start = 0,		run_end = 40,
 	},
 })
+
+mobs:register_egg("amc:62witch", "Witch", "witch_inv.png", 0)
 
 --###################
 --################### AGENT
@@ -1675,7 +1700,11 @@ mobs:register_mob("amc:84chest", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "chest.b3d",
-    textures = {{"normal.png"}},
+    textures = {
+        {"normal.png"},
+        {"normal1.png"},
+        {"normal1.png"},
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
