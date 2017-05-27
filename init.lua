@@ -125,6 +125,7 @@ mobs:register_mob("amc:27creeper", {
 	textures = {
 		{"creeper.png"},
         {"creeper1.png"},
+        {"creeper2.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -158,6 +159,7 @@ mobs:register_mob("amc:1bat", {
 	mesh = "bat.b3d",
 	textures = {
 		{"bat.png"},
+        {"bat.png"},
 	},
 	visual_size = {x=1, y=1},
 	walk_velocity = 3,
@@ -473,6 +475,7 @@ mobs:register_mob("amc:14endermite", {
 	mesh = "endermite.b3d",
 	textures = {
 		{"endermite.png"},
+        {"endermite1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -540,6 +543,7 @@ mobs:register_mob("amc:16guardian", {
 	mesh = "guardian.b3d",
 	textures = {
 		{"guardian.png"},
+        {"guardian1.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -573,6 +577,7 @@ mobs:register_mob("amc:17guardian_elder", {
 	mesh = "guardian.b3d",
 	textures = {
 		{"guardian_elder.png"},
+        {"guardian_elder1.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -606,6 +611,8 @@ mobs:register_mob("amc:19iron_golem", {
 	mesh = "iron_golem.b3d",
 	textures = {
 		{"iron_golem.png"},
+        {"iron_golem1.png"},
+        {"iron_golem2.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -671,6 +678,7 @@ mobs:register_mob("amc:21apig", {
 	mesh = "pig.b3d",
 	textures = {
 		{"pig.png"},
+        {"pig1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -704,6 +712,7 @@ mobs:register_mob("amc:22zombie", {
 	mesh = "zombie.b3d",
 	textures = {
 		{"zombie.png"},
+        {"zombie.png"},
 	},
 	visual_size = {x=3.5, y=3.5},
 	walk_velocity = 0.6,
@@ -803,6 +812,7 @@ mobs:register_mob("amc:25silverfish", {
 	mesh = "silverfish.b3d",
 	textures = {
 		{"silverfish.png"},
+        {"silverfish.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -871,6 +881,8 @@ mobs:register_mob("amc:28squid", {
 	mesh = "squid.b3d",
 	textures = {
 		{"squid.png"},
+        {"squid1.png"},
+        {"squid2.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -937,6 +949,7 @@ mobs:register_mob("amc:32wither", {
 	mesh = "wither.b3d",
 	textures = {
 		{"wither.png"},
+        {"wither1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -970,6 +983,7 @@ mobs:register_mob("amc:33wolf", {
 	mesh = "wolf.b3d",
 	textures = {
 		{"wolf.png"},
+        {"wolf.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 2,
@@ -1196,6 +1210,7 @@ mobs:register_mob("amc:38spider", {
 	mesh = "spider.b3d",
 	textures = {
 		{"spider.png"},
+        {"spider1.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1229,6 +1244,7 @@ mobs:register_mob("amc:38cavespider", {
 	mesh = "spider.b3d",
 	textures = {
 		{"cave_spider.png"},
+        {"cave_spider1.png"},
 	},
 	visual_size = {x=2, y=2},
 	walk_velocity = 0.6,
@@ -1416,7 +1432,12 @@ mobs:register_mob("amc:58villager", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "villager.b3d",
-    textures = {{"villager.png"},{"villager1.png"},{"villager2.png"},{"villager3.png"},},
+    textures = {
+        {"villager.png"},
+        {"villager1.png"},
+        {"villager2.png"},
+        {"villager3.png"},
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1703,7 +1724,7 @@ mobs:register_mob("amc:84chest", {
     textures = {
         {"normal.png"},
         {"normal1.png"},
-        {"normal1.png"},
+        {"normal2.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1735,7 +1756,10 @@ mobs:register_mob("amc:85minecart", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "minecart.b3d",
-    textures = {{"minecart.png"}},
+    textures = {
+        {"minecart.png"},
+        {"minecart.png"},
+    },
 	visual_size = {x=12, y=12},
 	walk_velocity = 0.6,
 	run_velocity = 2,
