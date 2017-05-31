@@ -290,7 +290,7 @@ mobs:register_mob("amc:3blaze", {
 	},
 })
 
-mobs:register_egg("amc:3blaze", "Blaze", "blaze_inv.png", 0)
+mobs:register_egg("amc:3blaze", "420 Blaze it", "blaze_inv.png", 0)
 
 --###################
 --################### OCELOT - CAT
@@ -1522,16 +1522,27 @@ mobs:register_mob("amc:59zvillager", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "zvillager.b3d",
-    textures = {{"zvillager1.png"},{"zvillager2.png"},{"zvillager3.png"},{"zvillager4.png"},{"zvillager5.png"},{"zvillager6.png"}},
+    textures = {
+        {"zombie_butcher.png"},
+        {"zombie_farmer.png"},
+        {"zombie_librarian.png"},
+        {"zombie_priest.png"},
+        {"zombie_smith.png"},
+        {"zombie_villager.png"}
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		speed_normal = 25,
+        speed_run = 50,
+		stand_start = 20,
+        stand_end = 40,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
 	},
 })
 
@@ -1597,7 +1608,51 @@ mobs:register_mob("amc:61vindicator", {
 	},
 })
 
-mobs:register_egg("amc:61vindicator", "Vindicator", "vindicator_inv.png", 0)
+--###################
+--################### ILLUSIONER
+--###################
+
+mobs:register_mob("amc:611illusioner", {
+	type = "monster",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "illusioner.b3d",
+    textures = {
+        --{"illusionist.png"},
+        {"illusionist.png^illusionist1.png"},
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,
+		speed_run = 25,
+		stand_start = 40,
+		stand_end = 59,
+        --speed_stand = 5,
+		walk_start = 0,
+		walk_end = 40,
+        --speed_walk = 50,
+        shoot_start = 90,
+        shoot_end = 110,
+        die_start = 110,
+        die_end = 130,
+        speed_die = 5,
+        -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
+	},
+})
+
+mobs:register_egg("amc:611illusioner", "Illusioner", "illusioner_inv.png", 0)
 
 --###################
 --################### WITCH
@@ -2023,7 +2078,12 @@ mobs:register_mob("amc:9032x32", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "32x32.b3d",
-    textures = {{"aa1.png"},{"aa2.png"},{"aa3.png"},{"aa4.png"}},
+    textures = {
+        {"aa1.png"},
+        {"aa2.png"},
+        {"aa3.png"},
+        {"aa4.png"}
+    },
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
