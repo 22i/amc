@@ -78,6 +78,43 @@ mobs:register_mob("amc:0acow", {
 mobs:register_egg("amc:0acow", "Cow", "cow_inv.png", 0)
 
 --###################
+--################### BABY COW
+--###################
+
+mobs:register_mob("amc:0acowbaby", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "cowbaby.b3d",
+	textures = {
+		{"cow.png"},
+        {"cow1.png"},
+        {"cow2.png"},
+        --{"cow3.png"},
+        --{"cow4.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:0acowbaby", "Cow baby", "cow_inv.png", 0)
+
+--###################
 --################### COW MOOSHROOM
 --###################
 
@@ -1362,7 +1399,15 @@ mobs:register_mob("amc:52horse", {
     rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
-    textures = {{"horse.png"},{"horse1.png"},{"horse2.png"},{"horse3.png"},{"horse4.png"},{"horse5.png"},{"horse6.png"}},
+    textures = {
+        {"horse.png"},
+        {"horse1.png"},
+        {"horse2.png"},
+        {"horse3.png"},
+        {"horse4.png"},
+        {"horse5.png"},
+        --{"horse6.png"}
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1376,6 +1421,46 @@ mobs:register_mob("amc:52horse", {
 })
 
 mobs:register_egg("amc:52horse", "Horse", "horse_inv.png", 0)
+
+--###################
+--################### BABY HORSE
+--###################
+
+mobs:register_mob("amc:52horsebaby", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "horsebaby.b3d",
+    textures = {
+        {"horse.png"},
+        {"horse1.png"},
+        {"horse2.png"},
+        {"horse3.png"},
+        {"horse4.png"},
+        {"horse5.png"},
+        --{"horse6.png"}
+    },
+	--visual_size = {x=0.9, y=0.9},
+    visual_size = {x=2, y=2},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:52horsebaby", "Horse baby", "horse_inv.png", 0)
 
 --###################
 --################### HORSE MULE
@@ -1553,9 +1638,11 @@ mobs:register_egg("amc:59zvillager", "Zombie Villager", "zvillager_inv.png", 0)
 --###################
 
 mobs:register_mob("amc:60evoker", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1563,17 +1650,25 @@ mobs:register_mob("amc:60evoker", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "villager.b3d",
+	mesh = "evoker.b3d",
     textures = {{"evoker.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 0,		stand_end = 0,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		speed_normal = 25,
+		speed_run = 25,
+		stand_start = 40,
+		stand_end = 59,
+        speed_stand = 5,
+		walk_start = 0,
+		walk_end = 40,
+        --speed_walk = 50,
+        shoot_start = 60,
+        shoot_end = 80,
+        die_start = 80,
+        die_end = 130,
 	},
 })
 
@@ -1584,9 +1679,8 @@ mobs:register_egg("amc:60evoker", "Evoker", "evoker_inv.png", 0)
 --###################
 
 mobs:register_mob("amc:61vindicator", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -1594,19 +1688,31 @@ mobs:register_mob("amc:61vindicator", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "villager.b3d",
-    textures = {{"vindicator.png"}},
+	mesh = "vindicator.b3d",
+    textures = {
+        {"vindicator.png^vindicator1.png"},
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 0,		stand_end = 0,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+		speed_normal = 25,
+		speed_run = 25,
+		stand_start = 40,
+		stand_end = 59,
+        speed_stand = 5,
+		walk_start = 0,
+		walk_end = 40,
+        --speed_walk = 50,
+        punch_start = 90,
+        punch_end = 110,
+        die_start = 110,
+        die_end = 130,
 	},
 })
+
+mobs:register_egg("amc:61vindicator", "Vindicator", "vindicator_inv.png", 0)
 
 --###################
 --################### ILLUSIONER
