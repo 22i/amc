@@ -445,6 +445,44 @@ mobs:register_mob("amc:5ocelotcat", {
 mobs:register_egg("amc:5ocelotcat", "Ocelot the cat", "cat_inv.png", 0)
 
 --###################
+--################### BABY OCELOT - CAT
+--###################
+
+mobs:register_mob("amc:5babyocelotcat", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "catbaby.b3d",
+    textures = {
+        {"cat.png"},
+        {"cat1.png"},
+        {"cat2.png"},
+        {"cat3.png"},
+        {"cat4.png"},
+        {"cat5.png"},
+    },
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:5babyocelotcat", "Baby ocelot the cat", "baby_ocelot_inv.png", 0)
+
+--###################
 --################### MAGMACUBE
 --###################
 
@@ -1226,12 +1264,12 @@ mobs:register_mob("amc:24sheep", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "sheep.b3d",
+	mesh = "sheepfur.b3d",
 	textures = {
 		{"sheep.png"},
 	},
-    gotten_texture = {"sheeps.png"},
-    gotten_mesh = "sheeps.b3d",
+    gotten_texture = {"sheep.png"},
+    gotten_mesh = "sheepnaked.b3d",
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1245,6 +1283,74 @@ mobs:register_mob("amc:24sheep", {
 })
 
 mobs:register_egg("amc:24sheep", "Sheep", "sheep_inv.png", 0)
+
+--###################
+--################### NAKED SHEEP
+--###################
+
+mobs:register_mob("amc:24nakedsheep", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "sheepnaked.b3d",
+	textures = {
+		{"sheep.png"},
+	},
+    gotten_texture = {"sheep.png"},
+    gotten_mesh = "sheepfur.b3d",
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:24nakedsheep", "Naked sheep", "sheep_inv.png", 0)
+
+--###################
+--################### BABY SHEEP
+--###################
+
+mobs:register_mob("amc:24babysheep", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "sheepfurbaby.b3d",
+	textures = {
+		{"sheep.png"},
+	},
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:24babysheep", "Baby sheep", "baby_sheep_inv.png", 0)
 
 --###################
 --################### SILVERFISH
