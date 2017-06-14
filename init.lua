@@ -322,6 +322,7 @@ mobs:register_mob("amc:2polarbear", {
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
+    --walk_velocity = 0.000000006,
 	run_velocity = 2,
 	jump = true,
 	animation = {
@@ -333,6 +334,41 @@ mobs:register_mob("amc:2polarbear", {
 })
 
 mobs:register_egg("amc:2polarbear", "Polarbear", "polarbear_inv.png", 0)
+
+--###################
+--################### BABY POLARBEAR
+--###################
+
+mobs:register_mob("amc:2babypolarbear", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "polarbear.b3d",
+	textures = {
+		{"polarbear.png"},
+        {"polarbear1.png"},
+	},
+	visual_size = {x=2.2, y=2.2},
+	walk_velocity = 0.6,
+    --walk_velocity = 0.000000006,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:2babypolarbear", "Baby polarbear", "baby_polar_bear_inv.png", 0)
 
 
 --###################
@@ -937,7 +973,7 @@ mobs:register_mob("amc:20babyllama", {
         {"llama.png^decor_green.png"},   --swag baby lama
         {"llama1.png^decor_lime.png^llama_chest.png"}, --swag and chest baby lama
     },
-	visual_size = {x=3, y=3},
+	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
@@ -988,6 +1024,42 @@ mobs:register_mob("amc:21apig", {
 mobs:register_egg("amc:21apig", "Pig", "pig_inv.png", 0)
 
 --###################
+--################### BABY PIG
+--###################
+
+mobs:register_mob("amc:21babypig", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "pigbaby.b3d",
+	textures = {
+		{"pig.png"},
+        {"pig1.png"},
+        {"pig2.png"},
+        --{"pig3.png"},
+	},
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 1.5,
+	run_velocity = 4,
+	jump = true,
+	animation = {
+		speed_normal = 40,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:21babypig", "Baby pig", "baby_pig_inv.png", 0)
+
+--###################
 --################### ZOMBIE
 --###################
 
@@ -1007,7 +1079,7 @@ mobs:register_mob("amc:22zombie", {
 		{"zombie.png"},
         {"zombie.png"},
 	},
-	visual_size = {x=3.5, y=3.5},
+	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
@@ -1020,6 +1092,40 @@ mobs:register_mob("amc:22zombie", {
 })
 
 mobs:register_egg("amc:22zombie", "Zombie", "zombie_inv.png", 0)
+
+--###################
+--################### BABY ZOMBIE
+--###################
+
+mobs:register_mob("amc:22babyzombie", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "zombiebaby.b3d",
+	textures = {
+		{"zombie.png"},
+        {"zombie.png"},
+	},
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:22babyzombie", "Baby zombie", "baby_zombie_inv.png", 0)
 
 --###################
 --################### RABBIT
@@ -1062,6 +1168,48 @@ mobs:register_mob("amc:23rabbit", {
 })
 
 mobs:register_egg("amc:23rabbit", "Rabbit", "rabbit_inv.png", 0)
+
+--###################
+--################### BABY RABBIT
+--###################
+
+mobs:register_mob("amc:23babyrabbit", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.5, 0.15},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "rabbitbaby.b3d",
+    textures = {
+        {"rabbit.png"},
+        {"rabbit1.png"},
+        {"rabbit2.png"},
+        {"rabbit3.png"},
+        {"rabbit4.png"},
+        {"rabbit5.png"},
+        {"rabbit6.png"},
+        {"rabbit7.png"},
+        {"rabbit8.png"},
+        {"rabbit9.png"},
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:23babyrabbit", "Baby rabbit", "baby_rabbit_inv.png", 0)
 
 --###################
 --################### SHEEP
