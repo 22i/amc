@@ -607,6 +607,9 @@ mobs:register_mob("amc:13enderman", {
 		{"enderman.png"},
         --{"enderman1.png"},
 	},
+    sounds = {
+		death = "watchingme"
+	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1117,6 +1120,9 @@ mobs:register_mob("amc:22zombie", {
 		{"zombie.png"},
         {"zombie.png"},
 	},
+    sounds = {
+		death = "chainedtorhyme"
+	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1403,11 +1409,10 @@ mobs:register_mob("amc:26snowman", {
 	visual = "mesh",
 	mesh = "snowman.b3d",
 	textures = {
-		{"snowman.png"},
+		{"snowman.png^snowman_pumpkin.png"},
+        {"snowman.png"},
+        {"snowman1.png^snowman1_pumpkin.png"},
         {"snowman1.png"},
-        {"snowman2.png"},
-        {"snowman3.png"},
-        --{"snowman4.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1477,7 +1482,7 @@ mobs:register_mob("amc:30vex", {
 	visual = "mesh",
 	mesh = "vex.b3d",
 	textures = {
-		{"vex.png"},
+		{"vex.png^vex_sword.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1551,6 +1556,9 @@ mobs:register_mob("amc:33wolf", {
 		{"wolf.png"},
         {"wolf1.png"},
 	},
+    sounds = {
+		death = "whodogs"
+	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 2,
 	run_velocity = 4,
@@ -1564,6 +1572,40 @@ mobs:register_mob("amc:33wolf", {
 })
 
 mobs:register_egg("amc:33wolf", "Wolf", "wolf_inv.png", 0)
+
+--###################
+--################### BABY WOLF
+--###################
+
+mobs:register_mob("amc:33babywolf", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "wolfbaby.b3d",
+	textures = {
+		{"wolf.png"},
+        {"wolf1.png"},
+	},
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 2,
+	run_velocity = 4,
+	jump = true,
+	animation = {
+		speed_normal = 50,		speed_run = 100,
+		stand_start = 40,		stand_end = 45,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:33babywolf", "Baby wolf", "baby_wolf_inv.png", 0)
 
 --###################
 --################### SHULKER
@@ -1849,8 +1891,7 @@ mobs:register_mob("amc:51pigman", {
 	visual = "mesh",
 	mesh = "zombie_pigman.b3d",
     textures = {
-        {"zombie_pigman.png"},
-        --{"zombie_pigman1.png"},
+        {"zombie_pigman.png^zombie_pigman_sword.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1866,6 +1907,40 @@ mobs:register_mob("amc:51pigman", {
 })
 
 mobs:register_egg("amc:51pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
+
+--###################
+--################### BABY ZOMBIE PIGMAN
+--###################
+
+mobs:register_mob("amc:51babypigman", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "zombie_pigmanbaby.b3d",
+    textures = {
+        {"zombie_pigman.png^zombie_pigman_sword.png"},
+    },
+	visual_size = {x=1.5, y=1.5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+        punch_start = 90,		punch_end = 130,
+	},
+})
+
+mobs:register_egg("amc:51babypigman", "Baby Zombie Pigman", "baby_zombie_pigman_inv.png", 0)
 
 --###################
 --################### HORSE
