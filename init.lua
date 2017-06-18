@@ -17,7 +17,6 @@ mobs:register_mob("amc:6chicken", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 0.8, 0.20},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "chicken.b3d",
 	textures = {
@@ -53,7 +52,6 @@ mobs:register_mob("amc:6babychicken", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.7, 0.15},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "babychicken.b3d",
 	textures = {
@@ -89,7 +87,6 @@ mobs:register_mob("amc:0acow", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "cow.b3d",
 	textures = {
@@ -129,7 +126,6 @@ mobs:register_mob("amc:0babycow", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "cowbaby.b3d",
 	textures = {
@@ -166,7 +162,6 @@ mobs:register_mob("amc:0amooshroom", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "cow.b3d",
 	textures = {
@@ -199,7 +194,6 @@ mobs:register_mob("amc:27creeper", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.6, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "creeper.b3d",
 	textures = {
@@ -235,7 +229,6 @@ mobs:register_mob("amc:1bat", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -1, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "bat.b3d",
 	textures = {
@@ -270,7 +263,6 @@ mobs:register_mob("amc:1parrot", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "parrot.b3d",
 	textures = {
@@ -316,7 +308,6 @@ mobs:register_mob("amc:2polarbear", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "polarbear.b3d",
 	textures = {
@@ -351,7 +342,6 @@ mobs:register_mob("amc:2babypolarbear", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "polarbear.b3d",
 	textures = {
@@ -422,7 +412,6 @@ mobs:register_mob("amc:5ocelotcat", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "cat.b3d",
     textures = {
@@ -460,7 +449,6 @@ mobs:register_mob("amc:5babyocelotcat", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "catbaby.b3d",
     textures = {
@@ -498,7 +486,6 @@ mobs:register_mob("amc:10magmacube", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.3, 0.45},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "magmacube.b3d",
 	textures = {
@@ -531,7 +518,6 @@ mobs:register_mob("amc:11slime", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.3, 0.45},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "slime.b3d",
 	textures = {
@@ -564,7 +550,6 @@ mobs:register_mob("amc:12enderdragon", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "dragon.b3d",
 	textures = {
@@ -603,7 +588,6 @@ mobs:register_mob("amc:13enderman", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2.3, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "enderman.b3d",
 	textures = {
@@ -640,7 +624,6 @@ mobs:register_mob("amc:14endermite", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 0.3, 0.20},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "endermite.b3d",
 	textures = {
@@ -676,7 +659,6 @@ mobs:register_mob("amc:15ghast", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "ghast.b3d",
 	textures = {
@@ -712,7 +694,6 @@ mobs:register_mob("amc:16guardian", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.7, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "guardian.b3d",
 	textures = {
@@ -749,7 +730,6 @@ mobs:register_mob("amc:17guardian_elder", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.7, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "guardian.b3d",
 	textures = {
@@ -783,7 +763,6 @@ mobs:register_mob("amc:19iron_golem", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "iron_golem.b3d",
 	textures = {
@@ -820,7 +799,6 @@ mobs:register_mob("amc:20cllama", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "llama.b3d",
     textures = {
@@ -858,7 +836,6 @@ mobs:register_mob("amc:20dswagllama", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "llama.b3d",
     textures = {
@@ -970,7 +947,6 @@ mobs:register_mob("amc:20ecllama", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "llama.b3d",
     textures = {
@@ -1007,7 +983,6 @@ mobs:register_mob("amc:20edllama", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "llama.b3d",
     textures = {
@@ -1044,7 +1019,6 @@ mobs:register_mob("amc:20babyllama", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "llamababy.b3d",
     textures = {
@@ -1081,7 +1055,6 @@ mobs:register_mob("amc:21apig", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "pig.b3d",
 	textures = {
@@ -1117,7 +1090,6 @@ mobs:register_mob("amc:21babypig", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "pigbaby.b3d",
 	textures = {
@@ -1153,7 +1125,6 @@ mobs:register_mob("amc:22zombie", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zombie.b3d",
 	textures = {
@@ -1190,7 +1161,6 @@ mobs:register_mob("amc:22babyzombie", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zombiebaby.b3d",
 	textures = {
@@ -1224,7 +1194,6 @@ mobs:register_mob("amc:23rabbit", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.5, 0.15},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "rabbit.b3d",
     textures = {
@@ -1266,7 +1235,6 @@ mobs:register_mob("amc:23babyrabbit", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.5, 0.15},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "rabbitbaby.b3d",
     textures = {
@@ -1308,7 +1276,6 @@ mobs:register_mob("amc:24sheep", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sheepfur.b3d",
 	textures = {
@@ -1343,7 +1310,6 @@ mobs:register_mob("amc:24nakedsheep", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sheepnaked.b3d",
 	textures = {
@@ -1378,7 +1344,6 @@ mobs:register_mob("amc:24babysheep", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "sheepfurbaby.b3d",
 	textures = {
@@ -1411,7 +1376,6 @@ mobs:register_mob("amc:25silverfish", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.3, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "silverfish.b3d",
 	textures = {
@@ -1445,7 +1409,6 @@ mobs:register_mob("amc:26snowman", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "snowman.b3d",
 	textures = {
@@ -1518,7 +1481,6 @@ mobs:register_mob("amc:30vex", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.3, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "vex.b3d",
 	textures = {
@@ -1551,7 +1513,6 @@ mobs:register_mob("amc:32wither", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "wither.b3d",
 	textures = {
@@ -1564,7 +1525,7 @@ mobs:register_mob("amc:32wither", {
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
-	run_velocity = 2,
+    run_velocity = 2,
 	jump = true,
 	animation = {
 		speed_normal = 12,		speed_run = 12,
@@ -1589,7 +1550,6 @@ mobs:register_mob("amc:33wolf", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "wolf.b3d",
 	textures = {
@@ -1626,7 +1586,6 @@ mobs:register_mob("amc:33babywolf", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "wolfbaby.b3d",
 	textures = {
@@ -1665,7 +1624,6 @@ mobs:register_mob("amc:34shulker", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "shulker.b3d",
     textures = {
@@ -1742,7 +1700,6 @@ mobs:register_mob("amc:35skeleton", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "skeleton.b3d",
 	textures = {
@@ -1786,7 +1743,6 @@ mobs:register_mob("amc:36witherskeleton", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "witherskeleton.b3d",
 	textures = {
@@ -1831,7 +1787,6 @@ mobs:register_mob("amc:37stray", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "stray.b3d",
 	textures = {
@@ -1873,7 +1828,6 @@ mobs:register_mob("amc:38spider", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "spider.b3d",
 	textures = {
@@ -1910,7 +1864,6 @@ mobs:register_mob("amc:38cavespider", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.7, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "spider.b3d",
 	textures = {
@@ -1948,7 +1901,6 @@ mobs:register_mob("amc:51pigman", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zombie_pigman.b3d",
     textures = {
@@ -1982,7 +1934,6 @@ mobs:register_mob("amc:51babypigman", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zombie_pigmanbaby.b3d",
     textures = {
@@ -2016,7 +1967,6 @@ mobs:register_mob("amc:52bbhorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2055,7 +2005,6 @@ mobs:register_mob("amc:52msaddlehorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2093,7 +2042,6 @@ mobs:register_mob("amc:52chesthorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2131,7 +2079,6 @@ mobs:register_mob("amc:52rmourhorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2169,7 +2116,6 @@ mobs:register_mob("amc:52zeverythinghorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2207,7 +2153,6 @@ mobs:register_mob("amc:52babyhorse", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.5, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horsebaby.b3d",
     textures = {
@@ -2250,7 +2195,6 @@ mobs:register_mob("amc:53horsemule", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2283,7 +2227,6 @@ mobs:register_mob("amc:53horsedonkey", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {
@@ -2316,7 +2259,6 @@ mobs:register_mob("amc:54horseskeleton", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {{"horseskeleton.png"}},
@@ -2347,7 +2289,6 @@ mobs:register_mob("amc:55horsezombie", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "horse.b3d",
     textures = {{"horsezombie.png"}},
@@ -2378,7 +2319,6 @@ mobs:register_mob("amc:58villager", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "villager.b3d",
     textures = {
@@ -2414,7 +2354,6 @@ mobs:register_mob("amc:58babyvillager", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 1, 0.20},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "villager.b3d",
     textures = {
@@ -2451,7 +2390,6 @@ mobs:register_mob("amc:59zvillager", {
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
     visual_size = {x=2.9, y=2.9},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zvillager.b3d",
     textures = {
@@ -2492,7 +2430,6 @@ mobs:register_mob("amc:59babyzvillager", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 1.3, 0.20},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "zvillagerbaby.b3d",
     textures = {
@@ -2536,7 +2473,6 @@ mobs:register_mob("amc:60evoker", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "evoker.b3d",
     textures = {{"evoker.png"}},
@@ -2574,7 +2510,6 @@ mobs:register_mob("amc:61vindicator", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "vindicator.b3d",
     textures = {
@@ -2617,7 +2552,6 @@ mobs:register_mob("amc:611illusioner", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "illusioner.b3d",
     textures = {
@@ -2661,7 +2595,6 @@ mobs:register_mob("amc:62witch", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "witch.b3d",
 	textures = {
@@ -2696,7 +2629,6 @@ mobs:register_mob("amc:63agent", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "agent.b3d",
 	textures = {
@@ -2729,7 +2661,6 @@ mobs:register_mob("amc:81boat", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "boat.b3d",
     textures = {
@@ -2753,7 +2684,7 @@ mobs:register_mob("amc:81boat", {
 	},
 })
 
-mobs:register_egg("amc:81boat", "Boat", "boat_inv.png", 0)
+mobs:register_egg("amc:81boat", "Boaty", "boat_inv.png", 0)
 
 --###################
 --################### SHIELD
@@ -2768,7 +2699,6 @@ mobs:register_mob("amc:82shield", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.3, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "shield.b3d",
     textures = {{"shield.png"}},
@@ -2799,7 +2729,6 @@ mobs:register_mob("amc:83banner", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "banner.b3d",
     textures = {{"banner_base.png"}},
@@ -2865,7 +2794,6 @@ mobs:register_mob("amc:85minecart", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "minecart.b3d",
     textures = {
@@ -2899,7 +2827,6 @@ mobs:register_mob("amc:86bed", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "bed.b3d",
     textures = {
@@ -2997,7 +2924,7 @@ mobs:register_mob("amc:88sstonesword", {
 mobs:register_egg("amc:88sstonesword", "sword", "stone_sword.png", 0)
 
 --###################
---################### ARMORSTAND
+--################### ARMOURSTAND
 --###################
 
 mobs:register_mob("amc:89armorstand", {
@@ -3009,7 +2936,6 @@ mobs:register_mob("amc:89armorstand", {
 	hp_max = 60,
 	armor = 150,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
 	visual = "mesh",
 	mesh = "armorstand.b3d",
     textures = {
