@@ -270,7 +270,7 @@ mobs:register_mob("amc:1parrot", {
         {"parrot_green.png"},
         {"parrot_grey.png"},
         {"parrot_red_blue.png"},
-        {"parrot_yellow_blue.png"}
+        {"parrot_yellow_blue.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1046,7 +1046,7 @@ mobs:register_egg("amc:20babyllama", "Baby Llama", "baby_llama_inv.png", 0)
 --################### PIG
 --###################
 
-mobs:register_mob("amc:21apig", {
+mobs:register_mob("amc:21pig", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1075,7 +1075,41 @@ mobs:register_mob("amc:21apig", {
 	},
 })
 
-mobs:register_egg("amc:21apig", "Ditch Pig", "pig_inv.png", 0)
+mobs:register_egg("amc:21pig", "Ditch Pig", "pig_inv.png", 0)
+
+--###################
+--################### SADDLE PIG
+--###################
+
+mobs:register_mob("amc:21saddlepig", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "pig.b3d",
+	textures = {
+		{"pig.png^pig_saddle.png"},
+        {"pig1.png^pig_saddle.png"},
+        {"pig2.png^pig_saddle.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 1.5,
+	run_velocity = 4,
+	jump = true,
+	animation = {
+		speed_normal = 40,		speed_run = 50,
+		stand_start = 0,		stand_end = 0,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:21saddlepig", "Saddle Pig", "pig_saddle_inv.png", 0)
 
 --###################
 --################### BABY PIG
