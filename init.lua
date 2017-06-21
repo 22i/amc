@@ -579,10 +579,14 @@ mobs:register_egg("amc:12enderdragon", "Ender Dragon", "dragon_inv.png", 0)
 --################### ENDERMAN
 --###################
 
+-- 121-160 agressive walking with a block
+-- 161-200 non agressive walking with a block
+-- 200-200 standing with a block
+        
 mobs:register_mob("amc:13enderman", {
-	type = "animal",
-	passive = true,
-    runaway = true,
+	type = "monster",
+    attack_type = "dogfight",
+    damage = 1,
     stepheight = 1.2,
 	hp_min = 30,
 	hp_max = 60,
@@ -591,7 +595,7 @@ mobs:register_mob("amc:13enderman", {
 	visual = "mesh",
 	mesh = "enderman.b3d",
 	textures = {
-		{"enderman.png"},
+		{"enderman.png^enderman_eyes.png^enderman_block.png"},
         --{"enderman1.png"},
 	},
     sounds = {
@@ -601,15 +605,67 @@ mobs:register_mob("amc:13enderman", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 40,		stand_end = 80,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
+	animation = { 
+		speed_normal = 25,
+        speed_run = 50,
+		stand_start = 40,
+        stand_end = 80,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+        punch_start = 81,
+        punch_end = 120,
 	},
 })
 
 mobs:register_egg("amc:13enderman", "Enderman", "enderman_inv.png", 0)
+
+--###################
+--################### ENDERMAN BLOCK
+--###################
+
+-- 121-160 agressive walking with a block
+-- 161-200 non agressive walking with a block
+-- 200-200 standing with a block
+        
+mobs:register_mob("amc:13benderman", {
+	type = "monster",
+    attack_type = "dogfight",
+    damage = 1,
+    stepheight = 1.2,
+	hp_min = 30,
+	hp_max = 60,
+	armor = 150,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2.3, 0.35},
+	visual = "mesh",
+	mesh = "enderman.b3d",
+	textures = {
+		{"enderman.png^enderman_eyes.png^enderman_block.png"},
+        --{"enderman1.png"},
+	},
+    sounds = {
+		death = "watchingme"
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = { 
+		speed_normal = 25,
+        speed_run = 50,
+		stand_start = 200,
+        stand_end = 200,
+		walk_start = 161,
+        walk_end = 200,
+		run_start = 161,
+        run_end = 200,
+        punch_start = 121,
+        punch_end = 160,
+	},
+})
+
+mobs:register_egg("amc:13benderman", "Enderman with a block", "enderman_with_block_inv.png", 0)
 
 --###################
 --################### ENDERMITE
@@ -2263,9 +2319,7 @@ mobs:register_mob("amc:53horsedonkey", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "horse.b3d",
-    textures = {
-        {"donkey.png"}
-    },
+    textures = {{"donkey.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
