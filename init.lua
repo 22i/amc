@@ -1,6 +1,4 @@
---[[
-COLISIONBOX in minetest press f5 to see where you are looking at then put these wool collor nodes on the ground in direction of north/east/west... to make colisionbox editing easier
-#1west-pink/#2down/#3south-blue/#4east-red/#5up/#6north-yelow
+--[[ collision box
 {-1, -0.5, -1, 1, 3, 1}, Right, Bottom, Back, Left, Top, Front
 --]]
 
@@ -13,17 +11,13 @@ mobs:register_mob("amc:6chicken", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 0.8, 0.20},
 	visual = "mesh",
-	mesh = "chicken.b3d",
+	mesh = "mobs_mc_chicken.b3d",
 	textures = {
-		{"chicken.png"},
-        {"chicken1.png"},
-        {"chicken2.png"},
-        --{"chicken3.png"},
+		{"mobs_mc_chicken.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -37,7 +31,7 @@ mobs:register_mob("amc:6chicken", {
 	},
 })
 
-mobs:register_egg("amc:6chicken", "Spy Chicken", "chicken_inv.png", 0)
+mobs:register_egg("amc:6chicken", "Spy Chicken", "mobs_mc_spawn_icon_chicken.png", 0)
 
 --###################
 --################### BABY CHICKEN
@@ -48,17 +42,13 @@ mobs:register_mob("amc:6babychicken", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.7, 0.15},
 	visual = "mesh",
-	mesh = "babychicken.b3d",
+	mesh = "mobs_mc_chicken_baby.b3d",
 	textures = {
-		{"chicken.png"},
-        {"chicken1.png"},
-        {"chicken2.png"},
-        --{"chicken3.png"},
+		{"mobs_mc_chicken.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -72,7 +62,7 @@ mobs:register_mob("amc:6babychicken", {
 	},
 })
 
-mobs:register_egg("amc:6babychicken", "Baby Chicken", "baby_chicken_inv.png", 0)
+mobs:register_egg("amc:6babychicken", "Baby Chicken", "mobs_mc_spawn_icon_chicken_baby.png", 0)
 
 --###################
 --################### COW
@@ -83,21 +73,16 @@ mobs:register_mob("amc:0acow", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "cow.b3d",
+	mesh = "mobs_mc_cow.b3d",
 	textures = {
-		{"cow.png"},
-        {"cow1.png"},
-        {"cow2.png"},
-        --{"cow3.png"},
-        --{"cow4.png"},
+		{"mobs_mc_cow.png"},
 	},
     sounds = {
-		death = "belieber"
+		death = "mobs_mc_belieber"
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -111,7 +96,7 @@ mobs:register_mob("amc:0acow", {
 	},
 })
 
-mobs:register_egg("amc:0acow", "Super Cow", "cow_inv.png", 0)
+mobs:register_egg("amc:0acow", "Super Cow", "mobs_mc_spawn_icon_cow.png", 0)
 
 --###################
 --################### BABY COW
@@ -122,18 +107,14 @@ mobs:register_mob("amc:0babycow", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "cowbaby.b3d",
+	mesh = "mobs_mc_cow_baby.b3d",
 	textures = {
-		{"cow.png"},
-        {"cow1.png"},
-        {"cow2.png"},
-        {"mooshroom.png^mooshroom_mooshroom.png"},
-        --{"cow4.png"},
+		{"mobs_mc_cow.png"},
+        {"mobs_mc_mooshroom.png^mobs_mc_mooshroom_mooshroom.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -147,7 +128,7 @@ mobs:register_mob("amc:0babycow", {
 	},
 })
 
-mobs:register_egg("amc:0babycow", "Baby Cow", "baby_cow_inv.png", 0)
+mobs:register_egg("amc:0babycow", "Baby Cow", "mobs_mc_spawn_icon_cow_baby.png", 0)
 
 --###################
 --################### COW MOOSHROOM
@@ -158,14 +139,13 @@ mobs:register_mob("amc:0amooshroom", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "cow.b3d",
+	mesh = "mobs_mc_cow.b3d",
 	textures = {
-		{"mooshroom.png^mooshroom_mooshroom.png"},
+		{"mobs_mc_mooshroom.png^mobs_mc_mooshroom_mooshroom.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -179,7 +159,7 @@ mobs:register_mob("amc:0amooshroom", {
 	},
 })
 
-mobs:register_egg("amc:0amooshroom", "Mooshroom", "mooshroom_inv.png", 0)
+mobs:register_egg("amc:0amooshroom", "Mooshroom", "mobs_mc_spawn_icon_mooshroom.png", 0)
 
 --###################
 --################### CREEPER
@@ -190,17 +170,13 @@ mobs:register_mob("amc:27creeper", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.6, 0.35},
 	visual = "mesh",
-	mesh = "creeper.b3d",
+	mesh = "mobs_mc_creeper.b3d",
 	textures = {
-		{"creeper.png"},
-        {"creeper1.png"},
-        {"creeper2.png"},
-        {"creeper3.png"},
+		{"mobs_mc_creeper.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -214,7 +190,7 @@ mobs:register_mob("amc:27creeper", {
 	},
 })
 
-mobs:register_egg("amc:27creeper", "Creeper", "creeper_inv.png", 0)
+mobs:register_egg("amc:27creeper", "Creeper", "mobs_mc_spawn_icon_creeper.png", 0)
 
 --###################
 --################### BAT
@@ -225,30 +201,35 @@ mobs:register_mob("amc:1bat", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -1, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "bat.b3d",
+	mesh = "mobs_mc_bat.b3d",
 	textures = {
-		{"bat.png"},
-        --{"bat1.png"},
+		{"mobs_mc_bat.png"},
 	},
 	visual_size = {x=1, y=1},
 	walk_velocity = 3,
 	run_velocity = 3,
 	jump = true,
 	animation = {
-		speed_normal = 80,		speed_run = 80,
-		stand_start = 0,		stand_end = 40,
-		walk_start = 0,		walk_end = 40,
-		run_start = 0,		run_end = 40,
-        die_start = 40,		die_end = 80,
+		speed_normal = 80,
+        speed_run = 80,
+		stand_start = 0,
+        stand_end = 40,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+        die_start = 40,
+        die_end = 65,
+        speed_die = 5,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:1bat", "Batman", "bat_inv.png", 0)
+mobs:register_egg("amc:1bat", "Batman", "mobs_mc_spawn_icon_bat.png", 0)
 
 --###################
 --################### PARROT
@@ -259,18 +240,17 @@ mobs:register_mob("amc:1parrot", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "parrot.b3d",
+	mesh = "mobs_mc_parrot.b3d",
 	textures = {
-        {"parrot_blue.png"},
-        {"parrot_green.png"},
-        {"parrot_grey.png"},
-        {"parrot_red_blue.png"},
-        {"parrot_yellow_blue.png"},
+        {"mobs_mc_parrot_blue.png"},
+        {"mobs_mc_parrot_green.png"},
+        {"mobs_mc_parrot_grey.png"},
+        {"mobs_mc_parrot_red_blue.png"},
+        {"mobs_mc_parrot_yellow_blue.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -293,7 +273,7 @@ mobs:register_mob("amc:1parrot", {
 	},
 })
 
-mobs:register_egg("amc:1parrot", "Parrot", "parrot_inv.png", 0)
+mobs:register_egg("amc:1parrot", "Parrot", "mobs_mc_spawn_icon_parrot.png", 0)
 
 --###################
 --################### POLARBEAR
@@ -304,15 +284,13 @@ mobs:register_mob("amc:2polarbear", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "polarbear.b3d",
+	mesh = "mobs_mc_polar_bear.b3d",
 	textures = {
-		{"polarbear.png"},
-        {"polarbear1.png"},
+		{"mobs_mc_polarbear.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -327,7 +305,7 @@ mobs:register_mob("amc:2polarbear", {
 	},
 })
 
-mobs:register_egg("amc:2polarbear", "Polar Bear", "polarbear_inv.png", 0)
+mobs:register_egg("amc:2polarbear", "Polar Bear", "mobs_mc_spawn_icon_polarbear.png", 0)
 
 --###################
 --################### BABY POLAR BEAR
@@ -338,15 +316,13 @@ mobs:register_mob("amc:2babypolarbear", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "polarbear.b3d",
+	mesh = "mobs_mc_polar_bear.b3d",
 	textures = {
-		{"polarbear.png"},
-        {"polarbear1.png"},
+		{"mobs_mc_polarbear.png"},
 	},
 	visual_size = {x=2.2, y=2.2},
 	walk_velocity = 0.6,
@@ -361,7 +337,7 @@ mobs:register_mob("amc:2babypolarbear", {
 	},
 })
 
-mobs:register_egg("amc:2babypolarbear", "Baby Polar Bear", "baby_polar_bear_inv.png", 0)
+mobs:register_egg("amc:2babypolarbear", "Baby Polar Bear", "mobs_mc_spawn_icon_polarbear_baby.png", 0)
 
 
 --###################
@@ -373,17 +349,14 @@ mobs:register_mob("amc:3blaze", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.7, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "blaze.b3d",
+	mesh = "mobs_mc_blaze.b3d",
 	textures = {
-		{"blaze.png"},
-        {"blaze1.png"},
-        --{"blaze2.png"},
+		{"mobs_mc_blaze.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -397,7 +370,7 @@ mobs:register_mob("amc:3blaze", {
 	},
 })
 
-mobs:register_egg("amc:3blaze", "420 Blaze it", "blaze_inv.png", 0)
+mobs:register_egg("amc:3blaze", "420 Blaze it", "mobs_mc_spawn_icon_blaze.png", 0)
 
 --###################
 --################### OCELOT - CAT
@@ -408,19 +381,16 @@ mobs:register_mob("amc:5ocelotcat", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "cat.b3d",
+	mesh = "mobs_mc_cat.b3d",
     textures = {
-        {"cat.png"},
-        {"cat1.png"},
-        {"cat2.png"},
-        {"cat3.png"},
-        {"cat4.png"},
-        {"cat5.png"},
+        {"mobs_mc_cat_black.png"},
+        {"mobs_mc_cat_ocelot.png"},
+        {"mobs_mc_cat_red.png"},
+        {"mobs_mc_cat_siamese.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -434,7 +404,7 @@ mobs:register_mob("amc:5ocelotcat", {
 	},
 })
 
-mobs:register_egg("amc:5ocelotcat", "Ocelot the Cat", "cat_inv.png", 0)
+mobs:register_egg("amc:5ocelotcat", "Ocelot the Cat", "mobs_mc_spawn_icon_cat.png", 0)
 
 --###################
 --################### BABY OCELOT - CAT
@@ -445,19 +415,16 @@ mobs:register_mob("amc:5babyocelotcat", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "catbaby.b3d",
+	mesh = "mobs_mc_cat_baby.b3d",
     textures = {
-        {"cat.png"},
-        {"cat1.png"},
-        {"cat2.png"},
-        {"cat3.png"},
-        {"cat4.png"},
-        {"cat5.png"},
+        {"mobs_mc_cat_black.png"},
+        {"mobs_mc_cat_ocelot.png"},
+        {"mobs_mc_cat_red.png"},
+        {"mobs_mc_cat_siamese.png"},
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -471,7 +438,7 @@ mobs:register_mob("amc:5babyocelotcat", {
 	},
 })
 
-mobs:register_egg("amc:5babyocelotcat", "Baby Ocelot the Cat", "baby_ocelot_inv.png", 0)
+mobs:register_egg("amc:5babyocelotcat", "Baby Ocelot the Cat", "mobs_mc_spawn_icon_ocelot_baby.png", 0)
 
 --###################
 --################### MAGMACUBE
@@ -482,14 +449,13 @@ mobs:register_mob("amc:10magmacube", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.3, 0.45},
 	visual = "mesh",
-	mesh = "magmacube.b3d",
+	mesh = "mobs_mc_magma_cube.b3d",
 	textures = {
-		{"magmacube.png"},
+		{"mobs_mc_magmacube.png"},
 	},
 	visual_size = {x=8, y=8},
 	walk_velocity = 0.6,
@@ -503,7 +469,7 @@ mobs:register_mob("amc:10magmacube", {
 	},
 })
 
-mobs:register_egg("amc:10magmacube", "Magma Cube", "magmacube_inv.png", 0)
+mobs:register_egg("amc:10magmacube", "Magma Cube", "mobs_mc_spawn_icon_magmacube.png", 0)
 
 --###################
 --################### SLIME
@@ -514,14 +480,13 @@ mobs:register_mob("amc:11slime", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.3, 0.45},
 	visual = "mesh",
-	mesh = "slime.b3d",
+	mesh = "mobs_mc_slime.b3d",
 	textures = {
-		{"slime.png"},
+		{"mobs_mc_slime.png"},
 	},
 	visual_size = {x=8, y=8},
 	walk_velocity = 0.6,
@@ -535,7 +500,7 @@ mobs:register_mob("amc:11slime", {
 	},
 })
 
-mobs:register_egg("amc:11slime", "Slime", "slime_inv.png", 0)
+mobs:register_egg("amc:11slime", "Slime", "mobs_mc_spawn_icon_slime.png", 0)
 
 --###################
 --################### ENDERDRAGON
@@ -546,19 +511,16 @@ mobs:register_mob("amc:12enderdragon", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "dragon.b3d",
+	mesh = "mobs_mc_ender_dragon.b3d",
 	textures = {
-		{"dragon.png"},
-        {"dragon1.png"},
-        --{"dragon2.png"},
+		{"mobs_mc_dragon.png"},
 	},
     sounds = {
-		death = "intheend"
+		death = "mobs_mc_intheend"
 	},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
@@ -572,7 +534,7 @@ mobs:register_mob("amc:12enderdragon", {
 	},
 })
 
-mobs:register_egg("amc:12enderdragon", "Ender Dragon", "dragon_inv.png", 0)
+mobs:register_egg("amc:12enderdragon", "Ender Dragon", "mobs_mc_spawn_icon_dragon.png", 0)
 
 
 --###################
@@ -588,18 +550,16 @@ mobs:register_mob("amc:13enderman", {
     attack_type = "dogfight",
     damage = 1,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2.3, 0.35},
 	visual = "mesh",
-	mesh = "enderman.b3d",
+	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-		{"enderman.png^enderman_eyes.png^enderman_block.png"},
-        --{"enderman1.png"},
+		{"mobs_mc_enderman.png^mobs_mc_enderman_eyes.png^mobs_mc_enderman_block.png"},
 	},
     sounds = {
-		death = "watchingme"
+		death = "mobs_mc_watchingme"
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -619,7 +579,7 @@ mobs:register_mob("amc:13enderman", {
 	},
 })
 
-mobs:register_egg("amc:13enderman", "Enderman", "enderman_inv.png", 0)
+mobs:register_egg("amc:13enderman", "Enderman", "mobs_mc_spawn_icon_enderman.png", 0)
 
 --###################
 --################### ENDERMAN BLOCK
@@ -634,18 +594,13 @@ mobs:register_mob("amc:13benderman", {
     attack_type = "dogfight",
     damage = 1,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2.3, 0.35},
 	visual = "mesh",
-	mesh = "enderman.b3d",
+	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-		{"enderman.png^enderman_eyes.png^enderman_block.png"},
-        --{"enderman1.png"},
-	},
-    sounds = {
-		death = "watchingme"
+		{"mobs_mc_enderman.png^mobs_mc_enderman_eyes.png^mobs_mc_enderman_block.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -665,7 +620,7 @@ mobs:register_mob("amc:13benderman", {
 	},
 })
 
-mobs:register_egg("amc:13benderman", "Enderman with a block", "enderman_with_block_inv.png", 0)
+mobs:register_egg("amc:13benderman", "Enderman with a block", "mobs_mc_spawn_icon_enderman_block.png", 0)
 
 --###################
 --################### ENDERMITE
@@ -676,17 +631,13 @@ mobs:register_mob("amc:14endermite", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 0.3, 0.20},
 	visual = "mesh",
-	mesh = "endermite.b3d",
+	mesh = "mobs_mc_endermite.b3d",
 	textures = {
-		{"endermite.png"},
-        {"endermite1.png"},
-        {"endermite2.png"},
-        --{"endermite3.png"},
+		{"mobs_mc_endermite.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -700,7 +651,7 @@ mobs:register_mob("amc:14endermite", {
 	},
 })
 
-mobs:register_egg("amc:14endermite", "Endermite", "endermite_inv.png", 0)
+mobs:register_egg("amc:14endermite", "Endermite", "mobs_mc_spawn_icon_endermite.png", 0)
 
 --###################
 --################### GHAST
@@ -711,17 +662,13 @@ mobs:register_mob("amc:15ghast", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "ghast.b3d",
+	mesh = "mobs_mc_ghast.b3d",
 	textures = {
-		{"ghast.png"},
-        {"ghast1.png"},
-        {"ghast2.png"},
-        {"ghast3.png"},
+		{"mobs_mc_ghast.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -735,7 +682,7 @@ mobs:register_mob("amc:15ghast", {
 	},
 })
 
-mobs:register_egg("amc:15ghast", "Ghast", "ghast_inv.png", 0)
+mobs:register_egg("amc:15ghast", "Ghast", "mobs_mc_spawn_icon_ghast.png", 0)
 
 --###################
 --################### GUARDIAN
@@ -746,18 +693,13 @@ mobs:register_mob("amc:16guardian", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.7, 0.35},
 	visual = "mesh",
-	mesh = "guardian.b3d",
+	mesh = "mobs_mc_guardian.b3d",
 	textures = {
-		{"guardian.png"},
-        {"guardian1.png"},
-        {"guardian2.png"},
-        {"guardian3.png"},
-        --{"guardian4.png"},
+		{"mobs_mc_guardian.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -771,7 +713,7 @@ mobs:register_mob("amc:16guardian", {
 	},
 })
 
-mobs:register_egg("amc:16guardian", "Guardian", "guardian_inv.png", 0)
+mobs:register_egg("amc:16guardian", "Guardian", "mobs_mc_spawn_icon_guardian.png", 0)
 
 --###################
 --################### GUARDIAN ELDER
@@ -782,15 +724,13 @@ mobs:register_mob("amc:17guardian_elder", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.7, 0.35},
 	visual = "mesh",
-	mesh = "guardian.b3d",
+	mesh = "mobs_mc_guardian.b3d",
 	textures = {
-		{"guardian_elder.png"},
-        {"guardian_elder1.png"},
+		{"mobs_mc_guardian_elder.png"},
 	},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
@@ -804,7 +744,7 @@ mobs:register_mob("amc:17guardian_elder", {
 	},
 })
 
-mobs:register_egg("amc:17guardian_elder", "Elder Guardian", "guardian_elder_inv.png", 0)
+mobs:register_egg("amc:17guardian_elder", "Elder Guardian", "mobs_mc_spawn_icon_guardian_elder.png", 0)
 
 --###################
 --################### IRON GOLEM
@@ -815,17 +755,13 @@ mobs:register_mob("amc:19iron_golem", {
     attack_type = "dogfight",
 	passive = false,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "iron_golem.b3d",
+	mesh = "mobs_mc_iron_golem.b3d",
 	textures = {
-		{"iron_golem.png"},
-        --{"iron_golem1.png"},
-        --{"iron_golem2.png"},
-        --{"iron_golem3.png"},
+		{"mobs_mc_iron_golem.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -840,7 +776,7 @@ mobs:register_mob("amc:19iron_golem", {
 	},
 })
 
-mobs:register_egg("amc:19iron_golem", "Iron Golem", "iron_golem_inv.png", 0)
+mobs:register_egg("amc:19iron_golem", "Iron Golem", "mobs_mc_spawn_icon_iron_golem.png", 0)
 
 --###################
 --################### LLAMA
@@ -851,19 +787,17 @@ mobs:register_mob("amc:20cllama", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "llama.b3d",
+	mesh = "mobs_mc_llama.b3d",
     textures = {
-        {"llama.png"},
-        {"llama1.png"},
-        {"llama2.png"},
-        {"llama3.png"},
-        {"llama4.png"},
-        --{"llama5.png"},
+        {"mobs_mc_llama_brown.png"},
+        {"mobs_mc_llama_creamy.png"},
+        {"mobs_mc_llama_gray.png"},
+        {"mobs_mc_llama_white.png"},
+        {"mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -877,7 +811,7 @@ mobs:register_mob("amc:20cllama", {
 	},
 })
 
-mobs:register_egg("amc:20cllama", "Llama", "llama_inv.png", 0)
+mobs:register_egg("amc:20cllama", "Llama", "mobs_mc_spawn_icon_llama.png", 0)
 
 --###################
 --################### SWAG LLAMA
@@ -888,93 +822,92 @@ mobs:register_mob("amc:20dswagllama", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "llama.b3d",
+	mesh = "mobs_mc_llama.b3d",
     textures = {
-        {"llama.png^decor_black.png"},
-        {"llama1.png^decor_black.png"},
-        {"llama2.png^decor_black.png"},
-        {"llama3.png^decor_black.png"},
-        {"llama4.png^decor_black.png"},
-        {"llama.png^decor_blue.png"},
-        {"llama1.png^decor_blue.png"},
-        {"llama2.png^decor_blue.png"},
-        {"llama3.png^decor_blue.png"},
-        {"llama4.png^decor_blue.png"},
-        {"llama.png^decor_brown.png"},
-        {"llama1.png^decor_brown.png"},
-        {"llama2.png^decor_brown.png"},
-        {"llama3.png^decor_brown.png"},
-        {"llama4.png^decor_brown.png"},
-        {"llama.png^decor_cyan.png"},
-        {"llama1.png^decor_cyan.png"},
-        {"llama2.png^decor_cyan.png"},
-        {"llama3.png^decor_cyan.png"},
-        {"llama4.png^decor_cyan.png"},
-        {"llama.png^decor_gray.png"},
-        {"llama1.png^decor_gray.png"},
-        {"llama2.png^decor_gray.png"},
-        {"llama3.png^decor_gray.png"},
-        {"llama4.png^decor_gray.png"},
-        {"llama.png^decor_green.png"},
-        {"llama1.png^decor_green.png"},
-        {"llama2.png^decor_green.png"},
-        {"llama3.png^decor_green.png"},
-        {"llama4.png^decor_green.png"},
-        {"llama.png^decor_light_blue.png"},
-        {"llama1.png^decor_light_blue.png"},
-        {"llama2.png^decor_light_blue.png"},
-        {"llama3.png^decor_light_blue.png"},
-        {"llama4.png^decor_light_blue.png"},
-        {"llama.png^decor_lime.png"},
-        {"llama1.png^decor_lime.png"},
-        {"llama2.png^decor_lime.png"},
-        {"llama3.png^decor_lime.png"},
-        {"llama4.png^decor_lime.png"},
-        {"llama.png^decor_magenta.png"},
-        {"llama1.png^decor_magenta.png"},
-        {"llama2.png^decor_magenta.png"},
-        {"llama3.png^decor_magenta.png"},
-        {"llama4.png^decor_magenta.png"},
-        {"llama.png^decor_orange.png"},
-        {"llama1.png^decor_orange.png"},
-        {"llama2.png^decor_orange.png"},
-        {"llama3.png^decor_orange.png"},
-        {"llama4.png^decor_orange.png"},
-        {"llama.png^decor_pink.png"},
-        {"llama1.png^decor_pink.png"},
-        {"llama2.png^decor_pink.png"},
-        {"llama3.png^decor_pink.png"},
-        {"llama4.png^decor_pink.png"},
-        {"llama.png^decor_purple.png"},
-        {"llama1.png^decor_purple.png"},
-        {"llama2.png^decor_purple.png"},
-        {"llama3.png^decor_purple.png"},
-        {"llama4.png^decor_purple.png"},
-        {"llama.png^decor_red.png"},
-        {"llama1.png^decor_red.png"},
-        {"llama2.png^decor_red.png"},
-        {"llama3.png^decor_red.png"},
-        {"llama4.png^decor_red.png"},
-        {"llama.png^decor_silver.png"},
-        {"llama1.png^decor_silver.png"},
-        {"llama2.png^decor_silver.png"},
-        {"llama3.png^decor_silver.png"},
-        {"llama4.png^decor_silver.png"},
-        {"llama.png^decor_white.png"},
-        {"llama1.png^decor_white.png"},
-        {"llama2.png^decor_white.png"},
-        {"llama3.png^decor_white.png"},
-        {"llama4.png^decor_white.png"},
-        {"llama.png^decor_yellow.png"},
-        {"llama1.png^decor_yellow.png"},
-        {"llama2.png^decor_yellow.png"},
-        {"llama3.png^decor_yellow.png"},
-        {"llama4.png^decor_yellow.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_black.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_black.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_black.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_black.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_black.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_blue.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_blue.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_blue.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_blue.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_blue.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_brown.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_brown.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_brown.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_brown.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_brown.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_cyan.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_cyan.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_cyan.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_cyan.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_cyan.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_gray.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_gray.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_gray.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_gray.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_gray.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_green.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_green.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_green.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_green.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_light_blue.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_light_blue.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_light_blue.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_light_blue.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_light_blue.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_lime.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_lime.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_lime.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_lime.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_magenta.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_magenta.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_magenta.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_magenta.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_magenta.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_orange.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_orange.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_orange.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_orange.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_orange.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_pink.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_pink.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_pink.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_pink.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_pink.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_purple.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_purple.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_purple.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_purple.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_purple.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_red.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_red.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_red.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_red.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_red.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_silver.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_silver.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_silver.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_silver.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_silver.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_white.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_white.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_white.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_white.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_white.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_yellow.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_yellow.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_yellow.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_yellow.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_yellow.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -988,7 +921,7 @@ mobs:register_mob("amc:20dswagllama", {
 	},
 })
 
-mobs:register_egg("amc:20dswagllama", "Swag Llama", "llama_deco_inv.png", 0)
+mobs:register_egg("amc:20dswagllama", "Swag Llama", "mobs_mc_spawn_icon_llama_deco.png", 0)
 
 --###################
 --################### CHEST LLAMA
@@ -999,18 +932,17 @@ mobs:register_mob("amc:20ecllama", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "llama.b3d",
+	mesh = "mobs_mc_llama.b3d",
     textures = {
-        {"llama2.png^llama_chest1.png"},
-        {"llama3.png^llama_chest1.png"},
-        {"llama4.png^llama_chest1.png"},
-        {"llama.png^llama_chest.png"},
-        {"llama1.png^llama_chest.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_llama_chest.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1024,7 +956,7 @@ mobs:register_mob("amc:20ecllama", {
 	},
 })
 
-mobs:register_egg("amc:20ecllama", "Chest Llama", "llama_chest_inv.png", 0)
+mobs:register_egg("amc:20ecllama", "Chest Llama", "mobs_mc_spawn_icon_llama_chest.png", 0)
 
 --###################
 --################### EVERYTHING LLAMA
@@ -1035,18 +967,17 @@ mobs:register_mob("amc:20edllama", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "llama.b3d",
+	mesh = "mobs_mc_llama.b3d",
     textures = {
-        {"llama2.png^decor_green.png^llama_chest1.png"},
-        {"llama3.png^decor_green.png^llama_chest1.png"},
-        {"llama4.png^decor_green.png^llama_chest1.png"},
-        {"llama.png^decor_green.png^llama_chest.png"},
-        {"llama1.png^decor_lime.png^llama_chest.png"},
+        {"mobs_mc_llama_gray.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama_white.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_green.png^mobs_mc_llama_chest1.png"},
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png^mobs_mc_llama_chest.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1060,7 +991,7 @@ mobs:register_mob("amc:20edllama", {
 	},
 })
 
-mobs:register_egg("amc:20edllama", "EVERYTHING Llama", "llama_chest_deco_inv.png", 0)
+mobs:register_egg("amc:20edllama", "EVERYTHING Llama", "mobs_mc_spawn_icon_llama_chest_deco.png", 0)
 
 --###################
 --################### BABY LLAMA
@@ -1071,18 +1002,17 @@ mobs:register_mob("amc:20babyllama", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "llamababy.b3d",
+	mesh = "mobs_mc_llama_baby.b3d",
     textures = {
-        {"llama2.png"}, --just baby lama
-        {"llama3.png"}, --just baby lama
-        {"llama4.png^llama_chest1.png"}, --chest baby lama
-        {"llama.png^decor_green.png"},   --swag baby lama
-        {"llama1.png^decor_lime.png^llama_chest.png"}, --swag and chest baby lama
+        {"mobs_mc_llama_gray.png"}, --just baby lama
+        {"mobs_mc_llama_white.png"}, --just baby lama
+        {"mobs_mc_llama.png^mobs_mc_llama_chest.png"}, --chest baby lama
+        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png"},   --swag baby lama
+        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png^mobs_mc_llama_chest.png"}, --swag and chest baby lama
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1096,7 +1026,7 @@ mobs:register_mob("amc:20babyllama", {
 	},
 })
 
-mobs:register_egg("amc:20babyllama", "Baby Llama", "baby_llama_inv.png", 0)
+mobs:register_egg("amc:20babyllama", "Baby Llama", "mobs_mc_spawn_icon_llama_baby.png", 0)
 
 --###################
 --################### PIG
@@ -1107,17 +1037,13 @@ mobs:register_mob("amc:21pig", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "pig.b3d",
+	mesh = "mobs_mc_pig.b3d",
 	textures = {
-		{"pig.png"},
-        {"pig1.png"},
-        {"pig2.png"},
-        --{"pig3.png"},
+		{"mobs_mc_pig.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1131,7 +1057,7 @@ mobs:register_mob("amc:21pig", {
 	},
 })
 
-mobs:register_egg("amc:21pig", "Ditch Pig", "pig_inv.png", 0)
+mobs:register_egg("amc:21pig", "Ditch Pig", "mobs_mc_spawn_icon_pig.png", 0)
 
 --###################
 --################### SADDLE PIG
@@ -1142,16 +1068,13 @@ mobs:register_mob("amc:21saddlepig", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "pig.b3d",
+	mesh = "mobs_mc_pig.b3d",
 	textures = {
-		{"pig.png^pig_saddle.png"},
-        {"pig1.png^pig_saddle.png"},
-        {"pig2.png^pig_saddle.png"},
+		{"mobs_mc_pig.png^mobs_mc_pig_saddle.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1165,7 +1088,7 @@ mobs:register_mob("amc:21saddlepig", {
 	},
 })
 
-mobs:register_egg("amc:21saddlepig", "Saddle Pig", "pig_saddle_inv.png", 0)
+mobs:register_egg("amc:21saddlepig", "Saddle Pig", "mobs_mc_spawn_icon_pig_saddle.png", 0)
 
 --###################
 --################### BABY PIG
@@ -1176,17 +1099,13 @@ mobs:register_mob("amc:21babypig", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "pigbaby.b3d",
+	mesh = "mobs_mc_pig_baby.b3d",
 	textures = {
-		{"pig.png"},
-        {"pig1.png"},
-        {"pig2.png"},
-        --{"pig3.png"},
+		{"mobs_mc_pig.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 1.5,
@@ -1200,7 +1119,7 @@ mobs:register_mob("amc:21babypig", {
 	},
 })
 
-mobs:register_egg("amc:21babypig", "Baby Pig", "baby_pig_inv.png", 0)
+mobs:register_egg("amc:21babypig", "Baby Pig", "mobs_mc_spawn_icon_pig_baby.png", 0)
 
 --###################
 --################### ZOMBIE
@@ -1211,18 +1130,16 @@ mobs:register_mob("amc:22zombie", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
 	visual = "mesh",
-	mesh = "zombie.b3d",
+	mesh = "mobs_mc_zombie.b3d",
 	textures = {
-		{"zombie.png"},
-        {"zombie.png"},
+		{"mobs_mc_zombie.png"},
 	},
     sounds = {
-		death = "chainedtorhyme"
+		death = "mobs_mc_chainedtorhyme"
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1236,7 +1153,7 @@ mobs:register_mob("amc:22zombie", {
 	},
 })
 
-mobs:register_egg("amc:22zombie", "Zombie", "zombie_inv.png", 0)
+mobs:register_egg("amc:22zombie", "Zombie", "mobs_mc_spawn_icon_zombie.png", 0)
 
 --###################
 --################### BABY ZOMBIE
@@ -1247,15 +1164,13 @@ mobs:register_mob("amc:22babyzombie", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
 	visual = "mesh",
-	mesh = "zombiebaby.b3d",
+	mesh = "mobs_mc_zombie_baby.b3d",
 	textures = {
-		{"zombie.png"},
-        {"zombie.png"},
+		{"mobs_mc_zombie.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1269,7 +1184,7 @@ mobs:register_mob("amc:22babyzombie", {
 	},
 })
 
-mobs:register_egg("amc:22babyzombie", "Baby Zombie", "baby_zombie_inv.png", 0)
+mobs:register_egg("amc:22babyzombie", "Baby Zombie", "mobs_mc_spawn_icon_zombie_baby.png", 0)
 
 --###################
 --################### RABBIT
@@ -1280,23 +1195,20 @@ mobs:register_mob("amc:23rabbit", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.5, 0.15},
 	visual = "mesh",
-	mesh = "rabbit.b3d",
+	mesh = "mobs_mc_rabbit.b3d",
     textures = {
-        {"rabbit.png"},
-        {"rabbit1.png"},
-        {"rabbit2.png"},
-        {"rabbit3.png"},
-        {"rabbit4.png"},
-        {"rabbit5.png"},
-        {"rabbit6.png"},
-        {"rabbit7.png"},
-        {"rabbit8.png"},
-        {"rabbit9.png"},
+        {"mobs_mc_rabbit_black.png"},
+        {"mobs_mc_rabbit_brown.png"},
+        {"mobs_mc_rabbit_caerbannog.png"},
+        {"mobs_mc_rabbit_gold.png"},
+        {"mobs_mc_rabbit_salt.png"},
+        {"mobs_mc_rabbit_toast.png"},
+        {"mobs_mc_rabbit_white_splotched.png"},
+        {"mobs_mc_rabbit_white.png"},
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1310,7 +1222,7 @@ mobs:register_mob("amc:23rabbit", {
 	},
 })
 
-mobs:register_egg("amc:23rabbit", "Tom Rabbittt", "rabbit_inv.png", 0)
+mobs:register_egg("amc:23rabbit", "Tom Rabbittt", "mobs_mc_spawn_icon_rabbit.png", 0)
 
 --###################
 --################### BABY RABBIT
@@ -1321,23 +1233,20 @@ mobs:register_mob("amc:23babyrabbit", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.15, -0.01, -0.15, 0.15, 0.5, 0.15},
 	visual = "mesh",
-	mesh = "rabbitbaby.b3d",
+	mesh = "mobs_mc_rabbit_baby.b3d",
     textures = {
-        {"rabbit.png"},
-        {"rabbit1.png"},
-        {"rabbit2.png"},
-        {"rabbit3.png"},
-        {"rabbit4.png"},
-        {"rabbit5.png"},
-        {"rabbit6.png"},
-        {"rabbit7.png"},
-        {"rabbit8.png"},
-        {"rabbit9.png"},
+        {"mobs_mc_rabbit_black.png"},
+        {"mobs_mc_rabbit_brown.png"},
+        {"mobs_mc_rabbit_caerbannog.png"},
+        {"mobs_mc_rabbit_gold.png"},
+        {"mobs_mc_rabbit_salt.png"},
+        {"mobs_mc_rabbit_toast.png"},
+        {"mobs_mc_rabbit_white_splotched.png"},
+        {"mobs_mc_rabbit_white.png"},
     },
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
@@ -1351,7 +1260,7 @@ mobs:register_mob("amc:23babyrabbit", {
 	},
 })
 
-mobs:register_egg("amc:23babyrabbit", "Baby Rabbit", "baby_rabbit_inv.png", 0)
+mobs:register_egg("amc:23babyrabbit", "Baby Rabbit", "mobs_mc_spawn_icon_rabbit_baby.png", 0)
 
 --###################
 --################### SHEEP
@@ -1362,17 +1271,16 @@ mobs:register_mob("amc:24sheep", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "sheepfur.b3d",
+	mesh = "mobs_mc_sheep.b3d",
 	textures = {
-		{"sheep.png"},
+		{"mobs_mc_sheep.png"},
 	},
-    gotten_texture = {"sheep.png"},
-    gotten_mesh = "sheepnaked.b3d",
+    gotten_texture = {"mobs_mc_old_sheeps.png"},
+    gotten_mesh = "mobs_mc_sheep_sheared.b3d",
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1385,10 +1293,10 @@ mobs:register_mob("amc:24sheep", {
 	},
 })
 
-mobs:register_egg("amc:24sheep", "Sheeple", "sheep_inv.png", 0)
+mobs:register_egg("amc:24sheep", "Sheeple", "mobs_mc_spawn_icon_sheep.png", 0)
 
 --###################
---################### NAKED SHEEP
+--################### SHEEP SHEARED
 --###################
 
 mobs:register_mob("amc:24nakedsheep", {
@@ -1396,14 +1304,13 @@ mobs:register_mob("amc:24nakedsheep", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "sheepnaked.b3d",
+	mesh = "mobs_mc_sheep_sheared.b3d",
 	textures = {
-		{"sheep.png"},
+		{"mobs_mc_sheep.png"},
 	},
     gotten_texture = {"sheep.png"},
     gotten_mesh = "sheepfur.b3d",
@@ -1419,7 +1326,7 @@ mobs:register_mob("amc:24nakedsheep", {
 	},
 })
 
-mobs:register_egg("amc:24nakedsheep", "Naked Sheep", "sheep_naked_inv.png", 0)
+mobs:register_egg("amc:24nakedsheep", "Naked Sheep", "mobs_mc_spawn_icon_sheep_sheared.png", 0)
 
 --###################
 --################### BABY SHEEP
@@ -1430,14 +1337,13 @@ mobs:register_mob("amc:24babysheep", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "sheepfurbaby.b3d",
+	mesh = "mobs_mc_sheep_baby.b3d",
 	textures = {
-		{"sheep.png"},
+		{"mobs_mc_sheep.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1451,7 +1357,7 @@ mobs:register_mob("amc:24babysheep", {
 	},
 })
 
-mobs:register_egg("amc:24babysheep", "Baby Sheep", "baby_sheep_inv.png", 0)
+mobs:register_egg("amc:24babysheep", "Baby Sheep", "mobs_mc_spawn_icon_sheep_baby.png", 0)
 
 --###################
 --################### SILVERFISH
@@ -1462,15 +1368,13 @@ mobs:register_mob("amc:25silverfish", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.3, 0.35},
 	visual = "mesh",
-	mesh = "silverfish.b3d",
+	mesh = "mobs_mc_silverfish.b3d",
 	textures = {
-		{"silverfish.png"},
-        {"silverfish1.png"},
+		{"mobs_mc_silverfish.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1484,7 +1388,7 @@ mobs:register_mob("amc:25silverfish", {
 	},
 })
 
-mobs:register_egg("amc:25silverfish", "Silverfish", "silverfish_inv.png", 0)
+mobs:register_egg("amc:25silverfish", "Silverfish", "mobs_mc_spawn_icon_silverfish.png", 0)
 
 --###################
 --################### SNOWMAN
@@ -1495,32 +1399,35 @@ mobs:register_mob("amc:26snowman", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "snowman.b3d",
+	mesh = "mobs_mc_snowman.b3d",
 	textures = {
-		{"snowman.png^snowman_pumpkin.png"},
-        {"snowman.png"},
-        {"snowman1.png^snowman1_pumpkin.png"},
-        {"snowman1.png"},
+		{"mobs_mc_snowman.png^mobs_mc_snowman_pumpkin.png"},
+        {"mobs_mc_snowman.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 20,		stand_end = 40,
-		walk_start = 0,		walk_end = 20,
-		run_start = 0,		run_end = 20,
-        die_start = 40,		die_end = 50,
+		speed_normal = 25,
+        speed_run = 50,
+		stand_start = 20,
+        stand_end = 40,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+        die_start = 40,
+        die_end = 50,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:26snowman", "Snowman", "snowman_inv.png", 0)
+mobs:register_egg("amc:26snowman", "Snowman", "mobs_mc_spawn_icon_snowman.png", 0)
 
 --###################
 --################### SQUID
@@ -1531,18 +1438,13 @@ mobs:register_mob("amc:28squid", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "squid.b3d",
+	mesh = "mobs_mc_squid.b3d",
 	textures = {
-		{"squid.png"},
-        {"squid1.png"},
-        {"squid2.png"},
-        {"squid3.png"},
-        {"squid4.png"},
+		{"mobs_mc_squid.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1556,7 +1458,7 @@ mobs:register_mob("amc:28squid", {
 	},
 })
 
-mobs:register_egg("amc:28squid", "Squid", "squid_inv.png", 0)
+mobs:register_egg("amc:28squid", "Squid", "mobs_mc_spawn_icon_squid.png", 0)
 
 --###################
 --################### VEX
@@ -1567,14 +1469,13 @@ mobs:register_mob("amc:30vex", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.3, 0.35},
 	visual = "mesh",
-	mesh = "vex.b3d",
+	mesh = "mobs_mc_vex.b3d",
 	textures = {
-		{"vex.png^vex_sword.png"},
+		{"mobs_mc_vex.png^mobs_mc_vex_sword.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1588,7 +1489,7 @@ mobs:register_mob("amc:30vex", {
 	},
 })
 
-mobs:register_egg("amc:30vex", "Vex", "vex_inv.png", 0)
+mobs:register_egg("amc:30vex", "Vex", "mobs_mc_spawn_icon_vex.png", 0)
    
 --###################
 --################### WITHER
@@ -1599,19 +1500,13 @@ mobs:register_mob("amc:32wither", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "wither.b3d",
+	mesh = "mobs_mc_wither.b3d",
 	textures = {
-		{"wither.png"},
-        {"wither1.png"},
-        {"wither2.png"},
-        {"wither3.png"},
-        {"wither4.png"},
-        {"wither5.png"},
+		{"mobs_mc_wither.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1625,7 +1520,7 @@ mobs:register_mob("amc:32wither", {
 	},
 })
 
-mobs:register_egg("amc:32wither", "Wither", "wither_inv.png", 0)
+mobs:register_egg("amc:32wither", "Wither", "mobs_mc_spawn_icon_wither.png", 0)
 
 --###################
 --################### WOLF
@@ -1636,18 +1531,16 @@ mobs:register_mob("amc:33wolf", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "wolf.b3d",
+	mesh = "mobs_mc_wolf.b3d",
 	textures = {
-		{"wolf.png"},
-        {"wolf1.png"},
+		{"mobs_mc_wolf.png"},
 	},
     sounds = {
-		death = "whodogs"
+		death = "mobs_mc_whodogs"
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 2,
@@ -1661,7 +1554,7 @@ mobs:register_mob("amc:33wolf", {
 	},
 })
 
-mobs:register_egg("amc:33wolf", "She Wolf", "wolf_inv.png", 0)
+mobs:register_egg("amc:33wolf", "She Wolf", "mobs_mc_spawn_icon_wolf.png", 0)
 
 --###################
 --################### BABY WOLF
@@ -1672,15 +1565,13 @@ mobs:register_mob("amc:33babywolf", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "wolfbaby.b3d",
+	mesh = "mobs_mc_wolf_baby.b3d",
 	textures = {
-		{"wolf.png"},
-        {"wolf1.png"},
+		{"mobs_mc_wolf.png"},
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 2,
@@ -1694,7 +1585,7 @@ mobs:register_mob("amc:33babywolf", {
 	},
 })
 
-mobs:register_egg("amc:33babywolf", "Baby Wolf", "baby_wolf_inv.png", 0)
+mobs:register_egg("amc:33babywolf", "Baby Wolf", "mobs_mc_spawn_icon_wolf_baby.png", 0)
 
 --###################
 --################### SHULKER
@@ -1710,30 +1601,29 @@ mobs:register_mob("amc:34shulker", {
 	shoot_offset = 0.5,
 	passive = false,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "shulker.b3d",
+	mesh = "mobs_mc_shulker.b3d",
     textures = {
-        {"shulker.png"},
-        {"shulker1.png"},
-        {"shulker2.png"},
-        {"shulker3.png"},
-        {"shulker4.png"},
-        {"shulker5.png"},
-        {"shulker6.png"},
-        {"shulker7.png"},
-        {"shulker8.png"},
-        {"shulker9.png"},
-        {"shulker10.png"},
-        {"shulker11.png"},
-        {"shulker12.png"},
-        {"shulker13.png"},
-        {"shulker14.png"},
-        {"shulker15.png"},
-        {"shulker16.png"},
+        {"mobs_mc_shulker_black.png"},
+        {"mobs_mc_shulker_blue.png"},
+        {"mobs_mc_shulker_brown.png"},
+        {"mobs_mc_shulker_cyan.png"},
+        {"mobs_mc_shulker_gray.png"},
+        {"mobs_mc_shulker_green.png"},
+        {"mobs_mc_shulker_light_blue.png"},
+        {"mobs_mc_shulker_lime.png"},
+        {"mobs_mc_shulker_magenta.png"},
+        {"mobs_mc_shulker_orange.png"},
+        {"mobs_mc_shulker_pink.png"},
+        {"mobs_mc_shulker_purple.png"},
+        {"mobs_mc_shulker_red.png"},
+        {"mobs_mc_shulker_silver.png"},
+        {"mobs_mc_shulker_white.png"},
+        {"mobs_mc_shulker_yellow.png"},
+        {"mobs_mc_endergolem.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.0000000001,
@@ -1752,7 +1642,7 @@ mobs:register_mob("amc:34shulker", {
 mobs:register_arrow("amc:shulkerbullet", {
 	visual = "sprite",
 	visual_size = {x = 0.25, y = 0.25},
-	textures = {"shulkerbullet.png"},
+	textures = {"mobs_mc_shulkerbullet.png"},
 	velocity = 6,
 
 	hit_player = function(self, player)
@@ -1773,7 +1663,7 @@ mobs:register_arrow("amc:shulkerbullet", {
 	end
 })
 
-mobs:register_egg("amc:34shulker", "Shulker", "shulker_inv.png", 0)
+mobs:register_egg("amc:34shulker", "Shulker", "mobs_mc_spawn_icon_shulker.png", 0)
 
 --###################
 --################### SKELETON
@@ -1786,17 +1676,13 @@ mobs:register_mob("amc:35skeleton", {
 	arrow = "amc:shulkerbullet",
 	shoot_offset = 1.5,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "skeleton.b3d",
+	mesh = "mobs_mc_skeleton.b3d",
 	textures = {
-		{"skeleton.png^skeleton_bow.png"},
-        {"skeleton1.png^skeleton_bow.png"},
-        {"skeleton2.png^skeleton_bow.png"},
-        {"skeleton3.png^skeleton_bow.png"},
+		{"mobs_mc_skeleton.png^mobs_mc_skeleton_bow.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1816,28 +1702,27 @@ mobs:register_mob("amc:35skeleton", {
         die_start = 120,
         die_end = 130,
         speed_die = 5,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:35skeleton", "Skeleton", "skeleton_inv.png", 0)
+mobs:register_egg("amc:35skeleton", "Skeleton", "mobs_mc_spawn_icon_skeleton.png", 0)
 
 --###################
 --################### WITHER SKELETON
 --###################
 
-mobs:register_mob("amc:36witherskeleton", {
+mobs:register_mob("amc:37witherskeleton", {
 	type = "monster",
     attack_type = "dogfight",
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "witherskeleton.b3d",
+	mesh = "mobs_mc_wither_skeleton.b3d",
 	textures = {
-		{"wither_skeleton.png^wither_skeleton_sword.png"},
-        {"skeleton3.png^wither_skeleton_sword.png"},
+		{"mobs_mc_wither_skeleton.png^mobs_mc_wither_skeleton_sword.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1857,30 +1742,30 @@ mobs:register_mob("amc:36witherskeleton", {
         die_start = 120,
         die_end = 130,
         speed_die = 5,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:36witherskeleton", "Wither Skeleton", "witherskeleton_inv.png", 0)
+mobs:register_egg("amc:37witherskeleton", "Wither Skeleton", "mobs_mc_spawn_icon_witherskeleton.png", 0)
 
 --###################
 --################### STRAY
 --###################
 
-mobs:register_mob("amc:37stray", {
+mobs:register_mob("amc:36stray", {
 	type = "monster",
     attack_type = "shoot",
     shoot_interval = 0.5,
 	arrow = "amc:shulkerbullet",
 	shoot_offset = 1.5,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "stray.b3d",
+	mesh = "mobs_mc_skeleton_stray.b3d",
 	textures = {
-		{"stray.png"},
+		{"mobs_mc_stray.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1900,10 +1785,11 @@ mobs:register_mob("amc:37stray", {
         die_start = 120,
         die_end = 130,
         speed_die = 5,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:37stray", "Stray", "stray_inv.png", 0)
+mobs:register_egg("amc:36stray", "Stray", "mobs_mc_spawn_icon_stray.png", 0)
 
 --###################
 --################### SPIDER
@@ -1914,18 +1800,13 @@ mobs:register_mob("amc:38spider", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "spider.b3d",
+	mesh = "mobs_mc_spider.b3d",
 	textures = {
-		{"spider.png"},
-        {"spider1.png"},
-        {"spider2.png"},
-        {"spider3.png"},
-        {"spider4.png"},
+		{"mobs_mc_spider.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1939,7 +1820,7 @@ mobs:register_mob("amc:38spider", {
 	},
 })
 
-mobs:register_egg("amc:38spider", "Spider Mastermind", "spider_inv.png", 0)
+mobs:register_egg("amc:38spider", "Spider Mastermind", "mobs_mc_spawn_icon_spider.png", 0)
 
 --###################
 --################### CAVE SPIDER
@@ -1950,19 +1831,16 @@ mobs:register_mob("amc:38cavespider", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.7, 0.35},
 	visual = "mesh",
-	mesh = "spider.b3d",
+	mesh = "mobs_mc_spider.b3d",
 	textures = {
-		{"cave_spider.png"},
-        {"cave_spider1.png"},
-        {"cave_spider2.png"},
+		{"mobs_mc_cave_spider.png"},
 	},
     sounds = {
-		death = "bitspider"
+		death = "mobs_mc_bitspider"
 	},
 	visual_size = {x=2, y=2},
 	walk_velocity = 0.6,
@@ -1976,7 +1854,7 @@ mobs:register_mob("amc:38cavespider", {
 	},
 })
 
-mobs:register_egg("amc:38cavespider", "Itsy Bitsy Cave Spider", "cave_spider_inv.png", 0)
+mobs:register_egg("amc:38cavespider", "Itsy Bitsy Cave Spider", "mobs_mc_spawn_icon_cave_spider.png", 0)
 
 --###################
 --################### ZOMBIE PIGMAN
@@ -1987,14 +1865,13 @@ mobs:register_mob("amc:51pigman", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "zombie_pigman.b3d",
+	mesh = "mobs_mc_zombie_pigman.b3d",
     textures = {
-        {"zombie_pigman.png^zombie_pigman_sword.png"},
+        {"mobs_mc_zombie_pigman.png^mobs_mc_zombie_pigman_sword.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2009,7 +1886,7 @@ mobs:register_mob("amc:51pigman", {
 	},
 })
 
-mobs:register_egg("amc:51pigman", "Zombie Pigman", "zombie_pigman_inv.png", 0)
+mobs:register_egg("amc:51pigman", "Zombie Pigman", "mobs_mc_spawn_icon_zombie_pigman.png", 0)
 
 --###################
 --################### BABY ZOMBIE PIGMAN
@@ -2020,14 +1897,13 @@ mobs:register_mob("amc:51babypigman", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "zombie_pigmanbaby.b3d",
+	mesh = "mobs_mc_zombie_pigman_baby.b3d",
     textures = {
-        {"zombie_pigman.png^zombie_pigman_sword.png"},
+        {"mobs_mc_zombie_pigman.png^mobs_mc_zombie_pigman_sword.png"},
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -2042,7 +1918,7 @@ mobs:register_mob("amc:51babypigman", {
 	},
 })
 
-mobs:register_egg("amc:51babypigman", "Baby Zombie Pigman", "baby_zombie_pigman_inv.png", 0)
+mobs:register_egg("amc:51babypigman", "Baby Zombie Pigman", "mobs_mc_spawn_icon_zombie_pigman_baby.png", 0)
 
 --###################
 --################### HORSE
@@ -2053,20 +1929,19 @@ mobs:register_mob("amc:52bbhorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"horse.png"},
-        {"horse1.png"},
-        {"horse2.png"},
-        {"horse3.png"},
-        {"horse4.png"},
-        {"horse5.png"},
-        --{"horse6.png"}
+        {"mobs_mc_horse_black.png"},
+        {"mobs_mc_horse_brown.png"},
+        {"mobs_mc_horse_chestnut.png"},
+        {"mobs_mc_horse_creamy.png"},
+        {"mobs_mc_horse_darkbrown.png"},
+        {"mobs_mc_horse_gray.png"},
+        {"mobs_mc_horse_white.png"}
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2080,7 +1955,7 @@ mobs:register_mob("amc:52bbhorse", {
 	},
 })
 
-mobs:register_egg("amc:52bbhorse", "Horse", "horse_inv.png", 0)
+mobs:register_egg("amc:52bbhorse", "Horse", "mobs_mc_spawn_icon_horse.png", 0)
 
 --###################
 --################### HORSE SADDLE
@@ -2091,19 +1966,19 @@ mobs:register_mob("amc:52msaddlehorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"horse.png^horse_saddle.png"},
-        {"horse1.png^horse_saddle.png"},
-        {"horse2.png^horse_saddle.png"},
-        {"horse3.png^horse_saddle.png"},
-        {"horse4.png^horse_saddle.png"},
-        {"horse5.png^horse_saddle.png"},
+        {"mobs_mc_horse_black.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_brown.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_creamy.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_gray.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_white.png^mobs_mc_horse_saddle.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2117,7 +1992,7 @@ mobs:register_mob("amc:52msaddlehorse", {
 	},
 })
 
-mobs:register_egg("amc:52msaddlehorse", "Saddle Horse", "horse_saddle_inv.png", 0)
+mobs:register_egg("amc:52msaddlehorse", "Saddle Horse", "mobs_mc_spawn_icon_horse_saddle.png", 0)
 
 --###################
 --################### HORSE CHEST
@@ -2128,19 +2003,19 @@ mobs:register_mob("amc:52chesthorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"horse.png^horse_chest.png"},
-        {"horse1.png^horse_chest.png"},
-        {"horse2.png^horse_chest.png"},
-        {"horse3.png^horse_chest.png"},
-        {"horse4.png^horse_chest.png"},
-        {"horse5.png^horse_chest.png"},
+        {"mobs_mc_horse_black.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_brown.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_creamy.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_gray.png^mobs_mc_horse_chest.png"},
+        {"mobs_mc_horse_white.png^mobs_mc_horse_chest.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2154,7 +2029,7 @@ mobs:register_mob("amc:52chesthorse", {
 	},
 })
 
-mobs:register_egg("amc:52chesthorse", "Chest Horse", "horse_chest_inv.png", 0)
+mobs:register_egg("amc:52chesthorse", "Chest Horse", "mobs_mc_spawn_icon_horse_chest.png", 0)
 
 --###################
 --################### HORSE ARMOUR
@@ -2165,19 +2040,19 @@ mobs:register_mob("amc:52rmourhorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"horse.png^horse_armor_diamond.png"},
-        {"horse1.png^horse_armor_gold.png"},
-        {"horse2.png^horse_armor_iron.png"},
-        {"horse3.png^horse_armor_iron.png"},
-        {"horse4.png^horse_armor_iron.png"},
-        {"horse5.png^horse_armor_iron.png"},
+        {"mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png"},
+        {"mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png"},
+        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png"},
+        {"mobs_mc_horse_creamy.png^mobs_mc_horse_armor_iron.png"},
+        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_iron.png"},
+        {"mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png"},
+        {"mobs_mc_horse_white.png^mobs_mc_horse_armor_iron.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2191,7 +2066,7 @@ mobs:register_mob("amc:52rmourhorse", {
 	},
 })
 
-mobs:register_egg("amc:52rmourhorse", "Armour Horse", "horse_armour_inv.png", 0)
+mobs:register_egg("amc:52rmourhorse", "Armour Horse", "mobs_mc_spawn_icon_horse_armour.png", 0)
 
 --###################
 --################### HORSE EVERYTHING
@@ -2202,19 +2077,19 @@ mobs:register_mob("amc:52zeverythinghorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"horse.png^horse_armor_diamond.png^horse_chest.png^horse_saddle.png"},
-        {"horse1.png^horse_armor_gold.png^horse_chest.png^horse_saddle.png"},
-        {"horse2.png^horse_armor_iron.png^horse_chest.png^horse_saddle.png"},
-        {"horse3.png^horse_armor_iron.png^horse_chest.png^horse_saddle.png"},
-        {"horse4.png^horse_armor_iron.png^horse_chest.png^horse_saddle.png"},
-        {"horse5.png^horse_armor_iron.png^horse_chest.png^horse_saddle.png"},
+        {"mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_creamy.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {"mobs_mc_horse_white.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2228,7 +2103,7 @@ mobs:register_mob("amc:52zeverythinghorse", {
 	},
 })
 
-mobs:register_egg("amc:52zeverythinghorse", "EVERYTHING Horse", "horse_everything_inv.png", 0)
+mobs:register_egg("amc:52zeverythinghorse", "EVERYTHING Horse", "mobs_mc_spawn_icon_horse_everything.png", 0)
 
 --###################
 --################### BABY HORSE
@@ -2239,23 +2114,23 @@ mobs:register_mob("amc:52babyhorse", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.5, 0.35},
 	visual = "mesh",
-	mesh = "horsebaby.b3d",
+	mesh = "mobs_mc_horse_baby.b3d",
     textures = {
-        {"horse.png"},
-        {"horse1.png"},
-        {"horse2.png"},
-        {"horse3.png"},
-        {"horse4.png"},
-        {"horse5.png"},
-        {"mule.png"},
-        {"donkey.png"},
-        {"horseskeleton.png"},
-        {"horsezombie.png"},
+        {"mobs_mc_horse_black.png"},
+        {"mobs_mc_horse_brown.png"},
+        {"mobs_mc_horse_chestnut.png"},
+        {"mobs_mc_horse_creamy.png"},
+        {"mobs_mc_horse_darkbrown.png"},
+        {"mobs_mc_horse_gray.png"},
+        {"mobs_mc_horse_white.png"},
+        {"mobs_mc_mule.png"},
+        {"mobs_mc_donkey.png"},
+        {"mobs_mc_horse_skeleton.png"},
+        {"mobs_mc_horse_zombie.png"},
     },
 	--visual_size = {x=0.9, y=0.9},
     visual_size = {x=2, y=2},
@@ -2270,7 +2145,7 @@ mobs:register_mob("amc:52babyhorse", {
 	},
 })
 
-mobs:register_egg("amc:52babyhorse", "Baby horse", "baby_horse_inv.png", 0)
+mobs:register_egg("amc:52babyhorse", "Baby horse", "mobs_mc_spawn_icon_horse_baby.png", 0)
 
 --###################
 --################### MULE
@@ -2281,14 +2156,13 @@ mobs:register_mob("amc:53horsemule", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
+	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mule.png"},
+        {"mobs_mc_mule.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2302,7 +2176,7 @@ mobs:register_mob("amc:53horsemule", {
 	},
 })
 
-mobs:register_egg("amc:53horsemule", "Mule", "mule_inv.png", 0)
+mobs:register_egg("amc:53horsemule", "Mule", "mobs_mc_spawn_icon_mule.png", 0)
 
 --###################
 --################### DONKEY
@@ -2313,13 +2187,12 @@ mobs:register_mob("amc:53horsedonkey", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
-    textures = {{"donkey.png"}},
+	mesh = "mobs_mc_horse.b3d",
+    textures = {{"mobs_mc_donkey.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2332,7 +2205,7 @@ mobs:register_mob("amc:53horsedonkey", {
 	},
 })
 
-mobs:register_egg("amc:53horsedonkey", "Donkey", "donkey_inv.png", 0)
+mobs:register_egg("amc:53horsedonkey", "Donkey", "mobs_mc_spawn_icon_donkey.png", 0)
 
 --###################
 --################### SKELETON HORSE
@@ -2343,13 +2216,12 @@ mobs:register_mob("amc:54horseskeleton", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
-    textures = {{"horseskeleton.png"}},
+	mesh = "mobs_mc_horse.b3d",
+    textures = {{"mobs_mc_horse_skeleton.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2362,7 +2234,7 @@ mobs:register_mob("amc:54horseskeleton", {
 	},
 })
 
-mobs:register_egg("amc:54horseskeleton", "Skeleton Horse", "horseskeleton_inv.png", 0)
+mobs:register_egg("amc:54horseskeleton", "Skeleton Horse", "mobs_mc_spawn_icon_horse_skeleton.png", 0)
 
 --###################
 --################### ZOMBIE HORSE
@@ -2373,13 +2245,12 @@ mobs:register_mob("amc:55horsezombie", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "horse.b3d",
-    textures = {{"horsezombie.png"}},
+	mesh = "mobs_mc_horse.b3d",
+    textures = {{"mobs_mc_horse_zombie.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2392,7 +2263,7 @@ mobs:register_mob("amc:55horsezombie", {
 	},
 })
 
-mobs:register_egg("amc:55horsezombie", "Zombie Horse", "horsezombie_inv.png", 0)
+mobs:register_egg("amc:55horsezombie", "Zombie Horse", "mobs_mc_spawn_icon_horse_zombie.png", 0)
 
 --###################
 --################### VILLAGER
@@ -2403,17 +2274,18 @@ mobs:register_mob("amc:58villager", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "villager.b3d",
+	mesh = "mobs_mc_villager.b3d",
     textures = {
-        {"villager.png"},
-        {"villager1.png"},
-        {"villager2.png"},
-        {"villager3.png"},
+        {"mobs_mc_butcher.png"},
+        {"mobs_mc_farmer.png"},
+        {"mobs_mc_librarian.png"},
+        {"mobs_mc_priest.png"},
+        {"mobs_mc_smith.png"},
+        {"mobs_mc_villager.png"},
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
@@ -2427,7 +2299,7 @@ mobs:register_mob("amc:58villager", {
 	},
 })
 
-mobs:register_egg("amc:58villager", "Villager", "villager_inv.png", 0)
+mobs:register_egg("amc:58villager", "Villager", "mobs_mc_spawn_icon_villager.png", 0)
 
 --###################
 --################### BABY VILLAGER
@@ -2438,17 +2310,18 @@ mobs:register_mob("amc:58babyvillager", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 1, 0.20},
 	visual = "mesh",
-	mesh = "villager.b3d",
+	mesh = "mobs_mc_villager.b3d",
     textures = {
-        {"villager.png"},
-        {"villager1.png"},
-        {"villager2.png"},
-        {"villager3.png"},
+        {"mobs_mc_butcher.png"},
+        {"mobs_mc_farmer.png"},
+        {"mobs_mc_librarian.png"},
+        {"mobs_mc_priest.png"},
+        {"mobs_mc_smith.png"},
+        {"mobs_mc_villager.png"},
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -2462,7 +2335,7 @@ mobs:register_mob("amc:58babyvillager", {
 	},
 })
 
-mobs:register_egg("amc:58babyvillager", "Baby villager", "baby_villager_inv.png", 0)
+mobs:register_egg("amc:58babyvillager", "Baby villager", "mobs_mc_spawn_icon_villager_baby.png", 0)
 
 --###################
 --################### ZOMBIE VILLAGER
@@ -2473,20 +2346,19 @@ mobs:register_mob("amc:59zvillager", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
     visual_size = {x=2.9, y=2.9},
 	visual = "mesh",
-	mesh = "zvillager.b3d",
+	mesh = "mobs_mc_villager_zombie.b3d",
     textures = {
-        {"zombie_butcher.png"},
-        {"zombie_farmer.png"},
-        {"zombie_librarian.png"},
-        {"zombie_priest.png"},
-        {"zombie_smith.png"},
-        {"zombie_villager.png"}
+        {"mobs_mc_zombie_butcher.png"},
+        {"mobs_mc_zombie_farmer.png"},
+        {"mobs_mc_zombie_librarian.png"},
+        {"mobs_mc_zombie_priest.png"},
+        {"mobs_mc_zombie_smith.png"},
+        {"mobs_mc_zombie_villager.png"}
     },
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2503,7 +2375,7 @@ mobs:register_mob("amc:59zvillager", {
 	},
 })
 
-mobs:register_egg("amc:59zvillager", "Zombie Villager", "zvillager_inv.png", 0)
+mobs:register_egg("amc:59zvillager", "Zombie Villager", "mobs_mc_spawn_icon_zombie_villager.png", 0)
 
 --###################
 --################### BABY ZOMBIE VILLAGER
@@ -2514,19 +2386,18 @@ mobs:register_mob("amc:59babyzvillager", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.20, -0.01, -0.20, 0.20, 1.3, 0.20},
 	visual = "mesh",
-	mesh = "zvillagerbaby.b3d",
+	mesh = "mobs_mc_villager_zombie_baby.b3d",
     textures = {
-        {"zombie_butcher.png"},
-        {"zombie_farmer.png"},
-        {"zombie_librarian.png"},
-        {"zombie_priest.png"},
-        {"zombie_smith.png"},
-        {"zombie_villager.png"}
+        {"mobs_mc_zombie_butcher.png"},
+        {"mobs_mc_zombie_farmer.png"},
+        {"mobs_mc_zombie_librarian.png"},
+        {"mobs_mc_zombie_priest.png"},
+        {"mobs_mc_zombie_smith.png"},
+        {"mobs_mc_zombie_villager.png"}
     },
 	visual_size = {x=1.8, y=1.8},
 	walk_velocity = 0.6,
@@ -2544,7 +2415,7 @@ mobs:register_mob("amc:59babyzvillager", {
 	},
 })
 
-mobs:register_egg("amc:59babyzvillager", "Baby Zombie Villager", "baby_zvillager_inv.png", 0)
+mobs:register_egg("amc:59babyzvillager", "Baby Zombie Villager", "mobs_mc_spawn_icon_zombie_villager_baby.png", 0)
 
 --###################
 --################### EVOKER
@@ -2557,13 +2428,12 @@ mobs:register_mob("amc:60evoker", {
 	arrow = "amc:shulkerbullet",
 	shoot_offset = 1.5,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "evoker.b3d",
-    textures = {{"evoker.png"}},
+	mesh = "mobs_mc_evoker.b3d",
+    textures = {{"mobs_mc_evoker_base.png"}},
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2581,10 +2451,11 @@ mobs:register_mob("amc:60evoker", {
         shoot_end = 80,
         die_start = 80,
         die_end = 130,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:60evoker", "Evoker", "evoker_inv.png", 0)
+mobs:register_egg("amc:60evoker", "Evoker", "mobs_mc_spawn_icon_evoker.png", 0)
 
 --###################
 --################### VINDICATOR
@@ -2594,14 +2465,13 @@ mobs:register_mob("amc:61vindicator", {
 	type = "monster",
     attack_type = "dogfight",
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "vindicator.b3d",
+	mesh = "mobs_mc_vindicator.b3d",
     textures = {
-        {"vindicator.png^vindicator1.png"},
+        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe.png"},
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
@@ -2620,10 +2490,11 @@ mobs:register_mob("amc:61vindicator", {
         punch_end = 110,
         die_start = 110,
         die_end = 130,
+        die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:61vindicator", "Vindicator", "vindicator_inv.png", 0)
+mobs:register_egg("amc:61vindicator", "Vindicator", "mobs_mc_spawn_icon_vindicator.png", 0)
 
 --###################
 --################### ILLUSIONER
@@ -2636,15 +2507,13 @@ mobs:register_mob("amc:611illusioner", {
 	arrow = "amc:shulkerbullet",
 	shoot_offset = 1.5,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "illusioner.b3d",
+	mesh = "mobs_mc_illusioner.b3d",
     textures = {
-        --{"illusionist.png"},
-        {"illusionist.png^illusionist1.png"},
+        {"mobs_mc_illusionist.png^mobs_mc_illusionist_bow.png"},
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
@@ -2664,11 +2533,12 @@ mobs:register_mob("amc:611illusioner", {
         die_start = 110,
         die_end = 130,
         speed_die = 5,
+        die_loop = false,
         -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
 	},
 })
 
-mobs:register_egg("amc:611illusioner", "Illusioner", "illusioner_inv.png", 0)
+mobs:register_egg("amc:611illusioner", "Illusioner", "mobs_mc_spawn_icon_illusioner.png", 0)
 
 --###################
 --################### WITCH
@@ -2679,16 +2549,13 @@ mobs:register_mob("amc:62witch", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "witch.b3d",
+	mesh = "mobs_mc_witch.b3d",
 	textures = {
-		{"witch.png"},
-        {"witch1.png"},
-        --{"witch2.png"},
+		{"mobs_mc_witch.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2702,7 +2569,7 @@ mobs:register_mob("amc:62witch", {
 	},
 })
 
-mobs:register_egg("amc:62witch", "Witch", "witch_inv.png", 0)
+mobs:register_egg("amc:62witch", "Witch", "mobs_mc_spawn_icon_witch.png", 0)
 
 --###################
 --################### AGENT
@@ -2713,14 +2580,13 @@ mobs:register_mob("amc:63agent", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "agent.b3d",
+	mesh = "mobs_mc_agent.b3d",
 	textures = {
-		{"agent.png"},
+		{"mobs_mc_agent.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2734,7 +2600,7 @@ mobs:register_mob("amc:63agent", {
 	},
 })
 
-mobs:register_egg("amc:63agent", "Agent 007", "agent_inv.png", 0)
+mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
 
 --###################
 --################### BOAT
@@ -2745,20 +2611,18 @@ mobs:register_mob("amc:81boat", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "boat.b3d",
+	mesh = "mobs_mc_boat.b3d",
     textures = {
-        {"boat.png"},
-        {"boat1.png"},
-        {"boat2.png"},
-        {"boat3.png"},
-        {"boat4.png"},
-        {"boat5.png"},
-        {"boat6.png"},
+        {"mobs_mc_boat_acacia.png"},
+        {"mobs_mc_boat_birch.png"},
+        {"mobs_mc_boat_darkoak.png"},
+        {"mobs_mc_boat_jungle.png"},
+        {"mobs_mc_boat_oak.png"},
+        {"mobs_mc_boat_spruce.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2772,7 +2636,7 @@ mobs:register_mob("amc:81boat", {
 	},
 })
 
-mobs:register_egg("amc:81boat", "Boaty", "boat_inv.png", 0)
+mobs:register_egg("amc:81boat", "Boaty", "mobs_mc_spawn_icon_boat.png", 0)
 
 --###################
 --################### SHIELD
@@ -2783,13 +2647,12 @@ mobs:register_mob("amc:82shield", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.3, 0.35},
 	visual = "mesh",
-	mesh = "shield.b3d",
-    textures = {{"shield.png"}},
+	mesh = "mobs_mc_shield.b3d",
+    textures = {{"mobs_mc_shield_base_nopattern.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2802,7 +2665,7 @@ mobs:register_mob("amc:82shield", {
 	},
 })
 
-mobs:register_egg("amc:82shield", "Shield", "shield_inv.png", 0)
+mobs:register_egg("amc:82shield", "Shield", "mobs_mc_spawn_icon_shield.png", 0)
 
 --###################
 --################### BANNER
@@ -2813,13 +2676,12 @@ mobs:register_mob("amc:83banner", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "banner.b3d",
-    textures = {{"banner_base.png"}},
+	mesh = "mobs_mc_banner.b3d",
+    textures = {{"mobs_mc_banner_base.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2832,7 +2694,7 @@ mobs:register_mob("amc:83banner", {
 	},
 })
 
-mobs:register_egg("amc:83banner", "Banner", "banner_inv.png", 0)
+mobs:register_egg("amc:83banner", "Banner", "mobs_mc_spawn_icon_banner.png", 0)
 
 --###################
 --################### CHEST
@@ -2843,17 +2705,15 @@ mobs:register_mob("amc:84chest", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "chest.b3d",
+	mesh = "mobs_mc_chest.b3d",
     textures = {
-        {"normal.png"},
-        {"normal1.png"},
-        {"normal2.png"},
+        {"mobs_mc_normal.png"},
+        {"mobs_mc_ender.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2867,7 +2727,7 @@ mobs:register_mob("amc:84chest", {
 	},
 })
 
-mobs:register_egg("amc:84chest", "Chest", "normal_inv.png", 0)
+mobs:register_egg("amc:84chest", "Chest", "mobs_mc_spawn_icon_normal.png", 0)
 
 --###################
 --################### MINECART
@@ -2878,15 +2738,13 @@ mobs:register_mob("amc:85minecart", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "minecart.b3d",
+	mesh = "mobs_mc_minecart.b3d",
     textures = {
-        {"minecart.png"},
-        {"minecart.png"},
+        {"mobs_mc_minecart.png"},
     },
 	visual_size = {x=12, y=12},
 	walk_velocity = 0.6,
@@ -2900,7 +2758,7 @@ mobs:register_mob("amc:85minecart", {
 	},
 })
 
-mobs:register_egg("amc:85minecart", "Minecart", "minecart_normal.png", 0)
+mobs:register_egg("amc:85minecart", "Minecart", "mobs_mc_spawn_icon_minecart_normal.png", 0)
 
 --###################
 --################### BED
@@ -2911,29 +2769,28 @@ mobs:register_mob("amc:86bed", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "bed.b3d",
+	mesh = "mobs_mc_bed.b3d",
     textures = {
-        {"light_blue.png"},
-        {"green.png"}, 
-        {"gray.png"},
-        {"cyan.png"},
-        {"brown.png"},
-        {"blue.png"},
-        {"black.png"},
-        {"yellow.png"},
-        {"lime.png"},
-        {"magenta.png"},
-        {"orange.png"},
-        {"pink.png"},
-        {"purple.png"},
-        {"red.png"},
-        {"silver.png"},
-        {"white.png"}
+        {"mobs_mc_light_blue.png"},
+        {"mobs_mc_green.png"}, 
+        {"mobs_mc_gray.png"},
+        {"mobs_mc_cyan.png"},
+        {"mobs_mc_brown.png"},
+        {"mobs_mc_blue.png"},
+        {"mobs_mc_black.png"},
+        {"mobs_mc_yellow.png"},
+        {"mobs_mc_lime.png"},
+        {"mobs_mc_magenta.png"},
+        {"mobs_mc_orange.png"},
+        {"mobs_mc_pink.png"},
+        {"mobs_mc_purple.png"},
+        {"mobs_mc_red.png"},
+        {"mobs_mc_silver.png"},
+        {"mobs_mc_white.png"}
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2947,7 +2804,7 @@ mobs:register_mob("amc:86bed", {
 	},
 })
 
-mobs:register_egg("amc:86bed", "Bed", "bed.png", 0)
+mobs:register_egg("amc:86bed", "Bed", "mobs_mc_spawn_icon_bed.png", 0)
 
 --###################
 --################### STONE SWORD
@@ -2958,14 +2815,13 @@ mobs:register_mob("amc:87stonesword", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "stonesword.b3d",
-    textures = {{"stone_sword.png"}},
+	mesh = "mobs_mc_stone_sword.b3d",
+    textures = {{"mobs_mc_spawn_icon_stone_sword.png"}},
 	visual_size = {x=4, y=4},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2978,7 +2834,7 @@ mobs:register_mob("amc:87stonesword", {
 	},
 })
 
-mobs:register_egg("amc:87stonesword", "Stone sword", "stone_sword.png", 0)
+mobs:register_egg("amc:87stonesword", "Stone sword", "mobs_mc_spawn_icon_stone_sword.png", 0)
 
 --###################
 --################### STONE SWORD 2
@@ -2989,14 +2845,13 @@ mobs:register_mob("amc:88sstonesword", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "3d_item.b3d",
-    textures = {{"stone_sword.png"}},
+	mesh = "mobs_mc_3d_item.b3d",
+    textures = {{"mobs_mc_spawn_icon_stone_sword.png"}},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -3009,7 +2864,7 @@ mobs:register_mob("amc:88sstonesword", {
 	},
 })
 
-mobs:register_egg("amc:88sstonesword", "sword", "stone_sword.png", 0)
+mobs:register_egg("amc:88sstonesword", "sword", "mobs_mc_spawn_icon_stone_sword.png", 0)
 
 --###################
 --################### ARMOURSTAND
@@ -3020,15 +2875,13 @@ mobs:register_mob("amc:89armorstand", {
 	passive = true,
     runaway = true,
     stepheight = 1.2,
-	hp_min = 30,
-	hp_max = 60,
-	armor = 150,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
-	mesh = "armorstand.b3d",
+	mesh = "mobs_mc_armorstand.b3d",
     textures = {
-        {"wood.png"}
-        --{"wood1.png"}
+        {"mobs_mc_wood.png"}
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -3042,7 +2895,7 @@ mobs:register_mob("amc:89armorstand", {
 	},
 })
 
-mobs:register_egg("amc:89armorstand", "Armor stand", "wooden_armorstand.png", 0)
+mobs:register_egg("amc:89armorstand", "Armor stand", "mobs_mc_spawn_icon_wooden_armorstand.png", 0)
 
 --###################
 --################### 8x8 ITEM
@@ -3052,17 +2905,16 @@ mobs:register_mob("amc:90a8x8", {
 	type = "animal",
 	passive = true,
     stepheight = 1.2,
-	hp_min = 1,
-	hp_max = 1,
-	--armor = 1,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "8x8.b3d",
+	mesh = "mobs_mc_8x8.b3d",
     textures = {
-        {"8x1.png"},
-        {"8x2.png"},
-        {"8x3.png"}},
+        {"mobs_mc_spawn_icon_8x1.png"},
+        {"mobs_mc_spawn_icon_8x2.png"},
+        {"mobs_mc_spawn_icon_8x3.png"}},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
@@ -3075,7 +2927,7 @@ mobs:register_mob("amc:90a8x8", {
 	},
 })
 
-mobs:register_egg("amc:90a8x8", "8x8", "8x1.png", 0)
+mobs:register_egg("amc:90a8x8", "8x8", "mobs_mc_spawn_icon_8x1.png", 0)
 
 --###################
 --################### 16x16 ITEM
@@ -3085,19 +2937,18 @@ mobs:register_mob("amc:90b16x16", {
 	type = "animal",
 	passive = true,
     stepheight = 1.2,
-	hp_min = 1,
-	hp_max = 1,
-	--armor = 1,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "16x16.b3d",
+	mesh = "mobs_mc_16x16.b3d",
     textures = {
-        {"stone_sword.png"},
-        {"16x1.png"},
-        {"16x2.png"},
-        {"16x3.png"},
-        {"16x4.png"}},
+        {"mobs_mc_spawn_icon_stone_sword.png"},
+        {"mobs_mc_spawn_icon_16x1.png"},
+        {"mobs_mc_spawn_icon_16x2.png"},
+        {"mobs_mc_spawn_icon_16x3.png"},
+        {"mobs_mc_spawn_icon_16x4.png"}},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
@@ -3110,7 +2961,7 @@ mobs:register_mob("amc:90b16x16", {
 	},
 })
 
-mobs:register_egg("amc:90b16x16", "16x16", "16x1.png", 0)
+mobs:register_egg("amc:90b16x16", "16x16", "mobs_mc_spawn_icon_16x1.png", 0)
 
 --###################
 --################### 32x32 ITEM
@@ -3120,18 +2971,17 @@ mobs:register_mob("amc:90c32x32", {
 	type = "animal",
 	passive = true,
     stepheight = 1.2,
-	hp_min = 1,
-	hp_max = 1,
-	--armor = 1,
+	hp_min = 12,
+	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
     rotate = -180,
 	visual = "mesh",
-	mesh = "32x32.b3d",
+	mesh = "mobs_mc_32x32.b3d",
     textures = {
-        {"32x1.png"},
-        {"32x2.png"},
-        {"32x3.png"},
-        {"32x4.png"}
+        {"mobs_mc_spawn_icon_32x1.png"},
+        {"mobs_mc_spawn_icon_32x2.png"},
+        {"mobs_mc_spawn_icon_32x3.png"},
+        {"mobs_mc_spawn_icon_32x4.png"}
     },
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
@@ -3145,4 +2995,4 @@ mobs:register_mob("amc:90c32x32", {
 	},
 })
 
-mobs:register_egg("amc:90c32x32", "32x32", "32x1.png", 0)
+mobs:register_egg("amc:90c32x32", "32x32", "mobs_mc_spawn_icon_32x1.png", 0)
