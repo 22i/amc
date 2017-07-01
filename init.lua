@@ -1796,7 +1796,7 @@ mobs:register_mob("amc:36stray", {
 	visual = "mesh",
 	mesh = "mobs_mc_skeleton_stray.b3d",
 	textures = {
-		{"mobs_mc_stray.png"},
+		{"mobs_mc_stray.png^mobs_mc_stray_bow.png"},
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2500,9 +2500,9 @@ mobs:register_mob("amc:61vindicator", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_vindicator1.b3d", --with a pixel perfection axe
+	mesh = "mobs_mc_vindicator.b3d", --with a pixel perfection axe
     textures = {
-        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe1.png"},
+        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe.png"},
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
