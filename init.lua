@@ -1156,6 +1156,37 @@ mobs:register_mob("amc:22zombie", {
 mobs:register_egg("amc:22zombie", "Zombie", "mobs_mc_spawn_icon_zombie.png", 0)
 
 --###################
+--################### HUSK
+--###################
+
+mobs:register_mob("amc:22zhusk", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_zombie.b3d",
+	textures = {
+		{"mobs_mc_husk.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 40,		stand_end = 80,
+		walk_start = 0,		walk_end = 40,
+		run_start = 0,		run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:22zhusk", "Husk", "mobs_mc_spawn_icon_husk.png", 0)
+
+--###################
 --################### BABY ZOMBIE
 --###################
 
@@ -2469,9 +2500,9 @@ mobs:register_mob("amc:61vindicator", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_vindicator.b3d",
+	mesh = "mobs_mc_vindicator1.b3d", --with a pixel perfection axe
     textures = {
-        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe.png"},
+        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe1.png"},
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
@@ -2807,66 +2838,6 @@ mobs:register_mob("amc:86bed", {
 mobs:register_egg("amc:86bed", "Bed", "mobs_mc_spawn_icon_bed.png", 0)
 
 --###################
---################### STONE SWORD
---###################
-
-mobs:register_mob("amc:87stonesword", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "mobs_mc_stone_sword.b3d",
-    textures = {{"mobs_mc_spawn_icon_stone_sword.png"}},
-	visual_size = {x=4, y=4},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 20,		stand_end = 25,
-		walk_start = 0,		walk_end = 20,
-		run_start = 0,		run_end = 20,
-	},
-})
-
-mobs:register_egg("amc:87stonesword", "Stone sword", "mobs_mc_spawn_icon_stone_sword.png", 0)
-
---###################
---################### STONE SWORD 2
---###################
-
-mobs:register_mob("amc:88sstonesword", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
-    rotate = -180,
-	visual = "mesh",
-	mesh = "mobs_mc_3d_item.b3d",
-    textures = {{"mobs_mc_spawn_icon_stone_sword.png"}},
-	visual_size = {x=1, y=1},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-		speed_normal = 25,		speed_run = 50,
-		stand_start = 20,		stand_end = 25,
-		walk_start = 0,		walk_end = 20,
-		run_start = 0,		run_end = 20,
-	},
-})
-
-mobs:register_egg("amc:88sstonesword", "sword", "mobs_mc_spawn_icon_stone_sword.png", 0)
-
---###################
 --################### ARMOURSTAND
 --###################
 
@@ -2898,6 +2869,66 @@ mobs:register_mob("amc:89armorstand", {
 mobs:register_egg("amc:89armorstand", "Armor stand", "mobs_mc_spawn_icon_wooden_armorstand.png", 0)
 
 --###################
+--################### STONE SWORD
+--###################
+
+mobs:register_mob("amc:87stonesword", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "mobs_mc_stone_sword.b3d",
+    textures = {{"mobs_mc_spawn_icon_16x1.png"}},
+	visual_size = {x=4, y=4},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:87stonesword", "Stone sword", "mobs_mc_spawn_icon_16x1.png", 0)
+
+--###################
+--################### STONE SWORD 2
+--###################
+
+mobs:register_mob("amc:88sstonesword", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "mobs_mc_3d_item.b3d",
+    textures = {{"mobs_mc_spawn_icon_16x1.png"}},
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+		speed_normal = 25,		speed_run = 50,
+		stand_start = 20,		stand_end = 25,
+		walk_start = 0,		walk_end = 20,
+		run_start = 0,		run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:88sstonesword", "sword", "mobs_mc_spawn_icon_16x1.png", 0)
+
+--###################
 --################### 8x8 ITEM
 --###################
 
@@ -2914,7 +2945,7 @@ mobs:register_mob("amc:90a8x8", {
     textures = {
         {"mobs_mc_spawn_icon_8x1.png"},
         {"mobs_mc_spawn_icon_8x2.png"},
-        {"mobs_mc_spawn_icon_8x3.png"}},
+        },
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
@@ -2944,11 +2975,9 @@ mobs:register_mob("amc:90b16x16", {
 	visual = "mesh",
 	mesh = "mobs_mc_16x16.b3d",
     textures = {
-        {"mobs_mc_spawn_icon_stone_sword.png"},
         {"mobs_mc_spawn_icon_16x1.png"},
         {"mobs_mc_spawn_icon_16x2.png"},
-        {"mobs_mc_spawn_icon_16x3.png"},
-        {"mobs_mc_spawn_icon_16x4.png"}},
+    },    
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
@@ -2961,7 +2990,7 @@ mobs:register_mob("amc:90b16x16", {
 	},
 })
 
-mobs:register_egg("amc:90b16x16", "16x16", "mobs_mc_spawn_icon_16x1.png", 0)
+mobs:register_egg("amc:90b16x16", "16x16", "mobs_mc_spawn_icon_16x2.png", 0)
 
 --###################
 --################### 32x32 ITEM
@@ -2980,8 +3009,6 @@ mobs:register_mob("amc:90c32x32", {
     textures = {
         {"mobs_mc_spawn_icon_32x1.png"},
         {"mobs_mc_spawn_icon_32x2.png"},
-        {"mobs_mc_spawn_icon_32x3.png"},
-        {"mobs_mc_spawn_icon_32x4.png"}
     },
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.000000001,
