@@ -2667,7 +2667,7 @@ mobs:register_mob("amc:81boat", {
 	},
 })
 
-mobs:register_egg("amc:81boat", "Boaty", "mobs_mc_spawn_icon_boat.png", 0)
+mobs:register_egg("amc:81boat", "Boaty", "mobs_mc_spawn_icon_acacia_boat.png", 0)
 
 --###################
 --################### SHIELD
