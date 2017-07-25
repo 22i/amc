@@ -3127,6 +3127,116 @@ mobs:register_mob("amc:88sstonesword", {
 mobs:register_egg("amc:88sstonesword", "sword", "amc_16x1.png", 0)
 
 --###################
+--################### SIGN 0 DEGRESS
+--###################
+
+minetest.register_node('amc:sign0', {
+   description = 'Sign 0 degress',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_sign.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+})
+
+--###################
+--################### SIGN 22.5 DEGRESS
+--###################
+
+minetest.register_node('amc:sign22', {
+   description = 'Sign 22.5 degress',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_sign22.5.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+})
+
+--###################
+--################### SIGN 45 DEGRESS
+--###################
+
+minetest.register_node('amc:sign45', {
+   description = 'Sign 45 degress',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_sign45.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+})
+
+--###################
+--################### SIGN 67.5 DEGRESS
+--###################
+
+minetest.register_node('amc:sign67', {
+   description = 'Sign 67.5 degress',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_sign67.5.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+})
+
+--###################
+--################### SIGNONWALL
+--###################
+
+minetest.register_node('amc:sigonwall', {
+   description = 'Sign on wall',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_signonwall.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
 --################### 8x8 ITEM
 --###################
 
