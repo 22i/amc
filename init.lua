@@ -3218,7 +3218,7 @@ minetest.register_node('amc:sign67', {
 --################### SIGN 0 DEGRESS 1 NODE
 --###################
 
-minetest.register_node('amc:1sign0', {
+minetest.register_node('amc:sign01', {
    description = 'Sign 0 degress one node',
    drawtype = 'mesh',
    mesh = 'mcl_signs_1sign0.obj',
@@ -3241,13 +3241,35 @@ minetest.register_node('amc:1sign0', {
 --###################
 
 minetest.register_node('amc:sigonwall', {
-   description = 'Sign on wall',
+   description = 'Sign on wall facedir',
    drawtype = 'mesh',
    mesh = 'mcl_signs_signonwall.obj',
    tiles = {name='mcl_signs_sign.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### SIGNONWALL WALLMOUNTED
+--###################
+
+minetest.register_node('amc:sigonwallmount', {
+   description = 'Sign on wall wallmounted',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_signonwallmount.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'wallmounted',
    selection_box = {
       type = 'fixed',
       fixed = {-.5, -.5, -.5, .5, .5, .5},
