@@ -3215,6 +3215,28 @@ minetest.register_node('amc:sign67', {
 })
 
 --###################
+--################### SIGN 0 DEGRESS 1 NODE
+--###################
+
+minetest.register_node('amc:1sign0', {
+   description = 'Sign 0 degress one node',
+   drawtype = 'mesh',
+   mesh = 'mcl_signs_1sign0.obj',
+   tiles = {name='mcl_signs_sign.png'},
+   groups = {choppy=2, dig_immediate=1,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.2, -.5, -.2, .2, .5, .2},
+      },
+})
+
+--###################
 --################### SIGNONWALL
 --###################
 
