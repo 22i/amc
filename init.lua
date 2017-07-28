@@ -24,7 +24,8 @@ mobs:register_mob("amc:6chicken", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+		run_speed = 25,
+        walk_speed = 15,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -58,7 +59,7 @@ mobs:register_mob("amc:6babychicken", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        run_speed = 25,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -95,7 +96,8 @@ mobs:register_mob("amc:0acow", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        walk_speed = 25,
+        run_speed = 40,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -130,7 +132,8 @@ mobs:register_mob("amc:0babycow", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+        run_speed = 40,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -164,7 +167,8 @@ mobs:register_mob("amc:0amooshroom", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+        run_speed = 40,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -198,7 +202,8 @@ mobs:register_mob("amc:27creeper", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -232,16 +237,18 @@ mobs:register_mob("amc:1bat", {
 	run_velocity = 3,
 	jump = true,
 	animation = {
-        speed_run = 80,
+        stand_speed = 80,
+        walk_speed = 80,
+        run_speed = 80,
 		stand_start = 0,
         stand_end = 40,
 		walk_start = 0,
         walk_end = 40,
 		run_start = 0,
         run_end = 40,
-        die_start = 40,
-        die_end = 65,
-        speed_die = 5,
+        die_start = 40, --death animation repeats sometimes
+        die_end = 80,
+        die_speed = 60,
         die_loop = false,
 	},
 })
@@ -277,7 +284,9 @@ mobs:register_mob("amc:1parrot", {
     --fly = true,
     --fly_in = "air",
     	animation = {
-		speed_run = 50,
+        stand_speed = 50,
+        walk_speed = 50,
+		run_speed = 50,
 		stand_start = 0,
 		stand_end = 0,
 		walk_start = 0,
@@ -314,7 +323,8 @@ mobs:register_mob("amc:2polarbear", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -349,7 +359,8 @@ mobs:register_mob("amc:2babypolarbear", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -385,7 +396,8 @@ mobs:register_mob("amc:3blaze", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 100,
         walk_start = 0,
@@ -422,7 +434,8 @@ mobs:register_mob("amc:5ocelotcat", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -459,7 +472,8 @@ mobs:register_mob("amc:5babyocelotcat", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -493,7 +507,8 @@ mobs:register_mob("amc:10magmacube", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -527,7 +542,8 @@ mobs:register_mob("amc:11slime", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -564,7 +580,9 @@ mobs:register_mob("amc:12enderdragon", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 20,
 		walk_start = 0,
@@ -605,8 +623,10 @@ mobs:register_mob("amc:13enderman", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = { 
-        speed_run = 50,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -645,8 +665,10 @@ mobs:register_mob("amc:13benderman", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = { 
-        speed_run = 50,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 200,
         stand_end = 200,
 		walk_start = 161,
@@ -682,7 +704,9 @@ mobs:register_mob("amc:14endermite", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 20,
 		walk_start = 0,
@@ -716,7 +740,9 @@ mobs:register_mob("amc:15ghast", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 25,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
 		stand_start = 0,
         stand_end = 40,
 		walk_start = 0,
@@ -750,7 +776,9 @@ mobs:register_mob("amc:16guardian", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 20,
 		walk_start = 0,
@@ -784,7 +812,9 @@ mobs:register_mob("amc:17guardian_elder", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 20,
 		walk_start = 0,
@@ -818,7 +848,9 @@ mobs:register_mob("amc:19iron_golem", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 25,
+        stand_speed = 15,
+        walk_speed = 15,
+		run_speed = 25,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -858,7 +890,9 @@ mobs:register_mob("amc:20cllama", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -971,7 +1005,9 @@ mobs:register_mob("amc:20dswagllama", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1009,7 +1045,9 @@ mobs:register_mob("amc:20ecllama", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1038,7 +1076,7 @@ mobs:register_mob("amc:20edllama", {
     textures = {
         {"mobs_mc_llama_gray.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
         {"mobs_mc_llama_white.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_green.png^mobs_mc_llama_chest1.png"},
+        {"mobs_mc_llama.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
         {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
         {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png^mobs_mc_llama_chest.png"},
     },
@@ -1047,7 +1085,9 @@ mobs:register_mob("amc:20edllama", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1085,7 +1125,9 @@ mobs:register_mob("amc:20babyllama", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1119,7 +1161,9 @@ mobs:register_mob("amc:21pig", {
 	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 40,
+        walk_speed = 40,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1153,7 +1197,9 @@ mobs:register_mob("amc:21saddlepig", {
 	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 40,
+        walk_speed = 40,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1187,7 +1233,9 @@ mobs:register_mob("amc:21babypig", {
 	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 40,
+        walk_speed = 40,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1224,7 +1272,9 @@ mobs:register_mob("amc:22zombie", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1258,7 +1308,9 @@ mobs:register_mob("amc:22zhusk", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1292,7 +1344,9 @@ mobs:register_mob("amc:22babyzombie", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1333,7 +1387,9 @@ mobs:register_mob("amc:23rabbit", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1374,7 +1430,9 @@ mobs:register_mob("amc:23babyrabbit", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1410,7 +1468,9 @@ mobs:register_mob("amc:24sheep", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1446,7 +1506,9 @@ mobs:register_mob("amc:24nakedsheep", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1480,7 +1542,9 @@ mobs:register_mob("amc:24babysheep", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1514,7 +1578,9 @@ mobs:register_mob("amc:25silverfish", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 0,
         stand_end = 20,
 		walk_start = 0,
@@ -1549,7 +1615,9 @@ mobs:register_mob("amc:26snowman", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 20,
         stand_end = 40,
 		walk_start = 0,
@@ -1558,6 +1626,7 @@ mobs:register_mob("amc:26snowman", {
         run_end = 20,
         die_start = 40,
         die_end = 50,
+        die_speed = 25, --death animation repeats sometimes
         die_loop = false,
 	},
 })
@@ -1586,7 +1655,9 @@ mobs:register_mob("amc:28squid", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -1620,7 +1691,9 @@ mobs:register_mob("amc:30vex", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -1654,7 +1727,9 @@ mobs:register_mob("amc:32wither", {
     run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 12,
+        stand_speed = 12,
+        walk_speed = 12,
+		run_speed = 12,
 		stand_start = 0,
         stand_end = 20,
         walk_start = 0,
@@ -1691,7 +1766,9 @@ mobs:register_mob("amc:33wolf", {
 	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_run = 100,
+        stand_speed = 50,
+        walk_speed = 50,
+		run_speed = 100,
 		stand_start = 40,
         stand_end = 45,
 		walk_start = 0,
@@ -1725,7 +1802,9 @@ mobs:register_mob("amc:33babywolf", {
 	run_velocity = 4,
 	jump = true,
 	animation = {
-		speed_run = 100,
+        stand_speed = 50,
+        walk_speed = 50,
+		run_speed = 100,
 		stand_start = 40,
         stand_end = 45,
 		walk_start = 0,
@@ -1780,7 +1859,9 @@ mobs:register_mob("amc:34shulker", {
 	run_velocity = 0.0000000001,
 	jump = false,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 45,
 		walk_start = 0,
@@ -1843,18 +1924,18 @@ mobs:register_mob("amc:35skeleton", {
 	run_velocity = 2,
 	jump = true,
     animation = {
-		--speed_run = 50,
+        stand_speed = 15,
+        walk_speed = 15,
+		run_speed = 30,
 		stand_start = 0,
 		stand_end = 40,
-        speed_stand = 5,
 		walk_start = 40,
 		walk_end = 60,
-        speed_walk = 50,
         shoot_start = 70,
         shoot_end = 90,
         die_start = 120,
         die_end = 130,
-        speed_die = 5,
+        die_speed = 15,
         die_loop = false,
 	},
 })
@@ -1882,18 +1963,18 @@ mobs:register_mob("amc:37witherskeleton", {
 	run_velocity = 2,
 	jump = true,
     animation = {
-		--speed_run = 50,
+        stand_speed = 15,
+        walk_speed = 15,
+		run_speed = 30,
 		stand_start = 0,
 		stand_end = 40,
-        speed_stand = 5,
 		walk_start = 40,
 		walk_end = 60,
-        speed_walk = 50,
         punch_start = 70,
         punch_end = 90,
         die_start = 120,
         die_end = 130,
-        speed_die = 5,
+        die_speed = 15,
         die_loop = false,
 	},
 })
@@ -1924,18 +2005,18 @@ mobs:register_mob("amc:36stray", {
 	run_velocity = 2,
 	jump = true,
     animation = {
-		--speed_run = 50,
+        stand_speed = 15,
+        walk_speed = 15,
+		run_speed = 30,
 		stand_start = 0,
 		stand_end = 40,
-        speed_stand = 5,
 		walk_start = 40,
 		walk_end = 60,
-        speed_walk = 50,
         shoot_start = 70,
         shoot_end = 90,
         die_start = 120,
         die_end = 130,
-        speed_die = 5,
+        die_speed = 15,
         die_loop = false,
 	},
 })
@@ -1964,7 +2045,9 @@ mobs:register_mob("amc:38spider", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -2001,7 +2084,9 @@ mobs:register_mob("amc:38cavespider", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -2035,7 +2120,9 @@ mobs:register_mob("amc:51pigman", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -2071,7 +2158,9 @@ mobs:register_mob("amc:51babypigman", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 40,
         stand_end = 80,
 		walk_start = 0,
@@ -2113,7 +2202,9 @@ mobs:register_mob("amc:52bbhorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2153,7 +2244,9 @@ mobs:register_mob("amc:52msaddlehorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2193,7 +2286,9 @@ mobs:register_mob("amc:52chesthorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2233,7 +2328,9 @@ mobs:register_mob("amc:52rmourhorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2273,7 +2370,9 @@ mobs:register_mob("amc:52zeverythinghorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2318,7 +2417,9 @@ mobs:register_mob("amc:52babyhorse", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2352,7 +2453,9 @@ mobs:register_mob("amc:53horsemule", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2384,7 +2487,9 @@ mobs:register_mob("amc:53horsedonkey", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2416,7 +2521,9 @@ mobs:register_mob("amc:54horseskeleton", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2448,7 +2555,9 @@ mobs:register_mob("amc:55horsezombie", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2487,7 +2596,9 @@ mobs:register_mob("amc:58villager", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 17,
+        stand_speed = 17,
+        walk_speed = 17,
+		run_speed = 17,
 		stand_start = 20,
         stand_end = 40,
 		walk_start = 0,
@@ -2526,7 +2637,9 @@ mobs:register_mob("amc:58babyvillager", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 17,
+        stand_speed = 17,
+        walk_speed = 17,
+		run_speed = 17,
 		stand_start = 20,
         stand_end = 40,
 		walk_start = 0,
@@ -2565,7 +2678,9 @@ mobs:register_mob("amc:59zvillager", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 20,
         stand_end = 40,
 		walk_start = 0,
@@ -2604,7 +2719,9 @@ mobs:register_mob("amc:59babyzvillager", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
 		stand_start = 20,
         stand_end = 40,
 		walk_start = 0,
@@ -2638,17 +2755,18 @@ mobs:register_mob("amc:60evoker", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 25,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
 		stand_start = 40,
 		stand_end = 59,
-        speed_stand = 5,
 		walk_start = 0,
 		walk_end = 40,
-        --speed_walk = 50,
         shoot_start = 60,
         shoot_end = 80,
         die_start = 80,
         die_end = 130,
+        die_speed = 50,
         die_loop = false,
 	},
 })
@@ -2676,13 +2794,14 @@ mobs:register_mob("amc:61vindicator", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 25,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+        punch_speed = 25,
 		stand_start = 40,
 		stand_end = 59,
-        speed_stand = 5,
-		walk_start = 0,
+        walk_start = 0,
 		walk_end = 40,
-        --speed_walk = 50,
         punch_start = 90,
         punch_end = 110,
         die_start = 110,
@@ -2717,18 +2836,18 @@ mobs:register_mob("amc:611illusioner", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 25,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
 		stand_start = 40,
 		stand_end = 59,
-        --speed_stand = 5,
 		walk_start = 0,
 		walk_end = 40,
-        --speed_walk = 50,
         shoot_start = 90,
         shoot_end = 110,
         die_start = 110,
         die_end = 130,
-        speed_die = 5,
+        die_speed = 15,
         die_loop = false,
         -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
 	},
@@ -2758,7 +2877,9 @@ mobs:register_mob("amc:62witch", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2792,7 +2913,9 @@ mobs:register_mob("amc:63agent", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 20,
         stand_end = 60,
 		walk_start = 0,
@@ -2831,7 +2954,9 @@ mobs:register_mob("amc:81boat", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
 		stand_start = 0,
         stand_end = 0,
 		walk_start = 0,
@@ -2862,15 +2987,6 @@ mobs:register_mob("amc:82shield", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 40,
-        stand_end = 80,
-		walk_start = 0,
-        walk_end = 40,
-		run_start = 0,
-        run_end = 40,
-	},
 })
 
 mobs:register_egg("amc:82shield", "Shield", "amc_shield.png", 0)
@@ -2894,15 +3010,6 @@ mobs:register_mob("amc:83banner", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 40,
-        stand_end = 80,
-		walk_start = 0,
-        walk_end = 40,
-		run_start = 0,
-        run_end = 40,
-	},
 })
 
 mobs:register_egg("amc:83banner", "Banner", "amc_banner.png", 0)
@@ -2931,7 +3038,9 @@ mobs:register_mob("amc:84chest", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-		speed_run = 50,
+        stand_speed = 15,
+        walk_speed = 15,
+		run_speed = 25,
 		stand_start = 20,
         stand_end = 25,
 		walk_start = 0,
@@ -2964,15 +3073,6 @@ mobs:register_mob("amc:85minecart", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:85minecart", "Minecart", "amc_minecart_normal.png", 0)
@@ -3013,15 +3113,6 @@ mobs:register_mob("amc:86bed", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-        speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:86bed", "Bed", "mcl_beds_bed_blue.png", 0)
@@ -3047,15 +3138,6 @@ mobs:register_mob("amc:89armorstand", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:89armorstand", "Armor stand", "amc_wooden_armorstand.png", 0)
@@ -3080,15 +3162,6 @@ mobs:register_mob("amc:87stonesword", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:87stonesword", "Stone sword", "amc_16x1.png", 0)
@@ -3113,15 +3186,6 @@ mobs:register_mob("amc:88sstonesword", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:88sstonesword", "sword", "amc_16x1.png", 0)
@@ -3302,15 +3366,6 @@ mobs:register_mob("amc:90a8x8", {
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:90a8x8", "8x8", "amc_8x1.png", 0)
@@ -3337,15 +3392,6 @@ mobs:register_mob("amc:90b16x16", {
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:90b16x16", "16x16", "amc_16x2.png", 0)
@@ -3372,15 +3418,6 @@ mobs:register_mob("amc:90c32x32", {
 	walk_velocity = 0.000000001,
 	run_velocity = 0.00000001,
 	jump = true,
-	animation = {
-		speed_run = 50,
-		stand_start = 20,
-        stand_end = 25,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
 })
 
 mobs:register_egg("amc:90c32x32", "32x32", "amc_32x1.png", 0)
