@@ -246,7 +246,7 @@ mobs:register_mob("amc:1bat", {
         walk_end = 40,
 		run_start = 0,
         run_end = 40,
-        die_start = 40, --death animation repeats sometimes
+        die_start = 40,
         die_end = 80,
         die_speed = 60,
         die_loop = false,
@@ -1626,7 +1626,7 @@ mobs:register_mob("amc:26snowman", {
         run_end = 20,
         die_start = 40,
         die_end = 50,
-        die_speed = 25, --death animation repeats sometimes
+        die_speed = 25,
         die_loop = false,
 	},
 })
@@ -3010,7 +3010,7 @@ mobs:register_mob("amc:83banner", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
-    animation = {
+    animation = { -- banner slowly swings back and forth with wind 0-80
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
