@@ -3557,6 +3557,31 @@ minetest.register_node('amc:painting32x32_1facedir', {
 })
 
 --###################
+--################### PAINTINGS 64x48 #1 facedir
+--###################
+
+minetest.register_node('amc:painting64x48_1facedir', {
+   description = 'Painting #1 64x48 facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_painting64x48_1facedir.obj',
+   tiles = {name='amc_paintings_kristoffer_zetterstrand.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   inventory_image = "amc_painting64x48_1.png",
+   wield_image = "amc_painting64x48_1.png",
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
 --################### PAINTINGS 64x64 #1 facedir
 --###################
 
