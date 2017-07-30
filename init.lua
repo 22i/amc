@@ -3010,6 +3010,17 @@ mobs:register_mob("amc:83banner", {
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
+    animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 80,
+		walk_start = 0,
+        walk_end = 80,
+		run_start = 0,
+        run_end = 80,
+	},
 })
 
 mobs:register_egg("amc:83banner", "Banner", "amc_banner.png", 0)
@@ -3202,6 +3213,7 @@ minetest.register_node('amc:sign0', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.2, -.5, -.2, .2, .5, .2},
@@ -3224,6 +3236,7 @@ minetest.register_node('amc:sign22', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.2, -.5, -.2, .2, .5, .2},
@@ -3246,6 +3259,7 @@ minetest.register_node('amc:sign45', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.2, -.5, -.2, .2, .5, .2},
@@ -3268,6 +3282,7 @@ minetest.register_node('amc:sign67', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.2, -.5, -.2, .2, .5, .2},
@@ -3290,6 +3305,7 @@ minetest.register_node('amc:sign01', {
    groups = {choppy=2, dig_immediate=1,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.2, -.5, -.2, .2, .5, .2},
@@ -3312,6 +3328,7 @@ minetest.register_node('amc:sigonwall', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.5, -.5, -.5, .5, .5, .5},
@@ -3334,6 +3351,76 @@ minetest.register_node('amc:sigonwallmount', {
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
    paramtype2 = 'wallmounted',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### ITEM FRAME facedir
+--###################
+
+minetest.register_node('amc:itemframefacedir', {
+   description = 'Itemframe facedir',
+   drawtype = 'mesh',
+   mesh = 'itemframes_itemframe1facedir.obj',
+   tiles = {name='itemframes_itemframe_birch_plank.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### ITEM FRAME wallmoutn
+--###################
+
+minetest.register_node('amc:itemframewallmount', {
+   description = 'Itemframe walmount',
+   drawtype = 'mesh',
+   mesh = 'itemframes_itemframe1wallmount.obj',
+   tiles = {name='itemframes_itemframe_birch_plank.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'wallmounted',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### ENDERCRYSTAL facedir
+--###################
+
+minetest.register_node('amc:endercrystalfacedir', {
+   description = 'Endercrystal facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_endercrystalfacedir.obj',
+   tiles = {name='amc_endercrystal.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
    selection_box = {
       type = 'fixed',
       fixed = {-.5, -.5, -.5, .5, .5, .5},
