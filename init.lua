@@ -2928,6 +2928,32 @@ mobs:register_mob("amc:63agent", {
 mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
 
 --###################
+--################### 2 TEXTURES TEST
+--###################
+
+mobs:register_mob("amc:z2texturetest", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "amc_2texturetest.b3d",
+	textures = {
+		{"amc_1.png^amc_2.png"},
+        --{"amc_2.png^amc_1.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+})
+
+mobs:register_egg("amc:z2texturetest", "2 Textures test", "amc_1.png", 0)
+
+--###################
 --################### BOAT
 --###################
 
