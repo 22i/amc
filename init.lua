@@ -3458,13 +3458,49 @@ minetest.register_node('amc:endercrystalfacedir', {
 })
 
 --###################
+--################### ENDERCRYSTAL
+--###################
+
+mobs:register_mob("amc:endercrystal", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
+	visual = "mesh",
+	mesh = "amc_endercrystal.b3d",
+    textures = {
+        {"amc_endercrystal.png"}
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+    animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+		stand_start = 0,
+		stand_end = 60,
+        run_start = 0,
+		run_end = 60,
+		walk_start = 0,
+		walk_end = 60,
+	},
+})
+
+mobs:register_egg("amc:endercrystal", "endercrystal animation", "amc_endercrystal.png", 0)
+
+--###################
 --################### PAINTINGS 16x16 #1 facedir
 --###################
 
 minetest.register_node('amc:painting16x16_1facedir', {
    description = 'Painting #1 16x16 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting16x16_1facedir.obj',
+   mesh = 'amc_painting16x16_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3489,7 +3525,7 @@ minetest.register_node('amc:painting16x16_1facedir', {
 minetest.register_node('amc:painting32x16_1facedir', {
    description = 'Painting #1 32x16 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting32x16_1facedir.obj',
+   mesh = 'amc_painting32x16_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3514,7 +3550,7 @@ minetest.register_node('amc:painting32x16_1facedir', {
 minetest.register_node('amc:painting16x32_1facedir', {
    description = 'Painting #1 16x32 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting16x32_1facedir.obj',
+   mesh = 'amc_painting16x32_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3539,7 +3575,7 @@ minetest.register_node('amc:painting16x32_1facedir', {
 minetest.register_node('amc:painting64x32_1facedir', {
    description = 'Painting #1 64x32 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting64x32_1facedir.obj',
+   mesh = 'amc_painting64x32_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3564,7 +3600,7 @@ minetest.register_node('amc:painting64x32_1facedir', {
 minetest.register_node('amc:painting32x32_1facedir', {
    description = 'Painting #1 32x32 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting32x32_1facedir.obj',
+   mesh = 'amc_painting32x32_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3589,7 +3625,7 @@ minetest.register_node('amc:painting32x32_1facedir', {
 minetest.register_node('amc:painting64x48_1facedir', {
    description = 'Painting #1 64x48 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting64x48_1facedir.obj',
+   mesh = 'amc_painting64x48_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
@@ -3614,7 +3650,7 @@ minetest.register_node('amc:painting64x48_1facedir', {
 minetest.register_node('amc:painting64x64_1facedir', {
    description = 'Painting #1 64x64 facedir',
    drawtype = 'mesh',
-   mesh = 'amc_painting64x64_1facedir.obj',
+   mesh = 'amc_painting64x64_1f.obj',
    tiles = {name='amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png'},
    groups = {choppy=2, dig_immediate=2,},
    paramtype = 'light',
