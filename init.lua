@@ -3474,7 +3474,7 @@ mobs:register_mob("amc:endercrystal", {
     textures = {
         {"amc_endercrystal.png"}
     },
-	visual_size = {x=3, y=3},
+	visual_size = {x=6, y=6},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
@@ -3483,15 +3483,15 @@ mobs:register_mob("amc:endercrystal", {
         walk_speed = 25,
 		run_speed = 25,
 		stand_start = 0,
-		stand_end = 60,
+		stand_end = 120,
         run_start = 0,
-		run_end = 60,
+		run_end = 120,
 		walk_start = 0,
-		walk_end = 60,
+		walk_end = 120,
 	},
 })
 
-mobs:register_egg("amc:endercrystal", "endercrystal animation", "amc_endercrystal.png", 0)
+mobs:register_egg("amc:endercrystal", "endercrystal animation", "amc_endercrystal_inv.png", 0)
 
 --###################
 --################### PAINTINGS 16x16 #1 facedir
