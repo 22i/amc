@@ -3106,7 +3106,7 @@ mobs:register_mob("amc:85minecart", {
     textures = {
         {"amc_minecart.png"},
     },
-	visual_size = {x=12, y=12},
+	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
