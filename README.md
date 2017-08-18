@@ -1,4 +1,3 @@
-# amc
 <img src="https://i.imgur.com/SSdmdCt.png">
 Test how the Minecraft mobs look like in Minetest to spawn mobs find spawn eggs in creative inventory
 
