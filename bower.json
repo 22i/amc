@@ -1,0 +1,17 @@
+{
+  "name": "amc",
+  "homepage": "https://github.com/22i/amc",
+  "description": "quickly test out how the Minecraft mob models look like in Minetest.",
+  "keywords": [
+    "minecraft",
+    "mobs",
+    "amc",
+    "minecraft mobs"
+  ],
+  "screenshots": [
+    "https://i.imgur.com/I2MDagh.png"
+  ],
+  "authors": [
+    "22i"
+  ]
+}
