@@ -2931,6 +2931,14 @@ mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
 --################### 2 TEXTURES TEST
 --###################
 
+--textures = { --combine
+--{"amc_1.png" and "amc_2.png"},
+--{"amc_1.png", "amc_2.png"},
+--{"amc_1.png"}, {"amc_2.png"},
+--{"amc_1.png^amc_2.png"},
+--{"amc_2.png^amc_1.png"},
+--},
+
 mobs:register_mob("amc:z2texturetest", {
 	type = "animal",
 	passive = true,
@@ -2941,10 +2949,7 @@ mobs:register_mob("amc:z2texturetest", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
 	mesh = "amc_2texturetest.b3d",
-	textures = {
-		{"amc_1.png^amc_2.png"},
-        --{"amc_2.png^amc_1.png"},
-	},
+    textures = {"amc_2.png", "amc_1.png"},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2952,6 +2957,29 @@ mobs:register_mob("amc:z2texturetest", {
 })
 
 mobs:register_egg("amc:z2texturetest", "2 Textures test", "amc_1.png", 0)
+
+--###################
+--################### 22 slime
+--###################
+
+mobs:register_mob("amc:z2texslime", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "slime_big.x",
+    textures = {"slime_outside.png","slime_inside.png","eye_right.png","eye_left.png","mouth.png"},
+	visual_size = {x=0.5, y=0.5},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+})
+
+mobs:register_egg("amc:z2texslime", "2 Tex slime", "amc_1.png", 0)
 
 --###################
 --################### BOAT
