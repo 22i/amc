@@ -1632,10 +1632,15 @@ mobs:register_mob("amc:26snowman", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_snowman.b3d",
-	textures = {
-		{"mobs_mc_snowman.png^mobs_mc_snowman_pumpkin.png"},
-        {"mobs_mc_snowman.png"},
-	},
+    textures = {
+                "mobs_mc_snowman.png", --snowman texture
+                "amc_pumpkin_side.png", --backside
+                "amc_pumpkin_top.png", --down
+                "amc_pumpkin_face_off.png", --front
+                "amc_pumpkin_side.png", --left
+                "amc_pumpkin_side.png", --right
+                "amc_pumpkin_top.png", --top
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
