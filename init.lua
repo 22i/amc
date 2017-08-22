@@ -85,7 +85,7 @@ mobs:register_mob("amc:0acow", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_cow.b3d",
-	textures = {"mobs_mc_cow.png", "amc_mushroom_red1.png"}, -- amc_mushroom_red1 is empty and transparent 16x16 png it removes the white problem
+	textures = {"mobs_mc_cow.png", "amc_transparent.png"}, -- amc_transparent is an empty&transparent16x16png-it removes the white undefined texture problem
     sounds = {
 		death = "amc_belieber"
 	},
@@ -111,7 +111,7 @@ mobs:register_egg("amc:0acow", "Super Cow", "mobs_mc_spawn_icon_cow.png", 0)
 --################### BABY COW
 --###################
 
-mobs:register_mob("amc:0babycow", {
+mobs:register_mob("amc:acowbaby", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -121,7 +121,7 @@ mobs:register_mob("amc:0babycow", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_cow_baby.b3d",
-	textures = {"mobs_mc_cow.png", "amc_mushroom_red1.png"},
+	textures = {"mobs_mc_cow.png", "amc_transparent.png"},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -138,7 +138,7 @@ mobs:register_mob("amc:0babycow", {
 	},
 })
 
-mobs:register_egg("amc:0babycow", "Baby Cow", "mobs_mc_spawn_icon_cow_baby.png", 0)
+mobs:register_egg("amc:0acowbaby", "Baby Cow", "mobs_mc_spawn_icon_cow_baby.png", 0)
 
 --###################
 --################### COW MOOSHROOM
@@ -177,7 +177,7 @@ mobs:register_egg("amc:0amooshroom", "Mooshroom", "mobs_mc_spawn_icon_mooshroom.
 --################### BABY COW MOOSHROOM
 --###################
 
-mobs:register_mob("amc:0babymooshroom", {
+mobs:register_mob("amc:0mooshroombaby", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -204,7 +204,7 @@ mobs:register_mob("amc:0babymooshroom", {
 	},
 })
 
-mobs:register_egg("amc:0babymooshroom", "Baby Mooshroom", "mobs_mc_spawn_icon_mooshroom_baby.png", 0)
+mobs:register_egg("amc:0mooshroombaby", "Baby Mooshroom", "mobs_mc_spawn_icon_mooshroom_baby.png", 0)
 
 --###################
 --################### CREEPER
@@ -640,8 +640,16 @@ mobs:register_mob("amc:13enderman", {
 	visual = "mesh",
 	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-		{"mobs_mc_enderman.png^mobs_mc_enderman_eyes.png^mobs_mc_enderman_block.png"},
-	},
+                "amc_transparent.png", --flower 90 degress 
+                "amc_flower_blue_orchid.png", --flower 45 degress
+                "amc_grass_side.png", --cube back
+                "amc_dirt.png", --cube down
+                "amc_grass_side.png", --cube front
+                "amc_grass_side.png", --cube left
+                "amc_grass_side.png", --cube right
+                "amc_grass_top.png", --cube top
+                "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
+    },
     sounds = {
 		death = "amc_watchingme"
 	},
@@ -674,7 +682,7 @@ mobs:register_egg("amc:13enderman", "Enderman", "mobs_mc_spawn_icon_enderman.png
 -- 161-200 non agressive walking with a block
 -- 200-200 standing with a block
         
-mobs:register_mob("amc:13benderman", {
+mobs:register_mob("amc:13endermanf", {
 	type = "monster",
     attack_type = "dogfight",
     damage = 1,
@@ -685,8 +693,16 @@ mobs:register_mob("amc:13benderman", {
 	visual = "mesh",
 	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-		{"mobs_mc_enderman.png^mobs_mc_enderman_eyes.png^mobs_mc_enderman_block.png"},
-	},
+                "amc_transparent.png", --flower 90 degress 
+                "amc_transparent.png", --flower 45 degress
+                "amc_grass_side.png", --cube back
+                "amc_dirt.png", --cube down
+                "amc_grass_side.png", --cube front
+                "amc_grass_side.png", --cube left
+                "amc_grass_side.png", --cube right
+                "amc_grass_top.png", --cube top
+                "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -706,7 +722,57 @@ mobs:register_mob("amc:13benderman", {
 	},
 })
 
-mobs:register_egg("amc:13benderman", "Enderman with a block", "mobs_mc_spawn_icon_enderman_block.png", 0)
+mobs:register_egg("amc:13endermanf", "Enderman with a block", "mobs_mc_spawn_icon_enderman_block.png", 0)
+
+--###################
+--################### ENDERMAN FLOWER
+--###################
+
+-- 121-160 agressive walking with a block
+-- 161-200 non agressive walking with a block
+-- 200-200 standing with a block
+        
+mobs:register_mob("amc:13fenderman", {
+	type = "monster",
+    attack_type = "dogfight",
+    damage = 1,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 2.3, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_enderman.b3d",
+	textures = {
+                "amc_transparent.png", --flower 90 degress -- choice between rotated 90 or 45 degress
+                "amc_flower_blue_orchid.png", --flower 45 degress
+                "amc_transparent.png", --cube back
+                "amc_transparent.png", --cube down
+                "amc_transparent.png", --cube front
+                "amc_transparent.png", --cube left
+                "amc_transparent.png", --cube right
+                "amc_transparent.png", --cube top
+                "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
+		stand_start = 200,
+        stand_end = 200,
+		walk_start = 161,
+        walk_end = 200,
+		run_start = 161,
+        run_end = 200,
+        punch_start = 121,
+        punch_end = 160,
+	},
+})
+
+mobs:register_egg("amc:13fenderman", "Enderman with a flower", "mobs_mc_spawn_icon_enderman_flower.png", 0)
 
 --###################
 --################### ENDERMITE
