@@ -1550,9 +1550,10 @@ mobs:register_mob("amc:24sheep", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_sheep.b3d",
-	textures = {
-		{"mobs_mc_sheep.png"},
-	},
+    textures = {
+                "mobs_mc_sheep_fur.png", -- fur
+                "mobs_mc_sheep.png", --sheep texture
+    },
     gotten_texture = {"mobs_mc_old_sheeps.png"},
     gotten_mesh = "mobs_mc_sheep_sheared.b3d",
 	visual_size = {x=3, y=3},
@@ -1587,10 +1588,11 @@ mobs:register_mob("amc:24nakedsheep", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_sheep_sheared.b3d",
+	mesh = "mobs_mc_sheep.b3d",
 	textures = {
-		{"mobs_mc_sheep.png"},
-	},
+                "amc_transparent.png", --no fur transparent = no fur 
+                "mobs_mc_sheep.png", --sheep texture
+    },
     gotten_texture = {"sheep.png"},
     gotten_mesh = "sheepfur.b3d",
 	visual_size = {x=3, y=3},
@@ -1627,8 +1629,9 @@ mobs:register_mob("amc:24babysheep", {
 	visual = "mesh",
 	mesh = "mobs_mc_sheep_baby.b3d",
 	textures = {
-		{"mobs_mc_sheep.png"},
-	},
+                "mobs_mc_sheep_fur.png", -- fur
+                "mobs_mc_sheep.png", --sheep texture
+    },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
