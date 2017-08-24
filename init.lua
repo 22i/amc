@@ -3164,31 +3164,6 @@ mobs:register_mob("amc:84chest", {
 mobs:register_egg("amc:84chest", "Chest", "amc_spawn_icon_normal.png", 0)
 
 --###################
---################### MINECART
---###################
-
-mobs:register_mob("amc:85minecart", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-	visual = "mesh",
-	mesh = "amc_minecart.b3d",
-    textures = {
-        {"amc_minecart.png"},
-    },
-	visual_size = {x=1, y=1},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-})
-
-mobs:register_egg("amc:85minecart", "Minecart", "amc_minecart_normal.png", 0)
-
---###################
 --################### BED
 --###################
 
@@ -3549,8 +3524,8 @@ mobs:register_mob("amc:endercrystal", {
         {"amc_endercrystal.png"}
     },
 	visual_size = {x=6, y=6},
-	walk_velocity = 0.6,
-	run_velocity = 2,
+	walk_velocity = 0.000000000006,
+	run_velocity = 0.0000000000002,
 	jump = true,
     animation = {
         stand_speed = 25,
@@ -3566,6 +3541,240 @@ mobs:register_mob("amc:endercrystal", {
 })
 
 mobs:register_egg("amc:endercrystal", "endercrystal animation", "amc_endercrystal_inv.png", 0)
+
+--###################
+--################### HOPPER DOWN facedir
+--###################
+
+minetest.register_node('amc:hopper_down_facedir', {
+   description = 'Hopper down facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_hopper_down_f.b3d',
+   tiles = {"amc_hopper_inside.png", "amc_hopper_outside.png", "amc_hopper_top.png"},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   inventory_image = "amc_hopper.png",
+   wield_image = "amc_hopper.png",
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### HOPPER ONWALL facedir
+--###################
+
+minetest.register_node('amc:hopper_onwall_facedir', {
+   description = 'Hopper onwall facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_hopper_onwall_f.b3d',
+   tiles = {"amc_hopper_inside.png", "amc_hopper_outside.png", "amc_hopper_top.png"},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   inventory_image = "amc_hopper.png",
+   wield_image = "amc_hopper.png",
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### MINECART
+--###################
+
+mobs:register_mob("amc:84minecart", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart.b3d",
+    textures = {
+                "amc_minecart.png", --minecart
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart", "Minecart", "amc_minecart_normal.png", 0)
+
+--###################
+--################### MINECART FURNACE
+--###################
+
+mobs:register_mob("amc:84minecart_furnace", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart_block.b3d",
+    textures = {
+                "amc_furnace_top.png", --furnace_top
+                "amc_furnace_top.png", --furnace_bottom
+                "amc_furnace_front_off.png", --furnace_front
+                "amc_furnace_side.png", --furnace_backside
+                "amc_furnace_side.png", --furnace_left
+                "amc_furnace_side.png", --furnace_right
+                "amc_minecart.png", --minecart
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart_furnace", "Minecart furnace", "amc_minecart_furnace.png", 0)
+
+--###################
+--################### MINECART TNT
+--###################
+
+mobs:register_mob("amc:84minecart_tnt", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart_block.b3d",
+    textures = {
+                "amc_tnt_top.png", --tnt_top
+                "amc_tnt_bottom.png", --tnt_bottom
+                "amc_tnt_side.png", --tnt_front
+                "amc_tnt_side.png", --tnt_backside
+                "amc_tnt_side.png", --tnt_left
+                "amc_tnt_side.png", --tnt_right
+                "amc_minecart.png", --minecart
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart_tnt", "Minecart tnt", "amc_minecart_tnt.png", 0)
+
+--###################
+--################### MINECART COMMAND BLOCK
+--###################
+
+--command block - texture animation?
+        
+--https://github.com/minetest/minetest/blob/master/doc/lua_api.txt#L395
+
+--https://github.com/minetest-mods/pbj_pup/blob/master/init.lua#L56
+        
+mobs:register_mob("amc:84minecart_command", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart_block.b3d",
+    textures = {
+                "amc_command_block_side16.png", --block_top
+                "amc_command_block_side16.png", --block_bottom
+                "amc_command_block_front16.png", --block_front
+                "amc_command_block_back16.png", --block_backside
+                "amc_command_block_side16.png^[transformR90]", --block_left
+                "amc_command_block_side16.png^[transformFXR270]", --block_right
+                "amc_minecart.png", --minecart
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart_command", "Minecart command block", "amc_minecart_command_block.png", 0)
+
+--###################
+--################### MINECART CHEST
+--###################
+
+mobs:register_mob("amc:84minecart_chest", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart_chest.b3d",
+    textures = {
+                "amc_normal.png", --minecart amc_minecart
+                "amc_minecart.png", --chest
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart_chest", "Minecart chest", "amc_minecart_chest.png", 0)
+
+--###################
+--################### MINECART HOPPER
+--###################
+
+mobs:register_mob("amc:84minecart_hopper", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_minecart_hopper.b3d",
+    textures = {
+                "amc_hopper_inside.png", --hopper_inside
+                "amc_minecart.png", --minecart
+                "amc_hopper_outside.png", --hopper_outside
+                "amc_hopper_top.png", --hopper_top
+    },
+	visual_size = {x=1, y=1},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:84minecart_hopper", "Minecart hopper", "amc_minecart_hopper.png", 0)
 
 --###################
 --################### PAINTINGS 16x16 #1 facedir
