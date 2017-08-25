@@ -650,9 +650,7 @@ mobs:register_mob("amc:13enderman", {
                 "amc_grass_top.png", --cube top
                 "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
     },
-    sounds = {
-		death = "amc_watchingme"
-	},
+    sounds = {death = "amc_watchingme"},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1246,7 +1244,9 @@ mobs:register_mob("amc:21pig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-		{"mobs_mc_pig.png"},
+        "amc_transparent.png",
+		"mobs_mc_pig.png",
+        "amc_transparent.png",
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1282,7 +1282,9 @@ mobs:register_mob("amc:21saddlepig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-		{"mobs_mc_pig.png^mobs_mc_pig_saddle.png"},
+        "amc_transparent.png",
+		"mobs_mc_pig.png",
+        "mobs_mc_pig_saddle.png",
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1316,9 +1318,11 @@ mobs:register_mob("amc:21babypig", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_pig_baby.b3d",
+	mesh = "mobs_mc_pig.b3d",
 	textures = {
-		{"mobs_mc_pig.png"},
+        "mobs_mc_pig.png",
+		"mobs_mc_pig.png",
+        "amc_transparent.png",
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 1.5,
@@ -1858,13 +1862,11 @@ mobs:register_mob("amc:33wolf", {
 	textures = {
 		{"mobs_mc_wolf.png"},
 	},
-    sounds = {
-		death = "amc_whodogs"
-	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 2,
 	run_velocity = 4,
 	jump = true,
+    sounds = {death = "amc_whodogs"},
 	animation = {
         stand_speed = 50,
         walk_speed = 50,
