@@ -1,11 +1,11 @@
 --[[ collision box
 {-1, -0.5, -1, 1, 3, 1}, Right, Bottom, Back, Left, Top, Front
 --]]
-
+    
 --###################
 --################### CHICKEN
 --###################
-
+        
 mobs:register_mob("amc:6chicken", {
 	type = "animal",
 	passive = true,
@@ -968,12 +968,12 @@ mobs:register_mob("amc:20cllama", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
-    textures = {
-        {"mobs_mc_llama_brown.png"},
-        {"mobs_mc_llama_creamy.png"},
-        {"mobs_mc_llama_gray.png"},
-        {"mobs_mc_llama_white.png"},
-        {"mobs_mc_llama.png"},
+    textures = { --1chest --2decor --3llama base texture
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_brown.png"},
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"},
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_gray.png"},
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_white.png"},
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1008,87 +1008,12 @@ mobs:register_mob("amc:20dswagllama", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
-    textures = {
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_black.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_black.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_black.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_black.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_black.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_blue.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_blue.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_blue.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_blue.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_blue.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_brown.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_brown.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_brown.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_brown.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_brown.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_cyan.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_cyan.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_cyan.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_cyan.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_cyan.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_gray.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_gray.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_gray.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_gray.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_gray.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_green.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_green.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_green.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_green.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_light_blue.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_light_blue.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_light_blue.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_light_blue.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_light_blue.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_lime.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_lime.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_lime.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_lime.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_magenta.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_magenta.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_magenta.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_magenta.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_magenta.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_orange.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_orange.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_orange.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_orange.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_orange.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_pink.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_pink.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_pink.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_pink.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_pink.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_purple.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_purple.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_purple.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_purple.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_purple.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_red.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_red.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_red.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_red.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_red.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_silver.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_silver.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_silver.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_silver.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_silver.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_white.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_white.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_white.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_white.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_white.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_yellow.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_yellow.png"},
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_yellow.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_yellow.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_yellow.png"},
+    textures = { --1chest --2decor --3llama base texture
+        {"amc_transparent.png", "mobs_mc_decor_black.png", "mobs_mc_llama_brown.png"},
+        {"amc_transparent.png", "mobs_mc_decor_lime.png", "mobs_mc_llama_creamy.png"},
+        {"amc_transparent.png", "mobs_mc_decor_pink.png", "mobs_mc_llama_gray.png"},
+        {"amc_transparent.png", "mobs_mc_decor_magenta.png", "mobs_mc_llama_white.png"},
+        {"amc_transparent.png", "mobs_mc_decor_blue.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1123,12 +1048,12 @@ mobs:register_mob("amc:20ecllama", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
-    textures = {
-        {"mobs_mc_llama_gray.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_llama_chest.png"},
+    textures = { --1chest --2decor --3llama base texture
+        {"mobs_mc_llama_brown.png", "amc_transparent.png", "mobs_mc_llama_brown.png"},
+        {"mobs_mc_llama_creamy.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"},
+        {"mobs_mc_llama_gray.png", "amc_transparent.png", "mobs_mc_llama_gray.png"},
+        {"mobs_mc_llama_white.png", "amc_transparent.png", "mobs_mc_llama_white.png"},
+        {"mobs_mc_llama.png", "amc_transparent.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1163,12 +1088,12 @@ mobs:register_mob("amc:20edllama", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
-    textures = {
-        {"mobs_mc_llama_gray.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_white.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png^mobs_mc_llama_chest.png"},
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png^mobs_mc_llama_chest.png"},
+    textures = { --1chest --2decor --3llama base texture
+        {"mobs_mc_llama_brown.png", "mobs_mc_decor_black.png", "mobs_mc_llama_brown.png"},
+        {"mobs_mc_llama_creamy.png", "mobs_mc_decor_black.png", "mobs_mc_llama_creamy.png"},
+        {"mobs_mc_llama_gray.png", "mobs_mc_decor_black.png", "mobs_mc_llama_gray.png"},
+        {"mobs_mc_llama_white.png", "mobs_mc_decor_black.png", "mobs_mc_llama_white.png"},
+        {"mobs_mc_llama.png", "mobs_mc_decor_black.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1203,12 +1128,12 @@ mobs:register_mob("amc:20babyllama", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_llama_baby.b3d",
-    textures = {
-        {"mobs_mc_llama_gray.png"}, --just baby lama
-        {"mobs_mc_llama_white.png"}, --just baby lama
-        {"mobs_mc_llama.png^mobs_mc_llama_chest.png"}, --chest baby lama
-        {"mobs_mc_llama_brown.png^mobs_mc_decor_green.png"},   --swag baby lama
-        {"mobs_mc_llama_creamy.png^mobs_mc_decor_lime.png^mobs_mc_llama_chest.png"}, --swag and chest baby lama
+    textures = { --1chest --2decor --3llama base texture
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_brown.png"}, --just baby lama
+        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"}, --just baby lama
+        {"mobs_mc_llama_gray.png", "amc_transparent.png", "mobs_mc_llama_gray.png"}, --chest baby lama
+        {"amc_transparent.png", "mobs_mc_decor_black.png", "mobs_mc_llama_white.png"}, --swag baby lama
+        {"mobs_mc_llama.png", "mobs_mc_decor_black.png", "mobs_mc_llama.png"}, --swag and chest baby lama
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -1244,9 +1169,9 @@ mobs:register_mob("amc:21pig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-        "amc_transparent.png",
-		"mobs_mc_pig.png",
-        "amc_transparent.png",
+        "amc_transparent.png", --baby
+		"mobs_mc_pig.png", --pig base texture
+        "amc_transparent.png", --saddle
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1282,9 +1207,9 @@ mobs:register_mob("amc:21saddlepig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-        "amc_transparent.png",
-		"mobs_mc_pig.png",
-        "mobs_mc_pig_saddle.png",
+        "amc_transparent.png", --baby
+		"mobs_mc_pig.png", --pig base texture
+        "mobs_mc_pig_saddle.png", --saddle
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1320,9 +1245,9 @@ mobs:register_mob("amc:21babypig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-        "mobs_mc_pig.png",
-		"mobs_mc_pig.png",
-        "amc_transparent.png",
+        "mobs_mc_pig.png", --baby
+		"mobs_mc_pig.png", --pig base texture
+        "amc_transparent.png", --saddle
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 1.5,
