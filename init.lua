@@ -86,9 +86,6 @@ mobs:register_mob("amc:0acow", {
 	visual = "mesh",
 	mesh = "mobs_mc_cow.b3d",
 	textures = {"mobs_mc_cow.png", "amc_transparent.png"}, -- amc_transparent is an empty&transparent16x16png-it removes the white undefined texture problem
-    sounds = {
-		death = "amc_belieber"
-	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -103,6 +100,12 @@ mobs:register_mob("amc:0acow", {
 		run_start = 0,
         run_end = 40,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_belieber", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:0acow", "Super Cow", "mobs_mc_spawn_icon_cow.png", 0)
@@ -595,12 +598,7 @@ mobs:register_mob("amc:12enderdragon", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_ender_dragon.b3d",
-	textures = {
-		{"mobs_mc_dragon.png"},
-	},
-    sounds = {
-		death = "amc_intheend"
-	},
+	textures = {{"mobs_mc_dragon.png"}},
 	visual_size = {x=1, y=1},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -616,6 +614,12 @@ mobs:register_mob("amc:12enderdragon", {
 		run_start = 0,
         run_end = 20,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_intheend", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:12enderdragon", "Ender Dragon", "mobs_mc_spawn_icon_dragon.png", 0)
@@ -650,7 +654,6 @@ mobs:register_mob("amc:13enderman", {
                 "amc_grass_top.png", --cube top
                 "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
     },
-    sounds = {death = "amc_watchingme"},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -668,6 +671,12 @@ mobs:register_mob("amc:13enderman", {
         punch_start = 81,
         punch_end = 120,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_watchingme", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:13enderman", "Enderman", "mobs_mc_spawn_icon_enderman.png", 0)
@@ -1282,12 +1291,7 @@ mobs:register_mob("amc:22zombie", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.8, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_zombie.b3d",
-	textures = {
-		{"mobs_mc_zombie.png"},
-	},
-    sounds = {
-		death = "amc_chainedtorhyme"
-	},
+	textures = {{"mobs_mc_zombie.png"}},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -1303,6 +1307,12 @@ mobs:register_mob("amc:22zombie", {
 		run_start = 0,
         run_end = 40,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_chainedtorhyme", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:22zombie", "Zombie", "mobs_mc_spawn_icon_zombie.png", 0)
@@ -1791,7 +1801,6 @@ mobs:register_mob("amc:33wolf", {
 	walk_velocity = 2,
 	run_velocity = 4,
 	jump = true,
-    sounds = {death = "amc_whodogs"},
 	animation = {
         stand_speed = 50,
         walk_speed = 50,
@@ -1803,6 +1812,12 @@ mobs:register_mob("amc:33wolf", {
 		run_start = 0,
         run_end = 40,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_whodogs", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:33wolf", "Lone Wolf", "mobs_mc_spawn_icon_wolf.png", 0)
@@ -2100,12 +2115,7 @@ mobs:register_mob("amc:38cavespider", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.7, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_spider.b3d",
-	textures = {
-		{"mobs_mc_cave_spider.png"},
-	},
-    sounds = {
-		death = "amc_bitspider"
-	},
+	textures = {{"mobs_mc_cave_spider.png"}},
 	visual_size = {x=2, y=2},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2121,6 +2131,12 @@ mobs:register_mob("amc:38cavespider", {
 		run_start = 0,
         run_end = 40,
 	},
+    do_custom = function(self, dtime)
+       if not self.startup_sound then
+          minetest.sound_play("amc_bitspider", {object = self.object})
+          self.startup_sound = true -- sound played so toggle switch
+       end
+    end,
 })
 
 mobs:register_egg("amc:38cavespider", "Itsy Bitsy Cave Spider", "mobs_mc_spawn_icon_cave_spider.png", 0)
@@ -2140,7 +2156,11 @@ mobs:register_mob("amc:51pigman", {
 	visual = "mesh",
 	mesh = "mobs_mc_zombie_pigman.b3d",
     textures = {
-        {"mobs_mc_zombie_pigman.png^mobs_mc_zombie_pigman_sword.png"},
+        {
+            "amc_transparent.png",
+            "amc_gold_sword.png",
+            "mobs_mc_zombie_pigman.png",
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2176,9 +2196,13 @@ mobs:register_mob("amc:51babypigman", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_zombie_pigman_baby.b3d",
+	mesh = "mobs_mc_zombie_pigman.b3d",
     textures = {
-        {"mobs_mc_zombie_pigman.png^mobs_mc_zombie_pigman_sword.png"},
+        {
+            "mobs_mc_zombie_pigman.png",
+            "amc_gold_sword.png",
+            "mobs_mc_zombie_pigman.png",
+        },
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
@@ -2216,13 +2240,41 @@ mobs:register_mob("amc:52bbhorse", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_horse_black.png"},
-        {"mobs_mc_horse_brown.png"},
-        {"mobs_mc_horse_chestnut.png"},
-        {"mobs_mc_horse_creamy.png"},
-        {"mobs_mc_horse_darkbrown.png"},
-        {"mobs_mc_horse_gray.png"},
-        {"mobs_mc_horse_white.png"}
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_black.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_brown.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_chestnut.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_creamy.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_darkbrown.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_gray.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_white.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2258,13 +2310,41 @@ mobs:register_mob("amc:52msaddlehorse", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_horse_black.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_brown.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_creamy.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_gray.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_white.png^mobs_mc_horse_saddle.png"},
+        {
+            "amc_transparent.png", --no chest horses dont have chest texture
+            "mobs_mc_horse_black.png", --horse base texture
+            "mobs_mc_horse_black.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_brown.png", --horse base texture
+            "mobs_mc_horse_brown.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_chestnut.png", --horse base texture
+            "mobs_mc_horse_chestnut.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_creamy.png", --horse base texture
+            "mobs_mc_horse_creamy.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_darkbrown.png", --horse base texture
+            "mobs_mc_horse_darkbrown.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_gray.png", --horse base texture
+            "mobs_mc_horse_gray.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_white.png", --horse base texture
+            "mobs_mc_horse_white.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2300,13 +2380,41 @@ mobs:register_mob("amc:52chesthorse", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_horse_black.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_brown.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_creamy.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_gray.png^mobs_mc_horse_chest.png"},
-        {"mobs_mc_horse_white.png^mobs_mc_horse_chest.png"},
+        {
+            "mobs_mc_horse_black.png", --chest
+            "mobs_mc_horse_black.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_brown.png", --chest
+            "mobs_mc_horse_brown.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_chestnut.png", --chest
+            "mobs_mc_horse_chestnut.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_creamy.png", --chest
+            "mobs_mc_horse_creamy.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_darkbrown.png", --chest
+            "mobs_mc_horse_darkbrown.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_gray.png", --chest
+            "mobs_mc_horse_gray.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "mobs_mc_horse_white.png", --chest
+            "mobs_mc_horse_white.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2342,13 +2450,41 @@ mobs:register_mob("amc:52rmourhorse", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png"},
-        {"mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png"},
-        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png"},
-        {"mobs_mc_horse_creamy.png^mobs_mc_horse_armor_iron.png"},
-        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_iron.png"},
-        {"mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png"},
-        {"mobs_mc_horse_white.png^mobs_mc_horse_armor_iron.png"},
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_creamy.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_gold.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_white.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "amc_transparent.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2384,13 +2520,41 @@ mobs:register_mob("amc:52zeverythinghorse", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_creamy.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
-        {"mobs_mc_horse_white.png^mobs_mc_horse_armor_iron.png^mobs_mc_horse_chest.png^mobs_mc_horse_saddle.png"},
+        {
+            "mobs_mc_horse_black.png", --chest
+            "mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "mobs_mc_horse_black.png", --saddle
+        },
+        {
+            "mobs_mc_horse_brown.png", --chest
+            "mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png", --horse base texture
+            "mobs_mc_horse_brown.png", --saddle
+        },
+        {
+            "mobs_mc_horse_chestnut.png", --chest
+            "mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png", --horse base texture
+            "mobs_mc_horse_chestnut.png", --saddle
+        },
+        {
+            "mobs_mc_horse_creamy.png", --chest
+            "mobs_mc_horse_creamy.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "mobs_mc_horse_creamy.png", --saddle
+        },
+        {
+            "mobs_mc_horse_darkbrown.png", --chest
+            "mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_gold.png", --horse base texture
+            "mobs_mc_horse_darkbrown.png", --saddle
+        },
+        {
+            "mobs_mc_horse_gray.png", --chest
+            "mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png", --horse base texture
+            "mobs_mc_horse_gray.png", --saddle
+        },
+        {
+            "mobs_mc_horse_white.png", --chest
+            "mobs_mc_horse_white.png^mobs_mc_horse_armor_diamond.png", --horse base texture
+            "mobs_mc_horse_white.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2473,7 +2637,11 @@ mobs:register_mob("amc:53horsemule", {
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
     textures = {
-        {"mobs_mc_mule.png"},
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_mule.png", --base texture
+            "amc_transparent.png", --saddle
+        },
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2508,7 +2676,13 @@ mobs:register_mob("amc:53horsedonkey", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
-    textures = {{"mobs_mc_donkey.png"}},
+    textures = {
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_donkey.png", --base texture
+            "amc_transparent.png", --saddle
+        },
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2542,7 +2716,13 @@ mobs:register_mob("amc:54horseskeleton", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
-    textures = {{"mobs_mc_horse_skeleton.png"}},
+    textures = {
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_skeleton.png", --base texture
+            "amc_transparent.png", --saddle
+        },
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -2576,7 +2756,13 @@ mobs:register_mob("amc:55horsezombie", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 2, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_horse.b3d",
-    textures = {{"mobs_mc_horse_zombie.png"}},
+    textures = {
+        {
+            "amc_transparent.png", --chest
+            "mobs_mc_horse_zombie.png", --base texture
+            "amc_transparent.png", --saddle
+        },
+    },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -3702,6 +3888,387 @@ mobs:register_mob("amc:84minecart_hopper", {
 })
 
 mobs:register_egg("amc:84minecart_hopper", "Minecart hopper", "amc_minecart_hopper.png", 0)
+
+--###################
+--################### PAINTING ENTITY 16x16
+--###################
+
+mobs:register_mob("amc:paintings16x16", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting16x16.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings16x16", "Painting entity 1x1", "amc_painting16x16_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 16x32
+--###################
+
+mobs:register_mob("amc:paintings16x32", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting16x32.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings16x32", "Painting entity 1x2", "amc_painting16x32_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 32x16
+--###################
+
+mobs:register_mob("amc:paintings32x16", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting32x16.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings32x16", "Painting entity 2x1", "amc_painting32x16_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 32x32
+--###################
+
+mobs:register_mob("amc:paintings32x32", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting32x32.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings32x32", "Painting entity 2x2", "amc_painting32x32_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 16x16
+--###################
+
+mobs:register_mob("amc:paintings64x32", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting64x32.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings64x32", "Painting entity 4x2", "amc_painting64x32_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 64x48
+--###################
+
+mobs:register_mob("amc:paintings64x48", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting64x48.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings64x48", "Painting entity 4x3", "amc_painting64x48_1.png", 0)
+
+--###################
+--################### PAINTING ENTITY 64x64
+--###################
+
+mobs:register_mob("amc:paintings64x64", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-10/16., -0.5, -10/16, 10/16, 0.25, 10/16},
+    rotate = -180,
+	visual = "mesh",
+	mesh = "amc_painting64x64.b3d",
+    textures = {
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       'amc_transparent.png',
+       },
+       {
+       'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
+       'amc_transparent.png',
+       'amc_transparent.png',
+       'amc_paintings_kristoffer_zetterstrand.png',
+       },
+   },
+	visual_size = {x=10, y=10},
+	walk_velocity = 0.0000001,
+	run_velocity = 0.000002,
+	jump = true,
+})
+
+mobs:register_egg("amc:paintings64x64", "Painting entity 4x4", "amc_painting64x64_1.png", 0)
 
 --###################
 --################### PAINTINGS 16x16 #1 facedir
