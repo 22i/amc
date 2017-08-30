@@ -1946,6 +1946,17 @@ mobs:register_egg("amc:34shulker", "Shulker", "mobs_mc_spawn_icon_shulker.png", 
 --################### SKELETON
 --###################
 
+--standing 0-40
+--moving 40-60
+--bow up 60-70
+--bow strike 70-90
+--bow down 90-100
+--sword up 100-110
+--sword strike 110-130
+--sword down 130-140
+--hurt 140-160
+--death 160-170
+        
 mobs:register_mob("amc:35skeleton", {
 	type = "monster",
     attack_type = "shoot",
@@ -1959,7 +1970,10 @@ mobs:register_mob("amc:35skeleton", {
 	visual = "mesh",
 	mesh = "mobs_mc_skeleton.b3d",
 	textures = {
-		{"mobs_mc_skeleton.png^mobs_mc_skeleton_bow.png"},
+		{
+            "mobs_mc_bow_standby.png", --bow
+            "mobs_mc_skeleton.png", --skeleton base texture
+        },
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1975,8 +1989,8 @@ mobs:register_mob("amc:35skeleton", {
 		walk_end = 60,
         shoot_start = 70,
         shoot_end = 90,
-        die_start = 120,
-        die_end = 130,
+        die_start = 160,
+        die_end = 170,
         die_speed = 15,
         die_loop = false,
 	},
@@ -1998,7 +2012,10 @@ mobs:register_mob("amc:37witherskeleton", {
 	visual = "mesh",
 	mesh = "mobs_mc_wither_skeleton.b3d",
 	textures = {
-		{"mobs_mc_wither_skeleton.png^mobs_mc_wither_skeleton_sword.png"},
+		{
+            "mobs_mc_stone_sword.png", --stone sword
+            "mobs_mc_wither_skeleton.png", --wither skeleton base texture
+        },
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2012,10 +2029,10 @@ mobs:register_mob("amc:37witherskeleton", {
 		stand_end = 40,
 		walk_start = 40,
 		walk_end = 60,
-        punch_start = 70,
-        punch_end = 90,
-        die_start = 120,
-        die_end = 130,
+        punch_start = 110,
+        punch_end = 130,
+        die_start = 160,
+        die_end = 170,
         die_speed = 15,
         die_loop = false,
 	},
@@ -2027,7 +2044,7 @@ mobs:register_egg("amc:37witherskeleton", "Wither Skeleton", "mobs_mc_spawn_icon
 --################### STRAY
 --###################
 
-mobs:register_mob("amc:36stray", {
+mobs:register_mob("amc:36skeletonstray", {
 	type = "monster",
     attack_type = "shoot",
     shoot_interval = 0.5,
@@ -2040,7 +2057,11 @@ mobs:register_mob("amc:36stray", {
 	visual = "mesh",
 	mesh = "mobs_mc_skeleton_stray.b3d",
 	textures = {
-		{"mobs_mc_stray.png^mobs_mc_stray_bow.png"},
+		{
+            "mobs_mc_bow_standby.png", --bow
+            "mobs_mc_stray.png", --stray base texture
+            "mobs_mc_stray_overlay.png", --stray overlay
+        },
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -2056,14 +2077,14 @@ mobs:register_mob("amc:36stray", {
 		walk_end = 60,
         shoot_start = 70,
         shoot_end = 90,
-        die_start = 120,
-        die_end = 130,
+        die_start = 160,
+        die_end = 170,
         die_speed = 15,
         die_loop = false,
 	},
 })
 
-mobs:register_egg("amc:36stray", "Stray", "mobs_mc_spawn_icon_stray.png", 0)
+mobs:register_egg("amc:36skeletonstray", "Stray", "mobs_mc_spawn_icon_stray.png", 0)
 
 --###################
 --################### SPIDER
@@ -4164,7 +4185,7 @@ mobs:register_mob("amc:paintings32x32", {
 mobs:register_egg("amc:paintings32x32", "Painting entity 2x2", "amc_painting32x32_1.png", 0)
 
 --###################
---################### PAINTING ENTITY 16x16
+--################### PAINTING ENTITY 64x32
 --###################
 
 mobs:register_mob("amc:paintings64x32", {

@@ -6,7 +6,7 @@ amc is a Minetest mod made to quickly test how the Minecraft mobs look like in M
 - to spawn mobs find spawn eggs in creative inventory.
 
 ## depends on - [ Mobs Redo](https://forum.minetest.net/viewtopic.php?t=9917)
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" width="25"> [Minecraft Blender models](https://github.com/22i/minecraft-voxel-blender-models) <br /> <img src="https://avatars0.githubusercontent.com/u/10661113?v=4&s=400" width="25"> [mobs_mc](https://github.com/maikerumine/mobs_mc) - test mob abilities <img align="right" width="525" src="http://i.imgur.com/Y27V0v6.png"> <br /> <img src="http://repo.or.cz/MineClone/MineClone2.git/blob_plain/e2442a6283e164fa0c259edcad9f0928000103db:/menu/icon.png" width="32"> [MineClone2](https://forum.minetest.net/viewtopic.php?t=16407) - Minecraft clone
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" width="25"> [Minecraft Blender models](https://github.com/22i/minecraft-voxel-blender-models) <br /> <img src="https://avatars0.githubusercontent.com/u/10661113?v=4&s=400" width="25"> [mobs_mc](https://github.com/maikerumine/mobs_mc) - test mob abilities <img align="right" width="525" src="http://i.imgur.com/Y27V0v6.png"> <br /> <img src="http://repo.or.cz/MineClone/MineClone2.git/blob_plain/e2442a6283e164fa0c259edcad9f0928000103db:/menu/icon.png" width="32"> [MineClone2](https://forum.minetest.net/viewtopic.php?t=16407) - test epic Minecraft
 
 ## Suggested mods
 - [tool that changes mob's texture](https://forum.minetest.net/viewtopic.php?f=47&t=17583&p=271043#p269714)
@@ -36,3 +36,5 @@ amc is a Minetest mod made to quickly test how the Minecraft mobs look like in M
 <img src="https://avatars3.githubusercontent.com/u/1088750?v=4&s=400" width="45"> [Jordan4Ibanez](https://www.youtube.com/user/313hummer/videos) making OpenAi
 
 <img src="https://forum.minetest.net/download/file.php?avatar=11478_1492572385.png" width="45"> [Christian9](https://forum.minetest.net/search.php?author_id=11478&sr=posts) help with 2 different textures on 1 mob
+
+<img src="https://avatars1.githubusercontent.com/u/29333817?v=4&s=400" width="45"> [kingofscargames](https://github.com/kingoscargames) making new mob textures
