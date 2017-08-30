@@ -1723,7 +1723,10 @@ mobs:register_mob("amc:30vex", {
 	visual = "mesh",
 	mesh = "mobs_mc_vex.b3d",
 	textures = {
-		{"mobs_mc_vex.png^mobs_mc_vex_sword.png"},
+		{
+            "mobs_mc_iron_sword.png",
+            "mobs_mc_vex.png",
+        },
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
