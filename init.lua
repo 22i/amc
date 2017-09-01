@@ -2028,6 +2028,7 @@ mobs:register_mob("amc:37witherskeleton", {
         stand_speed = 15,
         walk_speed = 15,
 		run_speed = 30,
+        punch_speed = 25,
 		stand_start = 0,
 		stand_end = 40,
 		walk_start = 40,
