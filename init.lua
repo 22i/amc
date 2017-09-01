@@ -2111,15 +2111,15 @@ mobs:register_mob("amc:38spider", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        stand_speed = 25,
+        stand_speed = 10,
         walk_speed = 25,
         run_speed = 50,
-		stand_start = 40,
-        stand_end = 80,
+		stand_start = 20,
+        stand_end = 40,
 		walk_start = 0,
-        walk_end = 40,
+        walk_end = 20,
 		run_start = 0,
-        run_end = 40,
+        run_end = 20,
 	},
 })
 
@@ -2145,15 +2145,15 @@ mobs:register_mob("amc:38cavespider", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        stand_speed = 25,
+        stand_speed = 10,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 40,
-        stand_end = 80,
+		stand_start = 20,
+        stand_end = 40,
 		walk_start = 0,
-        walk_end = 40,
+        walk_end = 20,
 		run_start = 0,
-        run_end = 40,
+        run_end = 20,
 	},
     do_custom = function(self, dtime)
        if not self.startup_sound then
