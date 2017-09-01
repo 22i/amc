@@ -85,7 +85,7 @@ mobs:register_mob("amc:0acow", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_cow.b3d",
-	textures = {"mobs_mc_cow.png", "amc_transparent.png"}, -- amc_transparent is an empty&transparent16x16png-it removes the white undefined texture problem
+	textures = {"mobs_mc_cow.png", "blank.png"}, -- blank is an empty&transparent png-it removes the white undefined texture problem
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -114,7 +114,7 @@ mobs:register_egg("amc:0acow", "Super Cow", "mobs_mc_spawn_icon_cow.png", 0)
 --################### BABY COW
 --###################
 
-mobs:register_mob("amc:acowbaby", {
+mobs:register_mob("amc:0acowbaby", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -124,7 +124,7 @@ mobs:register_mob("amc:acowbaby", {
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_cow_baby.b3d",
-	textures = {"mobs_mc_cow.png", "amc_transparent.png"},
+	textures = {"mobs_mc_cow.png", "blank.png"},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
@@ -644,7 +644,7 @@ mobs:register_mob("amc:13enderman", {
 	visual = "mesh",
 	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-                "amc_transparent.png", --flower 90 degress 
+                "blank.png", --flower 90 degress 
                 "amc_flower_blue_orchid.png", --flower 45 degress
                 "amc_grass_side.png", --cube back
                 "amc_dirt.png", --cube down
@@ -700,8 +700,8 @@ mobs:register_mob("amc:13endermanf", {
 	visual = "mesh",
 	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-                "amc_transparent.png", --flower 90 degress 
-                "amc_transparent.png", --flower 45 degress
+                "blank.png", --flower 90 degress 
+                "blank.png", --flower 45 degress
                 "amc_grass_side.png", --cube back
                 "amc_dirt.png", --cube down
                 "amc_grass_side.png", --cube front
@@ -750,14 +750,14 @@ mobs:register_mob("amc:13fenderman", {
 	visual = "mesh",
 	mesh = "mobs_mc_enderman.b3d",
 	textures = {
-                "amc_transparent.png", --flower 90 degress -- choice between rotated 90 or 45 degress
+                "blank.png", --flower 90 degress -- choice between rotated 90 or 45 degress
                 "amc_flower_blue_orchid.png", --flower 45 degress
-                "amc_transparent.png", --cube back
-                "amc_transparent.png", --cube down
-                "amc_transparent.png", --cube front
-                "amc_transparent.png", --cube left
-                "amc_transparent.png", --cube right
-                "amc_transparent.png", --cube top
+                "blank.png", --cube back
+                "blank.png", --cube down
+                "blank.png", --cube front
+                "blank.png", --cube left
+                "blank.png", --cube right
+                "blank.png", --cube top
                 "mobs_mc_enderman.png^mobs_mc_enderman_eyes.png", --enderman texture
     },
 	visual_size = {x=3, y=3},
@@ -978,11 +978,11 @@ mobs:register_mob("amc:20cllama", {
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
     textures = { --1chest --2decor --3llama base texture
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_brown.png"},
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"},
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_gray.png"},
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_white.png"},
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama.png"},
+        {"blank.png", "blank.png", "mobs_mc_llama_brown.png"},
+        {"blank.png", "blank.png", "mobs_mc_llama_creamy.png"},
+        {"blank.png", "blank.png", "mobs_mc_llama_gray.png"},
+        {"blank.png", "blank.png", "mobs_mc_llama_white.png"},
+        {"blank.png", "blank.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1018,11 +1018,11 @@ mobs:register_mob("amc:20dswagllama", {
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
     textures = { --1chest --2decor --3llama base texture
-        {"amc_transparent.png", "mobs_mc_decor_black.png", "mobs_mc_llama_brown.png"},
-        {"amc_transparent.png", "mobs_mc_decor_lime.png", "mobs_mc_llama_creamy.png"},
-        {"amc_transparent.png", "mobs_mc_decor_pink.png", "mobs_mc_llama_gray.png"},
-        {"amc_transparent.png", "mobs_mc_decor_magenta.png", "mobs_mc_llama_white.png"},
-        {"amc_transparent.png", "mobs_mc_decor_blue.png", "mobs_mc_llama.png"},
+        {"blank.png", "mobs_mc_decor_black.png", "mobs_mc_llama_brown.png"},
+        {"blank.png", "mobs_mc_decor_lime.png", "mobs_mc_llama_creamy.png"},
+        {"blank.png", "mobs_mc_decor_pink.png", "mobs_mc_llama_gray.png"},
+        {"blank.png", "mobs_mc_decor_magenta.png", "mobs_mc_llama_white.png"},
+        {"blank.png", "mobs_mc_decor_blue.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1058,11 +1058,11 @@ mobs:register_mob("amc:20ecllama", {
 	visual = "mesh",
 	mesh = "mobs_mc_llama.b3d",
     textures = { --1chest --2decor --3llama base texture
-        {"mobs_mc_llama_brown.png", "amc_transparent.png", "mobs_mc_llama_brown.png"},
-        {"mobs_mc_llama_creamy.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"},
-        {"mobs_mc_llama_gray.png", "amc_transparent.png", "mobs_mc_llama_gray.png"},
-        {"mobs_mc_llama_white.png", "amc_transparent.png", "mobs_mc_llama_white.png"},
-        {"mobs_mc_llama.png", "amc_transparent.png", "mobs_mc_llama.png"},
+        {"mobs_mc_llama_brown.png", "blank.png", "mobs_mc_llama_brown.png"},
+        {"mobs_mc_llama_creamy.png", "blank.png", "mobs_mc_llama_creamy.png"},
+        {"mobs_mc_llama_gray.png", "blank.png", "mobs_mc_llama_gray.png"},
+        {"mobs_mc_llama_white.png", "blank.png", "mobs_mc_llama_white.png"},
+        {"mobs_mc_llama.png", "blank.png", "mobs_mc_llama.png"},
     },
 	visual_size = {x=3, y=3},
 	walk_velocity = 0.6,
@@ -1138,10 +1138,10 @@ mobs:register_mob("amc:20babyllama", {
 	visual = "mesh",
 	mesh = "mobs_mc_llama_baby.b3d",
     textures = { --1chest --2decor --3llama base texture
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_brown.png"}, --just baby lama
-        {"amc_transparent.png", "amc_transparent.png", "mobs_mc_llama_creamy.png"}, --just baby lama
-        {"mobs_mc_llama_gray.png", "amc_transparent.png", "mobs_mc_llama_gray.png"}, --chest baby lama
-        {"amc_transparent.png", "mobs_mc_decor_black.png", "mobs_mc_llama_white.png"}, --swag baby lama
+        {"blank.png", "blank.png", "mobs_mc_llama_brown.png"}, --just baby lama
+        {"blank.png", "blank.png", "mobs_mc_llama_creamy.png"}, --just baby lama
+        {"mobs_mc_llama_gray.png", "blank.png", "mobs_mc_llama_gray.png"}, --chest baby lama
+        {"blank.png", "mobs_mc_decor_black.png", "mobs_mc_llama_white.png"}, --swag baby lama
         {"mobs_mc_llama.png", "mobs_mc_decor_black.png", "mobs_mc_llama.png"}, --swag and chest baby lama
     },
 	visual_size = {x=1.5, y=1.5},
@@ -1178,9 +1178,9 @@ mobs:register_mob("amc:21pig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-        "amc_transparent.png", --baby
+        "blank.png", --baby
 		"mobs_mc_pig.png", --pig base texture
-        "amc_transparent.png", --saddle
+        "blank.png", --saddle
 	},
 	visual_size = {x=3, y=3},
 	walk_velocity = 1.5,
@@ -1216,7 +1216,7 @@ mobs:register_mob("amc:21saddlepig", {
 	visual = "mesh",
 	mesh = "mobs_mc_pig.b3d",
 	textures = {
-        "amc_transparent.png", --baby
+        "blank.png", --baby
 		"mobs_mc_pig.png", --pig base texture
         "mobs_mc_pig_saddle.png", --saddle
 	},
@@ -1256,7 +1256,7 @@ mobs:register_mob("amc:21babypig", {
 	textures = {
         "mobs_mc_pig.png", --baby
 		"mobs_mc_pig.png", --pig base texture
-        "amc_transparent.png", --saddle
+        "blank.png", --saddle
 	},
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 1.5,
@@ -1321,7 +1321,7 @@ mobs:register_egg("amc:22zombie", "Zombie", "mobs_mc_spawn_icon_zombie.png", 0)
 --################### HUSK
 --###################
 
-mobs:register_mob("amc:22zhusk", {
+mobs:register_mob("amc:22zzhusk", {
 	type = "animal",
 	passive = true,
     runaway = true,
@@ -1351,7 +1351,7 @@ mobs:register_mob("amc:22zhusk", {
 	},
 })
 
-mobs:register_egg("amc:22zhusk", "Husk", "mobs_mc_spawn_icon_husk.png", 0)
+mobs:register_egg("amc:22zzhusk", "Husk", "mobs_mc_spawn_icon_husk.png", 0)
 
 --###################
 --################### BABY ZOMBIE
@@ -1529,7 +1529,7 @@ mobs:register_mob("amc:24nakedsheep", {
 	visual = "mesh",
 	mesh = "mobs_mc_sheep.b3d",
 	textures = {
-                "amc_transparent.png", --no fur transparent = no fur 
+                "blank.png", --no fur transparent = no fur 
                 "mobs_mc_sheep.png", --sheep texture
     },
     gotten_texture = {"sheep.png"},
@@ -2181,9 +2181,9 @@ mobs:register_mob("amc:51pigman", {
 	mesh = "mobs_mc_zombie_pigman.b3d",
     textures = {
         {
-            "amc_transparent.png",
-            "amc_gold_sword.png",
-            "mobs_mc_zombie_pigman.png",
+            "blank.png", --baby
+            "amc_gold_sword.png", --sword
+            "mobs_mc_zombie_pigman.png", --pigman
         },
     },
 	visual_size = {x=3, y=3},
@@ -2223,9 +2223,9 @@ mobs:register_mob("amc:51babypigman", {
 	mesh = "mobs_mc_zombie_pigman.b3d",
     textures = {
         {
-            "mobs_mc_zombie_pigman.png",
-            "amc_gold_sword.png",
-            "mobs_mc_zombie_pigman.png",
+            "mobs_mc_zombie_pigman.png", --baby
+            "amc_gold_sword.png", --sword
+            "mobs_mc_zombie_pigman.png", --pigman
         },
     },
 	visual_size = {x=1.5, y=1.5},
@@ -2265,39 +2265,39 @@ mobs:register_mob("amc:52bbhorse", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_black.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_brown.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_chestnut.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_creamy.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_darkbrown.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_gray.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_white.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2335,37 +2335,37 @@ mobs:register_mob("amc:52msaddlehorse", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --no chest horses dont have chest texture
+            "blank.png", --no chest horses dont have chest texture
             "mobs_mc_horse_black.png", --horse base texture
             "mobs_mc_horse_black.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_brown.png", --horse base texture
             "mobs_mc_horse_brown.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_chestnut.png", --horse base texture
             "mobs_mc_horse_chestnut.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_creamy.png", --horse base texture
             "mobs_mc_horse_creamy.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_darkbrown.png", --horse base texture
             "mobs_mc_horse_darkbrown.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_gray.png", --horse base texture
             "mobs_mc_horse_gray.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_white.png", --horse base texture
             "mobs_mc_horse_white.png", --saddle
         },
@@ -2407,37 +2407,37 @@ mobs:register_mob("amc:52chesthorse", {
         {
             "mobs_mc_horse_black.png", --chest
             "mobs_mc_horse_black.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_brown.png", --chest
             "mobs_mc_horse_brown.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_chestnut.png", --chest
             "mobs_mc_horse_chestnut.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_creamy.png", --chest
             "mobs_mc_horse_creamy.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_darkbrown.png", --chest
             "mobs_mc_horse_darkbrown.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_gray.png", --chest
             "mobs_mc_horse_gray.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
             "mobs_mc_horse_white.png", --chest
             "mobs_mc_horse_white.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2475,39 +2475,39 @@ mobs:register_mob("amc:52rmourhorse", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_black.png^mobs_mc_horse_armor_diamond.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_brown.png^mobs_mc_horse_armor_gold.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_chestnut.png^mobs_mc_horse_armor_iron.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_creamy.png^mobs_mc_horse_armor_diamond.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_darkbrown.png^mobs_mc_horse_armor_gold.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_gray.png^mobs_mc_horse_armor_iron.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_white.png^mobs_mc_horse_armor_diamond.png", --horse base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2662,9 +2662,9 @@ mobs:register_mob("amc:53horsemule", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_mule.png", --base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2702,9 +2702,9 @@ mobs:register_mob("amc:53horsedonkey", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_donkey.png", --base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2742,9 +2742,9 @@ mobs:register_mob("amc:54horseskeleton", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_skeleton.png", --base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2782,9 +2782,9 @@ mobs:register_mob("amc:55horsezombie", {
 	mesh = "mobs_mc_horse.b3d",
     textures = {
         {
-            "amc_transparent.png", --chest
+            "blank.png", --chest
             "mobs_mc_horse_zombie.png", --base texture
-            "amc_transparent.png", --saddle
+            "blank.png", --saddle
         },
     },
 	visual_size = {x=3, y=3},
@@ -2821,27 +2821,49 @@ mobs:register_mob("amc:58villager", {
 	visual = "mesh",
 	mesh = "mobs_mc_villager.b3d",
     textures = {
-        {"mobs_mc_villager_butcher.png"},
-        {"mobs_mc_villager_farmer.png"},
-        {"mobs_mc_villager_librarian.png"},
-        {"mobs_mc_villager_priest.png"},
-        {"mobs_mc_villager_smith.png"},
-        {"mobs_mc_villager.png"},
+        {
+            "mobs_mc_villager_butcher.png",
+            "mobs_mc_villager_butcher.png", --hat
+        },
+        {
+            "mobs_mc_villager_farmer.png",
+            "mobs_mc_villager_farmer.png", --hat
+        },
+        {
+            "mobs_mc_villager_librarian.png",
+            "mobs_mc_villager_librarian.png", --hat
+        },
+        {
+            "mobs_mc_villager_priest.png",
+            "mobs_mc_villager_priest.png", --hat
+        },
+        {
+            "mobs_mc_villager_smith.png",
+            "mobs_mc_villager_smith.png", --hat
+        },
+        {
+            "mobs_mc_villager.png",
+            "mobs_mc_villager.png", --hat
+        },
     },
 	visual_size = {x=2.9, y=2.9},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        stand_speed = 17,
-        walk_speed = 17,
-		run_speed = 17,
-		stand_start = 20,
-        stand_end = 40,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+		stand_start = 40,
+        stand_end = 59,
 		walk_start = 0,
-        walk_end = 20,
+        walk_end = 40,
 		run_start = 0,
-        run_end = 20,
+        run_end = 40,
+        die_start = 210,
+        die_end = 220,
+        die_speed = 15,
+        die_loop = false,
 	},
 })
 
@@ -2862,31 +2884,188 @@ mobs:register_mob("amc:58babyvillager", {
 	visual = "mesh",
 	mesh = "mobs_mc_villager.b3d",
     textures = {
-        {"mobs_mc_villager_butcher.png"},
-        {"mobs_mc_villager_farmer.png"},
-        {"mobs_mc_villager_librarian.png"},
-        {"mobs_mc_villager_priest.png"},
-        {"mobs_mc_villager_smith.png"},
-        {"mobs_mc_villager.png"},
+        {
+            "mobs_mc_villager_butcher.png",
+            "mobs_mc_villager_butcher.png", --hat
+        },
+        {
+            "mobs_mc_villager_farmer.png",
+            "mobs_mc_villager_farmer.png", --hat
+        },
+        {
+            "mobs_mc_villager_librarian.png",
+            "mobs_mc_villager_librarian.png", --hat
+        },
+        {
+            "mobs_mc_villager_priest.png",
+            "mobs_mc_villager_priest.png", --hat
+        },
+        {
+            "mobs_mc_villager_smith.png",
+            "mobs_mc_villager_smith.png", --hat
+        },
+        {
+            "mobs_mc_villager.png",
+            "mobs_mc_villager.png", --hat
+        },
     },
 	visual_size = {x=1.5, y=1.5},
 	walk_velocity = 0.6,
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        stand_speed = 17,
-        walk_speed = 17,
-		run_speed = 17,
-		stand_start = 20,
-        stand_end = 40,
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+		stand_start = 40,
+        stand_end = 59,
 		walk_start = 0,
-        walk_end = 20,
+        walk_end = 40,
 		run_start = 0,
-        run_end = 20,
+        run_end = 40,
+        die_start = 210,
+        die_end = 220,
+        die_speed = 15,
+        die_loop = false,
 	},
 })
 
 mobs:register_egg("amc:58babyvillager", "Baby villager", "mobs_mc_spawn_icon_villager_baby.png", 0)
+
+--###################
+--################### EVOKER
+--###################
+
+mobs:register_mob("amc:60evoker", {
+	type = "monster",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_villager.b3d",
+    textures = {
+        {
+            "mobs_mc_evoker_base.png",
+            "blank.png", --no hat
+        }
+    },
+	visual_size = {x=2.9, y=2.9},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+		stand_start = 40,
+		stand_end = 59,
+		walk_start = 0,
+		walk_end = 40,
+        shoot_start = 120, --magic arm swinging
+        shoot_end = 140,
+        die_start = 190,
+        die_end = 200,
+        die_speed = 15,
+        die_loop = false,
+	},
+})
+
+mobs:register_egg("amc:60evoker", "Evoker", "mobs_mc_spawn_icon_evoker.png", 0)
+
+--###################
+--################### VINDICATOR
+--###################
+
+mobs:register_mob("amc:61vindicator", {
+	type = "monster",
+    attack_type = "dogfight",
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_vindicator.b3d", --with a pixel perfection axe
+    textures = {
+        {
+            "mobs_mc_vindicator_base.png",
+            "blank.png", --no hat
+            "mobs_mc_iron_axe.png",
+        },
+    },
+	visual_size = {x=2.9, y=2.9},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+        punch_speed = 25,
+		stand_start = 40,
+		stand_end = 59,
+        walk_start = 0,
+		walk_end = 40,
+        punch_start = 90,
+        punch_end = 110,
+        die_start = 170,
+        die_end = 180,
+        die_loop = false,
+	},
+})
+
+mobs:register_egg("amc:61vindicator", "Vindicator", "mobs_mc_spawn_icon_vindicator.png", 0)
+
+--###################
+--################### ILLUSIONER
+--###################
+
+mobs:register_mob("amc:611illusioner", {
+	type = "monster",
+	attack_type = "shoot",
+    shoot_interval = 0.5,
+	arrow = "amc:shulkerbullet",
+	shoot_offset = 1.5,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_illusioner.b3d",
+    textures = {
+        {
+            "mobs_mc_illusionist.png",
+            "mobs_mc_illusionist.png", --hat
+            "mobs_mc_bow_standby.png",
+        },
+    },
+	visual_size = {x=2.9, y=2.9},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 25,
+		stand_start = 40,
+		stand_end = 59,
+		walk_start = 0,
+		walk_end = 40,
+        shoot_start = 150,
+        shoot_end = 170,
+        die_start = 170,
+        die_end = 180,
+        die_speed = 15,
+        die_loop = false,
+        -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
+	},
+})
+
+mobs:register_egg("amc:611illusioner", "Illusioner", "mobs_mc_spawn_icon_illusioner.png", 0)
 
 --###################
 --################### ZOMBIE VILLAGER
@@ -2969,128 +3148,6 @@ mobs:register_mob("amc:59babyzvillager", {
 })
 
 mobs:register_egg("amc:59babyzvillager", "Baby Zombie Villager", "mobs_mc_spawn_icon_zombie_villager_baby.png", 0)
-
---###################
---################### EVOKER
---###################
-
-mobs:register_mob("amc:60evoker", {
-	type = "monster",
-	attack_type = "shoot",
-    shoot_interval = 0.5,
-	arrow = "amc:shulkerbullet",
-	shoot_offset = 1.5,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-	visual = "mesh",
-	mesh = "mobs_mc_evoker.b3d",
-    textures = {{"mobs_mc_evoker_base.png"}},
-	visual_size = {x=2.9, y=2.9},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-        stand_speed = 25,
-        walk_speed = 25,
-		run_speed = 25,
-		stand_start = 40,
-		stand_end = 59,
-		walk_start = 0,
-		walk_end = 40,
-        shoot_start = 60,
-        shoot_end = 80,
-        die_start = 80,
-        die_end = 130,
-        die_speed = 50,
-        die_loop = false,
-	},
-})
-
-mobs:register_egg("amc:60evoker", "Evoker", "mobs_mc_spawn_icon_evoker.png", 0)
-
---###################
---################### VINDICATOR
---###################
-
-mobs:register_mob("amc:61vindicator", {
-	type = "monster",
-    attack_type = "dogfight",
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-	visual = "mesh",
-	mesh = "mobs_mc_vindicator.b3d", --with a pixel perfection axe
-    textures = {
-        {"mobs_mc_vindicator_base.png^mobs_mc_vindicator_axe.png"},
-    },
-	visual_size = {x=2.9, y=2.9},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-        stand_speed = 25,
-        walk_speed = 25,
-		run_speed = 25,
-        punch_speed = 25,
-		stand_start = 40,
-		stand_end = 59,
-        walk_start = 0,
-		walk_end = 40,
-        punch_start = 90,
-        punch_end = 110,
-        die_start = 110,
-        die_end = 130,
-        die_loop = false,
-	},
-})
-
-mobs:register_egg("amc:61vindicator", "Vindicator", "mobs_mc_spawn_icon_vindicator.png", 0)
-
---###################
---################### ILLUSIONER
---###################
-
-mobs:register_mob("amc:611illusioner", {
-	type = "monster",
-	attack_type = "shoot",
-    shoot_interval = 0.5,
-	arrow = "amc:shulkerbullet",
-	shoot_offset = 1.5,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.95, 0.35},
-	visual = "mesh",
-	mesh = "mobs_mc_illusioner.b3d",
-    textures = {
-        {"mobs_mc_illusionist.png^mobs_mc_illusionist_bow.png"},
-    },
-	visual_size = {x=2.9, y=2.9},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-        stand_speed = 25,
-        walk_speed = 25,
-		run_speed = 25,
-		stand_start = 40,
-		stand_end = 59,
-		walk_start = 0,
-		walk_end = 40,
-        shoot_start = 90,
-        shoot_end = 110,
-        die_start = 110,
-        die_end = 130,
-        die_speed = 15,
-        die_loop = false,
-        -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
-	},
-})
-
-mobs:register_egg("amc:611illusioner", "Illusioner", "mobs_mc_spawn_icon_illusioner.png", 0)
 
 --###################
 --################### WITCH
@@ -3932,71 +3989,71 @@ mobs:register_mob("amc:paintings16x16", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
@@ -4027,11 +4084,11 @@ mobs:register_mob("amc:paintings16x32", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
@@ -4062,41 +4119,41 @@ mobs:register_mob("amc:paintings32x16", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
@@ -4127,55 +4184,55 @@ mobs:register_mob("amc:paintings32x32", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
@@ -4235,11 +4292,11 @@ mobs:register_mob("amc:paintings64x48", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
@@ -4270,19 +4327,19 @@ mobs:register_mob("amc:paintings64x64", {
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
-       'amc_transparent.png',
+       'blank.png',
        },
        {
        'amc_paintings_kristoffer_zetterstrand.png^amc_paintings_backside.png',
-       'amc_transparent.png',
-       'amc_transparent.png',
+       'blank.png',
+       'blank.png',
        'amc_paintings_kristoffer_zetterstrand.png',
        },
    },
