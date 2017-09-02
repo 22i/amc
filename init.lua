@@ -342,7 +342,7 @@ mobs:register_mob("amc:2polarbear", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_polar_bear.b3d",
+	mesh = "mobs_mc_polarbear.b3d",
 	textures = {
 		{"mobs_mc_polarbear.png"},
 	},
@@ -378,7 +378,7 @@ mobs:register_mob("amc:2babypolarbear", {
 	hp_max = 12,
     collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
 	visual = "mesh",
-	mesh = "mobs_mc_polar_bear.b3d",
+	mesh = "mobs_mc_polarbear.b3d",
 	textures = {
 		{"mobs_mc_polarbear.png"},
 	},
@@ -527,7 +527,7 @@ mobs:register_mob("amc:10magmacube", {
 	hp_max = 12,
     collisionbox = {-0.45, -0.01, -0.45, 0.45, 1.3, 0.45},
 	visual = "mesh",
-	mesh = "mobs_mc_magma_cube.b3d",
+	mesh = "mobs_mc_magmacube.b3d",
 	textures = {
 		{"mobs_mc_magmacube.png"},
 	},
@@ -2886,28 +2886,28 @@ mobs:register_mob("amc:58babyvillager", {
 	mesh = "mobs_mc_villager.b3d",
     textures = {
         {
-            "mobs_mc_villager_butcher.png",
-            "mobs_mc_villager_butcher.png", --hat
+            "mobs_mc_villager.png",
+            "mobs_mc_villager.png", --hat
         },
         {
             "mobs_mc_villager_farmer.png",
             "mobs_mc_villager_farmer.png", --hat
         },
         {
-            "mobs_mc_villager_librarian.png",
-            "mobs_mc_villager_librarian.png", --hat
-        },
-        {
             "mobs_mc_villager_priest.png",
             "mobs_mc_villager_priest.png", --hat
         },
         {
-            "mobs_mc_villager_smith.png",
-            "mobs_mc_villager_smith.png", --hat
+            "mobs_mc_villager_librarian.png",
+            "mobs_mc_villager_librarian.png", --hat
         },
         {
-            "mobs_mc_villager.png",
-            "mobs_mc_villager.png", --hat
+            "mobs_mc_villager_butcher.png",
+            "mobs_mc_villager_butcher.png", --hat
+        },
+        {
+            "mobs_mc_villager_smith.png",
+            "mobs_mc_villager_smith.png", --hat
         },
     },
 	visual_size = {x=1.5, y=1.5},
@@ -3062,7 +3062,7 @@ mobs:register_mob("amc:611illusioner", {
         die_end = 180,
         die_speed = 15,
         die_loop = false,
-        -- 60-80 magic arm swinging, 80-90 transition between magic to bow shooting
+        -- 120-140 magic arm swinging, 140-150 transition between magic to bow shooting
 	},
 })
 
