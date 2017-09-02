@@ -3738,6 +3738,56 @@ mobs:register_mob("amc:endercrystal", {
 mobs:register_egg("amc:endercrystal", "endercrystal animation", "amc_endercrystal_inv.png", 0)
 
 --###################
+--################### TORCH FLOOR wallmounted
+--###################
+
+minetest.register_node('amc:torch_floor_wallmounted', {
+   description = 'Torch floor wallmounted',
+   drawtype = 'mesh',
+   mesh = 'amc_torch_on_floor_node.obj',
+   tiles = {"default_torch_on_floor.png"},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'wallmounted',
+   inventory_image = "default_torch_on_floor.png",
+   wield_image = "default_torch_on_floor.png",
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### TORCH WALL wallmounted
+--###################
+
+minetest.register_node('amc:torch_wall_wallmounted', {
+   description = 'Torch wall wallmounted',
+   drawtype = 'mesh',
+   mesh = 'amc_torch_on_wall_node.obj',
+   tiles = {"default_torch_on_floor.png"},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'wallmounted',
+   inventory_image = "default_torch_on_floor.png",
+   wield_image = "default_torch_on_floor.png",
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
 --################### HOPPER DOWN facedir
 --###################
 
