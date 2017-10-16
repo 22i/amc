@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/Kh4l7ml.png">
+<img src="https://i.imgur.com/pQ9alim.png">
 
 ## About
 
@@ -11,10 +11,14 @@ amc is a Minetest mod made to quickly test how the Minecraft mobs look like in M
 ## Suggested mods
 - [tool that changes mob's texture](https://forum.minetest.net/viewtopic.php?f=47&t=17583&p=271043#p269714)
 - [Show wielded item](https://forum.minetest.net/viewtopic.php?t=18011)
-- [large hotbar](https://github.com/Calinou/carbone-ng/tree/master/mods/large_hotbar)
 - [item magnet](https://github.com/jordan4ibanez/item_drop)
+- [large hotbar](https://github.com/Calinou/carbone-ng/tree/master/mods/large_hotbar)
+- [pixel font](https://forum.minetest.net/download/file.php?id=11758)
 
-<img src="https://i.imgur.com/F3HHSug.png">
+### minetest.conf
+- default_privs = interact, shout, fast, home, fly, worldedit, zoom, debug, teleport, settime, noclip, give
+
+<img src="https://i.imgur.com/d8hIqu5.png">
 
 ## Thanks to:
 <img src="https://avatars0.githubusercontent.com/u/16853304?v=4&s=400" width="45"> [toby109tt](https://github.com/tobyplowy) mapping fixes - help with backface culling
