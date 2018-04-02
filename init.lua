@@ -3472,6 +3472,125 @@ mobs:register_mob("amc:88sstonesword", {
 mobs:register_egg("amc:88sstonesword", "sword", "amc_16x1.png", 0)
 
 --###################
+--################### TRIPWIRE1
+--###################    
+
+minetest.register_node('amc:tripwire1facedir', {
+   description = 'Tripwire1 facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_tripwire1.b3d',
+   tiles = {name='amc_trip_wire_hook.png', 'amc_oak_planks.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### TRIPWIRE2
+--###################    
+
+minetest.register_node('amc:tripwire2facedir', {
+   description = 'Tripwire2 facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_tripwire2.b3d',
+   tiles = {name='amc_trip_wire_hook.png', 'amc_oak_planks.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### TRIPWIRE3
+--###################    
+
+minetest.register_node('amc:tripwire3facedir', {
+   description = 'Tripwire3 facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_tripwire3.b3d',
+   tiles = {name='amc_trip_wire_hook.png', 'amc_oak_planks.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### CHEST
+--###################
+
+-- smaller
+
+minetest.register_node('amc:chest_small_facedir', {
+   description = 'chest.small.facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_chest.small.facedir.obj',
+   tiles = {name='amc_normal.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
+--################### DOUBLECHEST
+--###################
+
+-- smaller
+
+minetest.register_node('amc:doublechest_small_facedir', {
+   description = 'doublechest.small.facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_doublechest.small.facedir.obj',
+   tiles = {name='amc_normal_double.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+--###################
 --################### SIGN 0 DEGRESS
 --###################
 
