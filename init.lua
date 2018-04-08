@@ -3220,7 +3220,77 @@ mobs:register_mob("amc:63agent", {
 	},
 })
 
-mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
+--###################
+--################### PHANTOM
+--###################
+
+mobs:register_mob("amc:64phantom", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_phantom.b3d",
+	textures = {
+		{"mobs_mc_phantom.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:64phantom", "Phantom", "mobs_mc_spawn_icon_agent.png", 0)
+
+--###################
+--################### TURTLE
+--###################
+
+mobs:register_mob("amc:65turtle", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_turtle.b3d",
+	textures = {
+		{"mobs_mc_big_sea_turtle.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:65turtle", "Turtle", "mobs_mc_spawn_icon_agent.png", 0)
 
 --###################
 --################### BOAT
