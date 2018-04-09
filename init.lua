@@ -3220,6 +3220,8 @@ mobs:register_mob("amc:63agent", {
 	},
 })
 
+mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
+
 --###################
 --################### PHANTOM
 --###################
@@ -3254,7 +3256,7 @@ mobs:register_mob("amc:64phantom", {
 	},
 })
 
-mobs:register_egg("amc:64phantom", "Phantom", "mobs_mc_spawn_icon_agent.png", 0)
+mobs:register_egg("amc:64phantom", "Phantom", "mobs_mc_spawn_icon_phantom.png", 0)
 
 --###################
 --################### TURTLE
@@ -3290,7 +3292,7 @@ mobs:register_mob("amc:65turtle", {
 	},
 })
 
-mobs:register_egg("amc:65turtle", "Turtle", "mobs_mc_spawn_icon_agent.png", 0)
+mobs:register_egg("amc:65turtle", "Turtle", "mobs_mc_spawn_icon_turtle.png", 0)
 
 --###################
 --################### COD
@@ -3326,10 +3328,10 @@ mobs:register_mob("amc:66cod", {
 	},
 })
 
-mobs:register_egg("amc:66cod", "Cod", "mobs_mc_spawn_icon_agent.png", 0)
+mobs:register_egg("amc:66cod", "Cod", "mobs_mc_spawn_icon_cod.png", 0)
 
 --###################
---################### COD
+--################### SALMON
 --###################
 
 mobs:register_mob("amc:67salmon", {
@@ -3362,7 +3364,121 @@ mobs:register_mob("amc:67salmon", {
 	},
 })
 
-mobs:register_egg("amc:67salmon", "Salmon", "mobs_mc_spawn_icon_agent.png", 0)
+mobs:register_egg("amc:67salmon", "Salmon", "mobs_mc_spawn_icon_salmon.png", 0)
+
+--###################
+--################### PUFFERFISH 1
+--###################
+
+mobs:register_mob("amc:68pufferfish1", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_puffer.fish.b3d",
+    textures = {
+        "mobs_mc_pufferfish.png", --small
+		"blank.png", --medium
+        "blank.png", --large
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:68pufferfish1", "Pufferfish small", "mobs_mc_spawn_icon_puf1.png", 0)
+
+--###################
+--################### PUFFERFISH 2
+--###################
+
+mobs:register_mob("amc:68pufferfish2", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_puffer.fish.b3d",
+    textures = {
+        "blank.png", --small
+		"mobs_mc_pufferfish.png", --medium
+        "blank.png", --large
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:68pufferfish2", "Pufferfish medium", "mobs_mc_spawn_icon_puf2.png", 0)
+
+--###################
+--################### PUFFERFISH 3
+--###################
+
+mobs:register_mob("amc:68pufferfish3", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_puffer.fish.b3d",
+    textures = {
+        "blank.png", --small
+		"blank.png", --medium
+        "mobs_mc_pufferfish.png", --large
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:68pufferfish3", "Pufferfish large", "mobs_mc_spawn_icon_puf3.png", 0)
 
 --###################
 --################### BOAT
