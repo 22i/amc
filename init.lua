@@ -3443,6 +3443,42 @@ mobs:register_mob("amc:68pufferfish2", {
 mobs:register_egg("amc:68pufferfish2", "Pufferfish medium", "mobs_mc_spawn_icon_puf2.png", 0)
 
 --###################
+--################### DOLPHIN
+--###################
+
+mobs:register_mob("amc:69dolphin", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_dolphin.b3d",
+    textures = {
+		{"mobs_mc_dolphin.png"},
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 20,
+        stand_end = 60,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:69dolphin", "Dolphin", "mobs_mc_spawn_icon_dolphin.png", 0)
+
+--###################
 --################### PUFFERFISH 3
 --###################
 
