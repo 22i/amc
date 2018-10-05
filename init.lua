@@ -1354,6 +1354,50 @@ mobs:register_mob("amc:22zzhusk", {
 mobs:register_egg("amc:22zzhusk", "Husk", "mobs_mc_spawn_icon_husk.png", 0)
 
 --###################
+--################### DROWNED
+--###################
+
+mobs:register_mob("amc:222drowned", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.9, 0.35},
+	visual = "mesh",
+	mesh = "amc_drowned.b3d",
+    textures = { --blank.png
+        {
+            "blank.png", --baby drowned head -- amc_drowned.png
+            "blank.png", --baby overlay head -- amc_drowned_outer_layer.png
+            "amc_drowned.png", --drowned body
+            "amc_drowned_outer_layer.png", --drowned overlay body
+            "amc_trident.png", --trident
+        },
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
+		stand_start = 40,
+        stand_end = 80,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+        punch_start = 90,
+        punch_end = 130,
+	},
+})
+
+mobs:register_egg("amc:222drowned", "Drowned", "mobs_mc_spawn_icon_drowned.png", 0)
+
+--###################
 --################### BABY ZOMBIE
 --###################
 
@@ -1768,6 +1812,7 @@ mobs:register_mob("amc:32wither", {
 	walk_velocity = 0.6,
     run_velocity = 2,
 	jump = true,
+    pushable = true,
 	animation = {
         stand_speed = 12,
         walk_speed = 12,
@@ -3197,7 +3242,7 @@ mobs:register_mob("amc:63agent", {
     stepheight = 1.2,
 	hp_min = 12,
 	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 0.9, 0.35},
 	visual = "mesh",
 	mesh = "mobs_mc_agent.b3d",
 	textures = {
