@@ -3307,6 +3307,9 @@ mobs:register_egg("amc:64phantom", "Phantom", "mobs_mc_spawn_icon_phantom.png", 
 --################### TURTLE
 --###################
 
+--turtle moves on land from 0 to 80
+--turtle swims 90 to 170
+
 mobs:register_mob("amc:65turtle", {
 	type = "animal",
 	passive = true,
@@ -3328,16 +3331,16 @@ mobs:register_mob("amc:65turtle", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 0,
 		walk_start = 0,
-        walk_end = 20,
+        walk_end = 80,
 		run_start = 0,
-        run_end = 20,
+        run_end = 80,
 	},
 })
 
-mobs:register_egg("amc:65turtle", "Turtle", "mobs_mc_spawn_icon_turtle.png", 0)
+mobs:register_egg("amc:65turtle", "ninja turtle", "mobs_mc_spawn_icon_turtle.png", 0)
 
 --###################
 --################### COD
@@ -3491,6 +3494,9 @@ mobs:register_egg("amc:68pufferfish2", "Pufferfish medium", "mobs_mc_spawn_icon_
 --################### DOLPHIN
 --###################
 
+--dolphin tail moves up and down 0 to 80
+--dolphin tail moves up and down also body moves up and down 100 to 180
+
 mobs:register_mob("amc:69dolphin", {
 	type = "animal",
 	passive = true,
@@ -3512,16 +3518,16 @@ mobs:register_mob("amc:69dolphin", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 0,
 		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
+        walk_end = 80,
+		run_start = 100,
+        run_end = 180,
 	},
 })
 
-mobs:register_egg("amc:69dolphin", "Dolphin", "mobs_mc_spawn_icon_dolphin.png", 0)
+mobs:register_egg("amc:69dolphin", "run with the Dolphin", "mobs_mc_spawn_icon_dolphin.png", 0)
 
 --###################
 --################### PUFFERFISH 3
