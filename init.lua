@@ -3346,6 +3346,9 @@ mobs:register_egg("amc:65turtle", "ninja turtle", "mobs_mc_spawn_icon_turtle.png
 --################### COD
 --###################
 
+--cod swims from 0 to 20
+--cod when its on land 30 to 50
+
 mobs:register_mob("amc:66cod", {
 	type = "animal",
 	passive = true,
@@ -3367,8 +3370,8 @@ mobs:register_mob("amc:66cod", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 20,
 		walk_start = 0,
         walk_end = 20,
 		run_start = 0,
@@ -3376,7 +3379,7 @@ mobs:register_mob("amc:66cod", {
 	},
 })
 
-mobs:register_egg("amc:66cod", "Cod", "mobs_mc_spawn_icon_cod.png", 0)
+mobs:register_egg("amc:66cod", "Cod 2", "mobs_mc_spawn_icon_cod.png", 0)
 
 --###################
 --################### SALMON
@@ -3403,8 +3406,8 @@ mobs:register_mob("amc:67salmon", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 20,
 		walk_start = 0,
         walk_end = 20,
 		run_start = 0,
