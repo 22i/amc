@@ -3271,6 +3271,10 @@ mobs:register_egg("amc:63agent", "Agent 007", "mobs_mc_spawn_icon_agent.png", 0)
 --################### PHANTOM
 --###################
 
+-- frame 0 phantom still statue
+
+-- from 10 to 30 phantom flys
+
 mobs:register_mob("amc:64phantom", {
 	type = "animal",
 	passive = true,
@@ -3289,15 +3293,15 @@ mobs:register_mob("amc:64phantom", {
 	run_velocity = 2,
 	jump = true,
 	animation = {
-        stand_speed = 25,
-        walk_speed = 25,
-		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
+        stand_speed = 12,
+        walk_speed = 12,
+		run_speed = 15,
+		stand_start = 10,
+        stand_end = 30,
+		walk_start = 10,
+        walk_end = 30,
+		run_start = 10,
+        run_end = 30,
 	},
 })
 
