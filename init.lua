@@ -3448,8 +3448,8 @@ mobs:register_mob("amc:68pufferfish1", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 20,
 		walk_start = 0,
         walk_end = 20,
 		run_start = 0,
@@ -3486,8 +3486,8 @@ mobs:register_mob("amc:68pufferfish2", {
         stand_speed = 25,
         walk_speed = 25,
 		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
+		stand_start = 0,
+        stand_end = 20,
 		walk_start = 0,
         walk_end = 20,
 		run_start = 0,
@@ -3496,6 +3496,150 @@ mobs:register_mob("amc:68pufferfish2", {
 })
 
 mobs:register_egg("amc:68pufferfish2", "Pufferfish medium", "mobs_mc_spawn_icon_puf2.png", 0)
+
+--###################
+--################### PUFFERFISH 3
+--###################
+
+mobs:register_mob("amc:68pufferfish3", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_puffer.fish.b3d",
+    textures = {
+        "blank.png", --small
+		"blank.png", --medium
+        "mobs_mc_pufferfish.png", --large
+	},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 20,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:68pufferfish3", "Pufferfish large", "mobs_mc_spawn_icon_puf3.png", 0)
+
+--###################
+--################### TROPICAL A
+--###################
+
+mobs:register_mob("amc:70tropicala", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_tropical_fish_a.b3d",
+    textures = {
+        {
+            "amc_a1.png",
+        },
+        {
+            "amc_a2.png",
+        },
+        {
+            "amc_a3.png",
+        },
+        {
+            "amc_a4.png",
+        },
+        {
+            "amc_a5.png",
+        },
+        {
+            "amc_a6.png",
+        },
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 20,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:70tropicala", "tropical fish a", "mobs_mc_spawn_icon_tropicala.png", 0)
+
+--###################
+--################### TROPICAL B
+--###################
+
+mobs:register_mob("amc:70tropicalb", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_tropical_fish_b.b3d",
+    textures = {
+        {
+            "amc_b1.png",
+        },
+        {
+            "amc_b2.png",
+        },
+        {
+            "amc_b3.png",
+        },
+        {
+            "amc_b4.png",
+        },
+        {
+            "amc_b5.png",
+        },
+        {
+            "amc_b6.png",
+        },
+    },
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 20,
+		walk_start = 0,
+        walk_end = 20,
+		run_start = 0,
+        run_end = 20,
+	},
+})
+
+mobs:register_egg("amc:70tropicalb", "tropical fish b", "mobs_mc_spawn_icon_tropicalb.png", 0)
 
 --###################
 --################### DOLPHIN
@@ -3535,44 +3679,6 @@ mobs:register_mob("amc:69dolphin", {
 })
 
 mobs:register_egg("amc:69dolphin", "run with the Dolphin", "mobs_mc_spawn_icon_dolphin.png", 0)
-
---###################
---################### PUFFERFISH 3
---###################
-
-mobs:register_mob("amc:68pufferfish3", {
-	type = "animal",
-	passive = true,
-    runaway = true,
-    stepheight = 1.2,
-	hp_min = 12,
-	hp_max = 12,
-    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1, 0.35},
-	visual = "mesh",
-	mesh = "mobs_mc_puffer.fish.b3d",
-    textures = {
-        "blank.png", --small
-		"blank.png", --medium
-        "mobs_mc_pufferfish.png", --large
-	},
-	visual_size = {x=3, y=3},
-	walk_velocity = 0.6,
-	run_velocity = 2,
-	jump = true,
-	animation = {
-        stand_speed = 25,
-        walk_speed = 25,
-		run_speed = 50,
-		stand_start = 20,
-        stand_end = 60,
-		walk_start = 0,
-        walk_end = 20,
-		run_start = 0,
-        run_end = 20,
-	},
-})
-
-mobs:register_egg("amc:68pufferfish3", "Pufferfish large", "mobs_mc_spawn_icon_puf3.png", 0)
 
 --###################
 --################### BOAT
