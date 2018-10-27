@@ -401,6 +401,47 @@ mobs:register_mob("amc:2babypolarbear", {
 
 mobs:register_egg("amc:2babypolarbear", "Baby Polar Bear", "mobs_mc_spawn_icon_polarbear_baby.png", 0)
 
+--###################
+--################### PANDA
+--###################
+
+mobs:register_mob("amc:3panda", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_panda.b3d",
+	textures = {
+		{"mobs_mc_panda.png"},
+        {"mobs_mc_aggressive_panda.png"},
+        {"mobs_mc_brown_panda.png"},
+        {"mobs_mc_lazy_panda.png"},
+        {"mobs_mc_playful_panda.png"},
+        {"mobs_mc_weak_panda.png"},
+        {"mobs_mc_worried_panda.png"},
+	},
+	visual_size = {x=2.2, y=2.2},
+	walk_velocity = 0.6,
+    --walk_velocity = 0.000000006,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        walk_speed = 25,
+		run_speed = 50,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:3panda", "panda", "mobs_mc_spawn_icon_panda.png", 0)
 
 --###################
 --################### BLAZE
@@ -3194,6 +3235,42 @@ mobs:register_mob("amc:59babyzvillager", {
 })
 
 mobs:register_egg("amc:59babyzvillager", "Baby Zombie Villager", "mobs_mc_spawn_icon_zombie_villager_baby.png", 0)
+
+--###################
+--################### BEAST
+--###################
+
+mobs:register_mob("amc:66beast", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.20, -0.01, -0.20, 0.20, 1.3, 0.20},
+	visual = "mesh",
+	mesh = "mobs_mc_beast.b3d",
+    textures = {
+        {"mobs_mc_beast.png"},
+    },
+	visual_size = {x=1.8, y=1.8},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        stand_speed = 25,
+        walk_speed = 25,
+        run_speed = 50,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 0,
+		run_start = 0,
+        run_end = 0,
+	},
+})
+
+mobs:register_egg("amc:66beast", "mrbeast", "mobs_mc_spawn_icon_beast.png", 0)
 
 --###################
 --################### WITCH
