@@ -1,6 +1,9 @@
 --[[ collision box
 {-1, -0.5, -1, 1, 3, 1}, Right, Bottom, Back, Left, Top, Front
 --]]
+
+
+
     
 --###################
 --################### CHICKEN
@@ -70,6 +73,105 @@ mobs:register_mob("amc:6babychicken", {
 })
 
 mobs:register_egg("amc:6babychicken", "Baby Spy Chicken", "mobs_mc_spawn_icon_chicken_baby.png", 0)
+
+--###################
+--################### BEE
+--###################
+
+mobs:register_mob("amc:0abee", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_bee.b3d",
+	textures = {"mobs_mc_bee.png"},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        walk_speed = 25,
+        run_speed = 40,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:0abee", "Bee", "mobs_mc_spawn_icon_bee.png", 0)
+
+--###################
+--################### HOGLIN
+--###################
+
+mobs:register_mob("amc:0aahoglin", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_hoglin.b3d",
+	textures = {"mobs_mc_hoglin.png"},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        walk_speed = 25,
+        run_speed = 40,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:0aahoglin", "Hoglin", "mobs_mc_spawn_icon_hoglin.png", 0)
+
+--###################
+--################### STRIDER
+--###################
+
+mobs:register_mob("amc:0aastrider", {
+	type = "animal",
+	passive = true,
+    runaway = true,
+    stepheight = 1.2,
+	hp_min = 12,
+	hp_max = 12,
+    collisionbox = {-0.35, -0.01, -0.35, 0.35, 1.4, 0.35},
+	visual = "mesh",
+	mesh = "mobs_mc_strider.b3d",
+	textures = {"mobs_mc_strider.png"},
+	visual_size = {x=3, y=3},
+	walk_velocity = 0.6,
+	run_velocity = 2,
+	jump = true,
+	animation = {
+        walk_speed = 25,
+        run_speed = 40,
+		stand_start = 0,
+        stand_end = 0,
+		walk_start = 0,
+        walk_end = 40,
+		run_start = 0,
+        run_end = 40,
+	},
+})
+
+mobs:register_egg("amc:0aastrider", "Strider", "mobs_mc_spawn_icon_strider.png", 0)
 
 --###################
 --################### COW
