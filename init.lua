@@ -3,6 +3,25 @@
 --]]
 
 
+minetest.register_node('amc:enchanting_table_book', {
+   description = 'enchanting table facedir',
+   drawtype = 'mesh',
+   mesh = 'amc_enchanting.table.book.rotate.b3d',
+   tiles = {'enchanting_table_book.png', 'enchanting_table_bottom.png', 'enchanting_table_side.png', 'enchanting_table_top.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
 
     
 --###################
