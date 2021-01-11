@@ -3,6 +3,26 @@
 --]]
 
 
+minetest.register_node('amc:shulkerbox', {
+   description = 'shulkerbox facedir',
+   drawtype = 'mesh',
+   mesh = 'shulkerbox.b3d',
+   tiles = {'shulker_blue.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+
 minetest.register_node('amc:enchanting_table_book', {
    description = 'enchanting table facedir',
    drawtype = 'mesh',
@@ -21,6 +41,8 @@ minetest.register_node('amc:enchanting_table_book', {
       fixed = {-.5, -.5, -.5, .5, .5, .5},
       },
 })
+
+
 
 
     
