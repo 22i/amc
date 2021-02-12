@@ -2,6 +2,45 @@
 {-1, -0.5, -1, 1, 3, 1}, Right, Bottom, Back, Left, Top, Front
 --]]
 
+minetest.register_node('amc:chester', {
+   description = 'chester facedir',
+   drawtype = 'mesh',
+   mesh = 'chester.b3d',
+   tiles = {'amc_normal.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
+
+minetest.register_node('amc:doublechester', {
+   description = 'doublechester facedir',
+   drawtype = 'mesh',
+   mesh = 'doublechester.b3d',
+   tiles = {'amc_normal_double.png'},
+   groups = {choppy=2, dig_immediate=2,},
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   walkable = false,
+   selection_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+   collision_box = {
+      type = 'fixed',
+      fixed = {-.5, -.5, -.5, .5, .5, .5},
+      },
+})
+
 
 minetest.register_node('amc:shulkerbox', {
    description = 'shulkerbox facedir',
